@@ -8,17 +8,16 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import ippo.assignment2.collections.WallsCollection;
-import ippo.assignment2.models.DirectionModel;
-import ippo.assignment2.models.PlayerModel;
-import ippo.assignment2.models.WallModel;
-import ippo.assignment2.models.RoomModel;
+import ippo.assignment2.factories.Services;
+import ippo.assignment2.models.Direction;
+import ippo.assignment2.models.Player;
+import ippo.assignment2.services.IService;
 import ippo.assignment2.utils.Properties;
 
 /**
  * @since 0.1.2
  */
-public class NavigationController implements Initializable {
+public class Navigation implements Initializable {
 
     @FXML
     private Button backButton;
@@ -32,10 +31,7 @@ public class NavigationController implements Initializable {
     @FXML
     private Button rightButton;
 
-    private PlayerModel player;
-
-    private Properties properties;
-
+    private Player player;
 
     /**
      *
@@ -45,22 +41,26 @@ public class NavigationController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Properties properties = null;
+        String propertyName = "navigation.service";
+        IService service = null;
+        Services serviceFactory = null;
 
         try {
-            this.properties = new Properties();
+            properties = new Properties();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        System.out.println(this.properties.getValue("navigationController.service"));
-        WallModel leftWall = new WallModel(null, null);
-        WallModel rightWall = new WallModel(null, null);
-        WallsCollection walls = new WallsCollection();
-        walls.add(DirectionModel.LEFT, leftWall);
-        walls.add(DirectionModel.RIGHT, rightWall);
-        RoomModel room = new RoomModel(null, walls);
+        serviceFactory = new Services();
+        service = serviceFactory.generateFromProperties(
+           properties,
+           propertyName
+        );
 
-        this.player = new PlayerModel(null, null, room);
+        if (service != null) {
+            this.player = service.get();
+        }
     }
 
     /**
@@ -68,7 +68,7 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void goBack() {
-        this.player.turn(DirectionModel.BACK);
+        this.player.turn(Direction.BACK);
     }
 
     /**
@@ -84,7 +84,7 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void turnLeft() {
-        this.player.turn(DirectionModel.LEFT);
+        this.player.turn(Direction.LEFT);
     }
 
     /**
@@ -92,6 +92,6 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void turnRight() {
-        this.player.turn(DirectionModel.RIGHT);
+        this.player.turn(Direction.RIGHT);
     }
 }

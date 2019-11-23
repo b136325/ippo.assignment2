@@ -20,6 +20,6 @@ public class PropertiesTest {
 
     @Test
     public void hasValueTrue() {
-        assertTrue(this.properties.has("navigationController.service"));
+        assertTrue(this.properties.has("navigation.service"));
     }
 }

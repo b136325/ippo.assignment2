@@ -2,19 +2,19 @@ package ippo.assignment2.collections;
 
 import java.util.HashMap;
 
-import ippo.assignment2.models.DirectionModel;
-import ippo.assignment2.models.WallModel;
+import ippo.assignment2.models.Direction;
+import ippo.assignment2.models.Wall;
 import java.awt.*;
 
 /**
  * @since 0.1.2
  */
-public class WallsCollection {
+public class Walls {
 
     /**
      * @since 0.1.2
      */
-    private HashMap<DirectionModel, WallModel> walls = new HashMap<DirectionModel, WallModel>();
+    private HashMap<Direction, Wall> walls = new HashMap<Direction, Wall>();
 
     /**
      *
@@ -22,7 +22,7 @@ public class WallsCollection {
      * @param walls
      * @since 0.1.2
      */
-    public void add(DirectionModel direction, WallModel walls) {
+    public void add(Direction direction, Wall walls) {
         this.walls.put(direction, walls);
     }
 
@@ -32,8 +32,8 @@ public class WallsCollection {
      * @return
      * @since 0.1.2
      */
-    public Image getImage(DirectionModel direction) {
-        WallModel wall = this.getWall(direction);
+    public Image getImage(Direction direction) {
+        Wall wall = this.getWall(direction);
 
         if (wall != null) {
             return wall.getImage();
@@ -48,7 +48,7 @@ public class WallsCollection {
      * @return
      * @since 0.1.2
      */
-    public WallModel getWall(DirectionModel direction) {
+    public Wall getWall(Direction direction) {
         if (this.hasWall(direction)) {
             return this.walls.get(direction);
         }
@@ -62,7 +62,7 @@ public class WallsCollection {
      * @return
      * @since 0.1.2
      */
-    public Boolean hasWall(DirectionModel direction) {
+    public Boolean hasWall(Direction direction) {
         return this.walls.containsKey(direction);
     }
 }

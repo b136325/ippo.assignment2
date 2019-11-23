@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 /**
  * @since 0.1.2
  */
-public class HeaderController implements Initializable {
+public class Header implements Initializable {
 
     @FXML
     private Button pickUpButton;

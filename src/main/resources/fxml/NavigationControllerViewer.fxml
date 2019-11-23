@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="ippo.assignment2.controllers.NavigationController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="ippo.assignment2.controllers.Navigation">
     <children>
         <Button fx:id="leftButton" onAction="#turnLeft" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Left" />
         <Button fx:id="forwardButton" onAction="#goForward"  layoutX="100.0" layoutY="61.0" mnemonicParsing="false" text="Forward" />

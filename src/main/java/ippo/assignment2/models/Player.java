@@ -1,13 +1,13 @@
 package ippo.assignment2.models;
 
-import ippo.assignment2.collections.ItemsCollection;
+import ippo.assignment2.collections.Items;
 
 import java.awt.*;
 
-public class PlayerModel {
-    private DirectionModel direction;
-    private ItemsCollection items;
-    private RoomModel room;
+public class Player {
+    private Direction direction;
+    private Items items;
+    private Room room;
 
     /**
      *
@@ -15,7 +15,7 @@ public class PlayerModel {
      * @param items
      * @param room
      */
-    public PlayerModel(DirectionModel direction, ItemsCollection items, RoomModel room) {
+    public Player(Direction direction, Items items, Room room) {
         this.direction = direction;
         this.items = items;
         this.room = room;
@@ -26,7 +26,7 @@ public class PlayerModel {
      * @param direction
      * @return
      */
-    public Image getCurrentImage(DirectionModel direction) {
+    public Image getCurrentImage(Direction direction) {
         this.assertRoom();
         return this.room.getImage(direction);
     }
@@ -35,7 +35,7 @@ public class PlayerModel {
      *
      * @return
      */
-    public DirectionModel getDirection() {
+    public Direction getDirection() {
         return this.direction;
     }
 
@@ -43,7 +43,7 @@ public class PlayerModel {
      *
      * @return
      */
-    public ItemsCollection getItems() {
+    public Items getItems() {
         return this.items;
     }
 
@@ -51,7 +51,7 @@ public class PlayerModel {
      *
      * @return
      */
-    public RoomModel getRoom() {
+    public Room getRoom() {
         return this.room;
     }
 
@@ -60,7 +60,7 @@ public class PlayerModel {
      */
     public void moveForward() {
         this.assertRoom();
-        WallModel wall = null;
+        Wall wall = null;
 
         if (this.room.hasWall(this.direction)) {
             wall = this.room.getWall(direction);
@@ -76,7 +76,7 @@ public class PlayerModel {
      * @param item
      * @return
      */
-    public Boolean pickUp(ItemModel item) {
+    public Boolean pickUp(Item item) {
         this.assertItems();
         this.assertRoom();
         Boolean response = false;
@@ -93,7 +93,7 @@ public class PlayerModel {
      * @param item
      * @return
      */
-    public Boolean putDown(ItemModel item) {
+    public Boolean putDown(Item item) {
         this.assertItems();
         this.assertRoom();
         Boolean response = false;
@@ -110,7 +110,7 @@ public class PlayerModel {
      * @param direction
      * @return
      */
-    public Boolean turn(DirectionModel direction) {
+    public Boolean turn(Direction direction) {
         this.assertRoom();
         Boolean response = false;
 

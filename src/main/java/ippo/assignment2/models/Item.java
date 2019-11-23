@@ -2,11 +2,11 @@ package ippo.assignment2.models;
 
 import java.awt.*;
 
-public class ItemModel {
+public class Item {
     private Image image;
     private String name;
 
-    public ItemModel(Image image, String name) {
+    public Item(Image image, String name) {
         this.image = image;
         this.name = name;
     }

@@ -2,16 +2,16 @@ package ippo.assignment2.models;
 
 import java.awt.*;
 
-public class WallModel {
+public class Wall {
     private Image image;
-    private RoomModel room;
+    private Room room;
 
     /**
      *
      * @param image
      * @param room
      */
-    public WallModel(Image image, RoomModel room) {
+    public Wall(Image image, Room room) {
         this.image = image;
         this.room = room;
     }
@@ -28,7 +28,7 @@ public class WallModel {
      *
      * @return
      */
-    public RoomModel getRoom() {
+    public Room getRoom() {
         return this.room;
     }
 

@@ -2,6 +2,12 @@
 
 ---
 
+### Tag 0.1.7
+
+The introduction of a Service and a ServiceFactory for Player models.
+ 
+---
+
 ### Tag 0.1.6
 
 The introduction of utils.Properties, which provides non view related configurations.

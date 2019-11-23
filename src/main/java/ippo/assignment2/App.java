@@ -6,11 +6,10 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import ippo.assignment2.controllers.MainController;
+import ippo.assignment2.controllers.Main;
 import ippo.assignment2.utils.Properties;
 
 /**
@@ -46,7 +45,7 @@ public class App extends javafx.application.Application {
             AnchorPane page =  (AnchorPane) loader.load(getClass().getResource(mainControllerViewerPath));
             Scene scene = new Scene(page);
             stage.setScene(scene);
-            MainController mainController = loader.getController();
+            Main mainController = loader.getController();
             stage.show();
 
         } catch (IOException ex) {

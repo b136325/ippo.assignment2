@@ -6,7 +6,7 @@ import javafx.scene.layout.AnchorPane;
 /**
  * @since 0.1.2
  */
-public class MainController {
+public class Main {
 
     @FXML
     private AnchorPane headerPane;

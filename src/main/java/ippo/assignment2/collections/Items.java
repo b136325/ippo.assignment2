@@ -1,21 +1,21 @@
 package ippo.assignment2.collections;
 
-import ippo.assignment2.models.ItemModel;
+import ippo.assignment2.models.Item;
 
 import java.util.*;
 
 /**
  * @since 0.1.2
  */
-public class ItemsCollection {
-    private Set<ItemModel> items = new HashSet<ItemModel>();
+public class Items {
+    private Set<Item> items = new HashSet<Item>();
 
     /**
      *
      * @param item
      * @since 0.1.2
      */
-    public void add(ItemModel item) {
+    public void add(Item item) {
         this.items.add(item);
     }
 
@@ -25,7 +25,7 @@ public class ItemsCollection {
      * @return
      * @since 0.1.2
      */
-    public Boolean has(ItemModel item) {
+    public Boolean has(Item item) {
         return this.items.contains(item);
     }
 
@@ -35,7 +35,7 @@ public class ItemsCollection {
      * @return
      * @since 0.1.2
      */
-    public Boolean remove(ItemModel item) {
+    public Boolean remove(Item item) {
         Boolean response = false;
 
         if (this.items.contains(item)) {

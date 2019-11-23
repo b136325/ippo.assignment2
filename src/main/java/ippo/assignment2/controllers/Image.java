@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 /**
  * @since 0.1.2
  */
-public class ImageController  implements Initializable {
+public class Image implements Initializable {
 
     /**
      *
