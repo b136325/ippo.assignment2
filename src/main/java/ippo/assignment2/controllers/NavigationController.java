@@ -1,12 +1,17 @@
 package ippo.assignment2.controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import ippo.assignment2.collections.WallsCollection;
+import ippo.assignment2.models.DirectionModel;
+import ippo.assignment2.models.PlayerModel;
+import ippo.assignment2.models.WallModel;
+import ippo.assignment2.models.RoomModel;
 
 /**
  * @since 0.1.2
@@ -25,6 +30,8 @@ public class NavigationController implements Initializable {
     @FXML
     private Button rightButton;
 
+    private PlayerModel player;
+
     /**
      *
      * @param url
@@ -33,7 +40,14 @@ public class NavigationController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        WallModel leftWall = new WallModel(null, null);
+        WallModel rightWall = new WallModel(null, null);
+        WallsCollection walls = new WallsCollection();
+        walls.add(DirectionModel.LEFT, leftWall);
+        walls.add(DirectionModel.RIGHT, rightWall);
+        RoomModel room = new RoomModel(null, walls);
 
+        this.player = new PlayerModel(null, null, room);
     }
 
     /**
@@ -41,7 +55,7 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void goBack() {
-        this.backButton.setText("Back - Clicked");
+        this.player.turn(DirectionModel.BACK);
     }
 
     /**
@@ -49,7 +63,7 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void goForward() {
-        this.forwardButton.setText("Forward - Clicked");
+        this.player.moveForward();
     }
 
     /**
@@ -57,7 +71,7 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void turnLeft() {
-        this.leftButton.setText("Left - Clicked");
+        this.player.turn(DirectionModel.LEFT);
     }
 
     /**
@@ -65,6 +79,6 @@ public class NavigationController implements Initializable {
      */
     @FXML
     public void turnRight() {
-        this.rightButton.setText("Right - Clicked");
+        this.player.turn(DirectionModel.RIGHT);
     }
 }
