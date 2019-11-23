@@ -1,11 +1,15 @@
 package ippo.assignment2;
 
+import com.sun.prism.ResourceFactoryListener;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -34,8 +38,10 @@ public class App extends javafx.application.Application {
 
         try {
 
-            String viewerFxml = "MainControllerViewer.fxml";
-            FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource(viewerFxml));
+            String viewerFxml = "/fxml/MainControllerViewer.fxml";
+
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(viewerFxml));
             AnchorPane page = (AnchorPane) fxmlLoader.load();
 
             Scene scene = new Scene(page);

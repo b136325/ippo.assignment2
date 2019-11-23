@@ -2,6 +2,18 @@
 
 ---
 
+### Tag 0.1.3
+
+Ensure that the correct FXML in found when the application start.
+
+---
+
+### Tag 0.1.2
+
+Update JavaDoc..
+
+---
+
 ### Tag 0.1.1
 
 A small update to connect the views and the controllers.
