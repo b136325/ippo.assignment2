@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -12,6 +13,7 @@ import ippo.assignment2.models.DirectionModel;
 import ippo.assignment2.models.PlayerModel;
 import ippo.assignment2.models.WallModel;
 import ippo.assignment2.models.RoomModel;
+import ippo.assignment2.utils.Properties;
 
 /**
  * @since 0.1.2
@@ -32,6 +34,9 @@ public class NavigationController implements Initializable {
 
     private PlayerModel player;
 
+    private Properties properties;
+
+
     /**
      *
      * @param url
@@ -40,6 +45,14 @@ public class NavigationController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        try {
+            this.properties = new Properties();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(this.properties.getValue("navigationController.service"));
         WallModel leftWall = new WallModel(null, null);
         WallModel rightWall = new WallModel(null, null);
         WallsCollection walls = new WallsCollection();

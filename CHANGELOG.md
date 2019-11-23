@@ -2,9 +2,15 @@
 
 ---
 
+### Tag 0.1.6
+
+The introduction of utils.Properties, which provides non view related configurations.
+
+---
+
 ### Tag 0.1.5
 
-Temporarily instantiate the Player model within the Naviagtion controller and link the controller's view related callnacks to the model.
+Temporarily instantiate the Player model within the Navigation controller and link the controller's view related callbacks to the model.
 
 ---
 
