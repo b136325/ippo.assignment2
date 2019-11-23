@@ -8,6 +8,9 @@ import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 import ippo.assignment2.models.Wall;
 
+import javafx.scene.image.Image;
+import java.io.IOException;
+
 /**
  * @since 0.1.7
  */
@@ -18,7 +21,7 @@ public class Players implements IService {
      * @return
      * @since 0.1.7
      */
-    public Player get() {
+    public Player get() throws IOException {
 
         Wall innerWallLeft = new Wall(null, null);
         Wall innerWallRight = new Wall(null, null);
@@ -37,8 +40,11 @@ public class Players implements IService {
         Items roomItems = new Items();
         roomItems.add(roomItem);
 
-        Wall wallLeft = new Wall(null, innerRoom);
-        Wall wallRight = new Wall(null, null);
+        Image imageLeft = new Image("https://javaconceptoftheday.com/wp-content/NumberPatternPrograms.png");
+        Image imageRight = new Image("https://sprudge.com/wp-content/uploads/2019/04/Edinburgh.jpg");
+
+        Wall wallLeft = new Wall(imageLeft, innerRoom);
+        Wall wallRight = new Wall(imageRight, null);
 
         Walls walls = new Walls();
         walls.add(Direction.LEFT, wallLeft);

@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Wall;
-import java.awt.*;
+import javafx.scene.image.Image;
 
 /**
  * @since 0.1.2

@@ -2,7 +2,7 @@ package ippo.assignment2.models;
 
 import ippo.assignment2.collections.Items;
 import ippo.assignment2.collections.Walls;
-import java.awt.*;
+import javafx.scene.image.Image;
 
 public class Room {
 

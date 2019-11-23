@@ -1,8 +1,7 @@
 package ippo.assignment2.models;
 
 import ippo.assignment2.collections.Items;
-
-import java.awt.*;
+import javafx.scene.image.Image;
 
 public class Player {
     private Direction direction;

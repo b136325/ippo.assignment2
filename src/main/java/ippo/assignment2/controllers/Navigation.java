@@ -63,7 +63,11 @@ public class Navigation implements Initializable {
         );
 
         if (service != null) {
-            this.player = service.get();
+            try {
+                this.player = service.get();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

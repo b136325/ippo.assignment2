@@ -1,6 +1,6 @@
 package ippo.assignment2.models;
 
-import java.awt.*;
+import javafx.scene.image.Image;
 
 public class Wall {
     private Image image;

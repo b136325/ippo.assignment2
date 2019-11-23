@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+---
+
+### Tag 0.1.9
+
+The introduction of one image.
 
 ---
 
