@@ -2,6 +2,12 @@
 
 ---
 
+### Tag 0.1.4
+
+Wire together basic view to controller button callbacks.
+
+---
+
 ### Tag 0.1.3
 
 Ensure that the correct FXML in found when the application start.

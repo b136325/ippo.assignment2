@@ -2,22 +2,25 @@ package ippo.assignment2.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 /**
  * @since 0.1.2
  */
-public class ImageController {
-
-    @FXML
-    private Button imageButton;
+public class ImageController  implements Initializable {
 
     /**
      *
-     * @param event
-     * @since 0.1.2
+     * @param url
+     * @param resourceBundle
+     * @since 0.1.3
      */
-    public void pressImageButton(ActionEvent event) {
-        imageButton.setText("Clicked");
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }

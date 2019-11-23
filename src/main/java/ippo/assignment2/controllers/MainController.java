@@ -13,11 +13,4 @@ public class MainController {
 
     @FXML
     private AnchorPane imagePane;
-
-    /**
-     * @since 0.1.2
-     */
-    public void getHeaderController() {
-
-    }
 }

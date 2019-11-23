@@ -14,12 +14,17 @@ import java.util.ResourceBundle;
 public class HeaderController implements Initializable {
 
     @FXML
-    private Button basketButton;
+    private Button pickUpButton;
 
-    public Button getButton() {
-        return this.basketButton;
-    }
+    @FXML
+    private Button putDownButton;
 
+    /**
+     *
+     * @param url
+     * @param resourceBundle
+     * @since 0.1.3
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -28,9 +33,19 @@ public class HeaderController implements Initializable {
     /**
      *
      * @param event
-     * @since 0.1.2
+     * @since 0.1.3
      */
-    public void pressHeaderButton(ActionEvent event) {
-        basketButton.setText("Clicked");
+    public void pickUp(ActionEvent event) {
+        this.pickUpButton.setText("Clicked");
     }
+
+    /**
+     *
+     * @param event
+     * @since 0.1.3
+     */
+    public void putDown(ActionEvent event) {
+        this.putDownButton.setText("Clicked");
+    }
+
 }

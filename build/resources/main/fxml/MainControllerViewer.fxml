@@ -11,7 +11,7 @@
                 <fx:include source="ImageControllerViewer.fxml" fx:id="headerPane" BorderPane.alignment="TOP_LEFT" />
             </top>
             <bottom>
-                <fx:include source="ImageControllerViewer.fxml" fx:id="navigationPane" BorderPane.alignment="TOP_LEFT" />
+                <fx:include source="NavigationControllerViewer.fxml" fx:id="navigationPane" BorderPane.alignment="BOTTOM_LEFT" />
             </bottom>
         </BorderPane>
     </children>
