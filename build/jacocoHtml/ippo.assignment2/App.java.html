@@ -26,17 +26,15 @@ import ippo.assignment2.controllers.MainController;
 <span class="nc" id="L26">            AnchorPane page = (AnchorPane) fxmlLoader.load();</span>
 
 <span class="nc" id="L28">            Scene scene = new Scene(page);</span>
+<span class="nc" id="L29">            stage.setScene(scene);</span>
+<span class="nc" id="L30">            MainController mainController = fxmlLoader.getController();</span>
 
-<span class="nc" id="L30">            stage.setScene(scene);</span>
+<span class="nc" id="L32">            stage.show();</span>
 
-<span class="nc" id="L32">            MainController mainController = fxmlLoader.getController();</span>
-
-<span class="nc" id="L34">            stage.show();</span>
-
-<span class="nc" id="L36">        } catch (IOException ex) {</span>
-<span class="nc" id="L37">            Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, null, ex);</span>
-<span class="nc" id="L38">            System.exit(1);</span>
-<span class="nc" id="L39">        }</span>
-<span class="nc" id="L40">    }</span>
+<span class="nc" id="L34">        } catch (IOException ex) {</span>
+<span class="nc" id="L35">            Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, null, ex);</span>
+<span class="nc" id="L36">            System.exit(1);</span>
+<span class="nc" id="L37">        }</span>
+<span class="nc" id="L38">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

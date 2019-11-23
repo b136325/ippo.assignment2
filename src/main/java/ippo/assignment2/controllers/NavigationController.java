@@ -7,13 +7,19 @@ import javafx.scene.control.Button;
 public class NavigationController {
 
     @FXML
-    private Button imageButton;
+    private Button leftButton;
 
-    public Button getButton() {
-        return this.imageButton;
-    }
+    @FXML
+    private Button forwardButton;
 
-    public void pressImageButton(ActionEvent event) {
-        imageButton.setText("Clicked");
+    @FXML
+    private Button rightButton;
+
+    @FXML
+    private Button backButton;
+
+    @FXML
+    public void onButtonClick() {
+
     }
 }

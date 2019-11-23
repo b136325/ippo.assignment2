@@ -34,39 +34,39 @@ import java.awt.*;
 
     public void moveForward() {
 <span class="fc" id="L36">        this.assertRoom();</span>
+<span class="fc" id="L37">        Wall wall = null;</span>
 
-<span class="fc" id="L38">        Wall wall = null;</span>
-
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (this.room.hasWall(this.direction)) {</span>
-<span class="fc" id="L41">            wall = this.room.getWall(direction);</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (this.room.hasWall(this.direction)) {</span>
+<span class="fc" id="L40">            wall = this.room.getWall(direction);</span>
         }
 
-<span class="fc bfc" id="L44" title="All 4 branches covered.">        if (wall != null &amp;&amp; wall.hasRoom()) {</span>
-<span class="fc" id="L45">            this.room = wall.getRoom();</span>
+<span class="fc bfc" id="L43" title="All 4 branches covered.">        if (wall != null &amp;&amp; wall.hasRoom()) {</span>
+<span class="fc" id="L44">            this.room = wall.getRoom();</span>
         }
-<span class="fc" id="L47">    }</span>
+<span class="fc" id="L46">    }</span>
 
     public Boolean pickUp(Item item) {
-<span class="fc" id="L50">        this.assertItems();</span>
-<span class="fc" id="L51">        this.assertRoom();</span>
+<span class="fc" id="L49">        this.assertItems();</span>
+<span class="fc" id="L50">        this.assertRoom();</span>
+<span class="fc" id="L51">        Boolean response = false;</span>
 
 <span class="fc bfc" id="L53" title="All 2 branches covered.">        if (this.room.remove(item)) {</span>
 <span class="fc" id="L54">            this.items.add(item);</span>
-
-<span class="fc" id="L56">            return true;</span>
+<span class="fc" id="L55">            response = true;</span>
         }
-<span class="fc" id="L58">        return false;</span>
+<span class="fc" id="L57">        return response;</span>
     }
 
     public Boolean putDown(Item item) {
-<span class="fc" id="L62">        this.assertItems();</span>
-<span class="fc" id="L63">        this.assertRoom();</span>
+<span class="fc" id="L61">        this.assertItems();</span>
+<span class="fc" id="L62">        this.assertRoom();</span>
+<span class="fc" id="L63">        Boolean response = false;</span>
 
 <span class="fc bfc" id="L65" title="All 2 branches covered.">        if (this.items.remove(item)) {</span>
 <span class="fc" id="L66">            this.room.add(item);</span>
-<span class="fc" id="L67">            return true;</span>
+<span class="fc" id="L67">            response = true;</span>
         }
-<span class="fc" id="L69">        return false;</span>
+<span class="fc" id="L69">        return response;</span>
     }
 
     public Boolean turn(Direction direction) {

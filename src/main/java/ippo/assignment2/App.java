@@ -26,9 +26,7 @@ public class App extends javafx.application.Application {
             AnchorPane page = (AnchorPane) fxmlLoader.load();
 
             Scene scene = new Scene(page);
-
             stage.setScene(scene);
-
             MainController mainController = fxmlLoader.getController();
 
             stage.show();
