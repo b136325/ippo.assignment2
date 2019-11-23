@@ -8,6 +8,9 @@ import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @since 0.1.2
+ */
 public class HeaderController implements Initializable {
 
     @FXML
@@ -22,6 +25,11 @@ public class HeaderController implements Initializable {
 
     }
 
+    /**
+     *
+     * @param event
+     * @since 0.1.2
+     */
     public void pressHeaderButton(ActionEvent event) {
         basketButton.setText("Clicked");
     }

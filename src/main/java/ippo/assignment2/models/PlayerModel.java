@@ -1,40 +1,66 @@
 package ippo.assignment2.models;
 
-import ippo.assignment2.collections.Items;
+import ippo.assignment2.collections.ItemsCollection;
 
 import java.awt.*;
 
-public class Player {
-    private Direction direction;
-    private Items items;
-    private Room room;
+public class PlayerModel {
+    private DirectionModel direction;
+    private ItemsCollection items;
+    private RoomModel room;
 
-    public Player(Direction direction, Items items, Room room) {
+    /**
+     *
+     * @param direction
+     * @param items
+     * @param room
+     */
+    public PlayerModel(DirectionModel direction, ItemsCollection items, RoomModel room) {
         this.direction = direction;
         this.items = items;
         this.room = room;
     }
 
-    public Image getCurrentImage(Direction direction) {
+    /**
+     *
+     * @param direction
+     * @return
+     */
+    public Image getCurrentImage(DirectionModel direction) {
         this.assertRoom();
         return this.room.getImage(direction);
     }
 
-    public Direction getDirection() {
+    /**
+     *
+     * @return
+     */
+    public DirectionModel getDirection() {
         return this.direction;
     }
 
-    public Items getItems() {
+    /**
+     *
+     * @return
+     */
+    public ItemsCollection getItems() {
         return this.items;
     }
 
-    public Room getRoom() {
+    /**
+     *
+     * @return
+     */
+    public RoomModel getRoom() {
         return this.room;
     }
 
+    /**
+     *
+     */
     public void moveForward() {
         this.assertRoom();
-        Wall wall = null;
+        WallModel wall = null;
 
         if (this.room.hasWall(this.direction)) {
             wall = this.room.getWall(direction);
@@ -45,7 +71,12 @@ public class Player {
         }
     }
 
-    public Boolean pickUp(Item item) {
+    /**
+     *
+     * @param item
+     * @return
+     */
+    public Boolean pickUp(ItemModel item) {
         this.assertItems();
         this.assertRoom();
         Boolean response = false;
@@ -57,7 +88,12 @@ public class Player {
         return response;
     }
 
-    public Boolean putDown(Item item) {
+    /**
+     *
+     * @param item
+     * @return
+     */
+    public Boolean putDown(ItemModel item) {
         this.assertItems();
         this.assertRoom();
         Boolean response = false;
@@ -69,7 +105,12 @@ public class Player {
         return response;
     }
 
-    public Boolean turn(Direction direction) {
+    /**
+     *
+     * @param direction
+     * @return
+     */
+    public Boolean turn(DirectionModel direction) {
         this.assertRoom();
         Boolean response = false;
 
@@ -81,10 +122,16 @@ public class Player {
         return response;
     }
 
+    /**
+     *
+     */
     private void assertItems() {
         assert this.items != null : "Items is null";
     }
 
+    /**
+     *
+     */
     private void assertRoom() {
         assert this.room != null : "Room is null";
     }

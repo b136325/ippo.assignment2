@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
+/**
+ * @since 0.1.2
+ */
 public class NavigationController {
 
     @FXML
@@ -18,6 +21,9 @@ public class NavigationController {
     @FXML
     private Button backButton;
 
+    /**
+     * @since 0.1.2
+     */
     @FXML
     public void onButtonClick() {
 

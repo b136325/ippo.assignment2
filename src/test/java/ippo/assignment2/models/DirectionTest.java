@@ -7,21 +7,21 @@ public class DirectionTest {
 
     @Test
     public void hasBackDirection() {
-        assertEquals(Direction.BACK.ordinal(), 0);
+        assertEquals(DirectionModel.BACK.ordinal(), 0);
     }
 
     @Test
     public void hasForwardDirection() {
-        assertEquals(Direction.FORWARD.ordinal(), 1);
+        assertEquals(DirectionModel.FORWARD.ordinal(), 1);
     }
 
     @Test
     public void hasLeftDirection() {
-        assertEquals(Direction.LEFT.ordinal(), 2);
+        assertEquals(DirectionModel.LEFT.ordinal(), 2);
     }
 
     @Test
     public void hasRightDirection() {
-        assertEquals(Direction.RIGHT.ordinal(), 3);
+        assertEquals(DirectionModel.RIGHT.ordinal(), 3);
     }
 }

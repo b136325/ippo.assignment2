@@ -11,12 +11,25 @@ import java.util.logging.Logger;
 
 import ippo.assignment2.controllers.MainController;
 
+/**
+ * @since 0.1.2
+ */
 public class App extends javafx.application.Application {
 
+    /**
+     *
+     * @param args
+     * @since 0.1.2
+     */
     public static void main(String args[]) {
         launch(args);
     }
 
+    /**
+     *
+     * @param stage
+     * @since 0.1.2
+     */
     public void start(Stage stage) {
 
         try {

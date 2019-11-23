@@ -1,6 +1,6 @@
 package ippo.assignment2.models;
 
-public enum Direction{
+public enum DirectionModel {
     BACK,
     FORWARD,
     LEFT,
