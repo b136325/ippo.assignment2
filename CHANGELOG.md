@@ -2,6 +2,12 @@
 
 ---
 
+### Tag 0.1.5
+
+Temporarily instantiate the Player model within the Naviagtion controller and link the controller's view related callnacks to the model.
+
+---
+
 ### Tag 0.1.4
 
 Wire together basic view to controller button callbacks.
