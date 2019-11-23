@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e2c042f-6700-4e54-8b51-bd3f30347d27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/collections/Items.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/collections/Walls.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/HeaderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/ImageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/NavigationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Direction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Wall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest 3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest 4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest 5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest 6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest 7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/DirectionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/PlayerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Items.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Items.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Walls.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Walls.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/HeaderController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/HeaderController.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/ImageController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/ImageController.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/MainController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/MainController.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/NavigationController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/NavigationController.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Direction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Direction.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Item.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Player.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Player.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Room.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Wall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Wall.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/App.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/App.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/Main.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/branchfc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/branchnc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/branchpc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/bundle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/class.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/greenbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/group.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/method.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/package.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/redbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/report.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/session.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/sort.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/source.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacocoHtml/jacoco-sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/ippo-assignment2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.PlayerTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.models.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/HeaderControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/ImageControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/MainControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/NavigationControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/collections/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/collections/Walls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/controllers/HeaderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/controllers/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/controllers/NavigationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/models/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/models/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/models/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/java/ippo/assignment2/models/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/resources/HeaderControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/resources/ImageControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/resources/MainControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/main/resources/NavigationControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/submission/src/test/java/ippo/assignment2/models/DirectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.PlayerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/jacocoagent.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/org/jacoco/agent/AgentJar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Walls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/HeaderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HeaderControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ImageControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MainControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/NavigationControllerViewer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/models/DirectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/models/PlayerTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ippo-assignment2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TyzIwdZAffnMAV4XC1Yfd1gN7K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ippo.assignment2.models" />
+      <recent name="ippo.assignment2.models.Player" />
+      <recent name="ippo.assignment2.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle buildDependents" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.ippo-assignment2 [jacocoTestReport]">
+    <configuration name="PlayerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.models.PlayerTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestCoverageVerification" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PlayerTest" />
+        <item itemvalue="Gradle.ippo-assignment2 [jacocoTestCoverageVerification]" />
+        <item itemvalue="Gradle.ippo-assignment2 [jacocoTestReport]" />
+        <item itemvalue="Gradle.ippo-assignment2 [dependencies]" />
+        <item itemvalue="Gradle.ippo-assignment2 [buildDependents]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e2c042f-6700-4e54-8b51-bd3f30347d27" name="Default Changelist" comment="" />
+      <created>1574447047074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574447047074</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
