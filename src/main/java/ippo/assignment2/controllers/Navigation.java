@@ -13,6 +13,7 @@ import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.services.IService;
 import ippo.assignment2.utils.Properties;
+import javafx.scene.control.TextField;
 
 /**
  * @since 0.1.2
@@ -27,6 +28,9 @@ public class Navigation implements Initializable {
 
     @FXML
     private Button leftButton;
+
+    @FXML
+    private TextField logger;
 
     @FXML
     private Button rightButton;
@@ -77,6 +81,7 @@ public class Navigation implements Initializable {
     @FXML
     public void goForward() {
         this.player.moveForward();
+        this.logger.setText(this.player.getRoom().toString());
     }
 
     /**
@@ -85,6 +90,7 @@ public class Navigation implements Initializable {
     @FXML
     public void turnLeft() {
         this.player.turn(Direction.LEFT);
+        this.logger.setText(this.player.getRoom().toString());
     }
 
     /**
@@ -93,5 +99,6 @@ public class Navigation implements Initializable {
     @FXML
     public void turnRight() {
         this.player.turn(Direction.RIGHT);
+        this.logger.setText(this.player.getRoom().toString());
     }
 }

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Walls.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ippo-assignment2</a> &gt; <a href="index.source.html" class="el_package">ippo.assignment2.collections</a> &gt; <span class="el_source">Walls.java</span></div><h1>Walls.java</h1><pre class="source lang-java linenums">package ippo.assignment2.collections;
+
+import java.util.HashMap;
+
+import ippo.assignment2.models.Direction;
+import ippo.assignment2.models.Wall;
+import java.awt.*;
+
+/**
+ * @since 0.1.2
+ */
+<span class="fc" id="L12">public class Walls {</span>
+
+    /**
+     * @since 0.1.2
+     */
+<span class="fc" id="L17">    private HashMap&lt;Direction, Wall&gt; walls = new HashMap&lt;Direction, Wall&gt;();</span>
+
+    /**
+     *
+     * @param direction
+     * @param walls
+     * @since 0.1.2
+     */
+    public void add(Direction direction, Wall walls) {
+<span class="fc" id="L26">        this.walls.put(direction, walls);</span>
+<span class="fc" id="L27">    }</span>
+
+    /**
+     *
+     * @param direction
+     * @return
+     * @since 0.1.2
+     */
+    public Image getImage(Direction direction) {
+<span class="fc" id="L36">        Wall wall = this.getWall(direction);</span>
+
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">        if (wall != null) {</span>
+<span class="fc" id="L39">            return wall.getImage();</span>
+        }
+
+<span class="nc" id="L42">        return null;</span>
+    }
+
+    /**
+     *
+     * @param direction
+     * @return
+     * @since 0.1.2
+     */
+    public Wall getWall(Direction direction) {
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">        if (this.hasWall(direction)) {</span>
+<span class="fc" id="L53">            return this.walls.get(direction);</span>
+        }
+
+<span class="nc" id="L56">        return null;</span>
+    }
+
+    /**
+     *
+     * @param direction
+     * @return
+     * @since 0.1.2
+     */
+    public Boolean hasWall(Direction direction) {
+<span class="fc" id="L66">        return this.walls.containsKey(direction);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

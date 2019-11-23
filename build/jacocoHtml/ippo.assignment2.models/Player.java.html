@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Player.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ippo-assignment2</a> &gt; <a href="index.source.html" class="el_package">ippo.assignment2.models</a> &gt; <span class="el_source">Player.java</span></div><h1>Player.java</h1><pre class="source lang-java linenums">package ippo.assignment2.models;
+
+import ippo.assignment2.collections.Items;
+
+import java.awt.*;
+
+<span class="pc bpc" id="L7" title="1 of 2 branches missed.">public class Player {</span>
+    private Direction direction;
+    private Items items;
+    private Room room;
+
+    /**
+     *
+     * @param direction
+     * @param items
+     * @param room
+     */
+<span class="fc" id="L18">    public Player(Direction direction, Items items, Room room) {</span>
+<span class="fc" id="L19">        this.direction = direction;</span>
+<span class="fc" id="L20">        this.items = items;</span>
+<span class="fc" id="L21">        this.room = room;</span>
+<span class="fc" id="L22">    }</span>
+
+    /**
+     *
+     * @param direction
+     * @return
+     */
+    public Image getCurrentImage(Direction direction) {
+<span class="fc" id="L30">        this.assertRoom();</span>
+<span class="fc" id="L31">        return this.room.getImage(direction);</span>
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Direction getDirection() {
+<span class="fc" id="L39">        return this.direction;</span>
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Items getItems() {
+<span class="fc" id="L47">        return this.items;</span>
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Room getRoom() {
+<span class="fc" id="L55">        return this.room;</span>
+    }
+
+    /**
+     *
+     */
+    public void moveForward() {
+<span class="fc" id="L62">        this.assertRoom();</span>
+<span class="fc" id="L63">        Wall wall = null;</span>
+
+<span class="fc bfc" id="L65" title="All 2 branches covered.">        if (this.room.hasWall(this.direction)) {</span>
+<span class="fc" id="L66">            wall = this.room.getWall(direction);</span>
+        }
+
+<span class="fc bfc" id="L69" title="All 4 branches covered.">        if (wall != null &amp;&amp; wall.hasRoom()) {</span>
+<span class="fc" id="L70">            this.room = wall.getRoom();</span>
+        }
+<span class="fc" id="L72">    }</span>
+
+    /**
+     *
+     * @param item
+     * @return
+     */
+    public Boolean pickUp(Item item) {
+<span class="fc" id="L80">        this.assertItems();</span>
+<span class="fc" id="L81">        this.assertRoom();</span>
+<span class="fc" id="L82">        Boolean response = false;</span>
+
+<span class="fc bfc" id="L84" title="All 2 branches covered.">        if (this.room.remove(item)) {</span>
+<span class="fc" id="L85">            this.items.add(item);</span>
+<span class="fc" id="L86">            response = true;</span>
+        }
+<span class="fc" id="L88">        return response;</span>
+    }
+
+    /**
+     *
+     * @param item
+     * @return
+     */
+    public Boolean putDown(Item item) {
+<span class="fc" id="L97">        this.assertItems();</span>
+<span class="fc" id="L98">        this.assertRoom();</span>
+<span class="fc" id="L99">        Boolean response = false;</span>
+
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        if (this.items.remove(item)) {</span>
+<span class="fc" id="L102">            this.room.add(item);</span>
+<span class="fc" id="L103">            response = true;</span>
+        }
+<span class="fc" id="L105">        return response;</span>
+    }
+
+    /**
+     *
+     * @param direction
+     * @return
+     */
+    public Boolean turn(Direction direction) {
+<span class="fc" id="L114">        this.assertRoom();</span>
+<span class="fc" id="L115">        Boolean response = false;</span>
+
+<span class="fc bfc" id="L117" title="All 2 branches covered.">        if (this.room.hasWall(direction)) {</span>
+<span class="fc" id="L118">            this.direction = direction;</span>
+<span class="fc" id="L119">            response = true;</span>
+        }
+
+<span class="fc" id="L122">        return response;</span>
+    }
+
+    /**
+     *
+     */
+    private void assertItems() {
+<span class="pc bpc" id="L129" title="1 of 4 branches missed.">        assert this.items != null : &quot;Items is null&quot;;</span>
+<span class="fc" id="L130">    }</span>
+
+    /**
+     *
+     */
+    private void assertRoom() {
+<span class="pc bpc" id="L136" title="1 of 4 branches missed.">        assert this.room != null : &quot;Room is null&quot;;</span>
+<span class="fc" id="L137">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+
+---
+
+### Tag 0.1.8
+
+The addition of a simple 'logger' dsiplaying the HASH ID associated with the current room class.
+
 ---
 
 ### Tag 0.1.7

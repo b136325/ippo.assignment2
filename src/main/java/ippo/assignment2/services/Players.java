@@ -19,6 +19,16 @@ public class Players implements IService {
      * @since 0.1.7
      */
     public Player get() {
+
+        Wall innerWallLeft = new Wall(null, null);
+        Wall innerWallRight = new Wall(null, null);
+
+        Walls innerRoomWalls = new Walls();
+        innerRoomWalls.add(Direction.LEFT, innerWallLeft);
+        innerRoomWalls.add(Direction.RIGHT, innerWallRight);
+
+        Room innerRoom = new Room(null, innerRoomWalls);
+
         Item playerItem = new Item(null, "playerItem");
         Items playerItems = new Items();
         playerItems.add(playerItem);
@@ -27,7 +37,7 @@ public class Players implements IService {
         Items roomItems = new Items();
         roomItems.add(roomItem);
 
-        Wall wallLeft = new Wall(null, null);
+        Wall wallLeft = new Wall(null, innerRoom);
         Wall wallRight = new Wall(null, null);
 
         Walls walls = new Walls();
