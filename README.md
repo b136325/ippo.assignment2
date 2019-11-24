@@ -7,13 +7,23 @@
 ### Contents
 
 - Overview
+- Entry point
 - Models
 - Views
+- Styling
 - Controllers
 
 ---
 
 ### Overview
+
+---
+
+### Entry point
+
+`main/java/ippo.assignment2.Main` is the entry point, and it calls `main/java/ippo.assignment2.App`.
+`main/java/ippo.assignment2.App` derives a data service (using the `app.service` property from app.properties`).
+It also loads the main view, `MainViewer.fxml`, and its associated controller, using the FXML loader.
 
 ---
 
@@ -45,7 +55,10 @@ Consequently,
 
 ---
 
-### Controllers
+### Styling
+- https://raw.githubusercontent.com/dicolar/jbootx/master/src/main/resources/bootstrap3.css
 
+### Controllers
+- Guice
 
 

@@ -73,7 +73,10 @@ public class App extends Application {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource(this.mainControllerViewerPath));
             AnchorPane page = loader.load();
+
             Scene scene = new Scene(page);
+            scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
+
             stage.setScene(scene);
 
             MainController mainController = loader.getController();
