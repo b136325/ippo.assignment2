@@ -1,9 +1,11 @@
 package ippo.assignment2.models;
 
-import ippo.assignment2.collections.Items;
 import javafx.scene.image.Image;
+import java.util.Observable;
 
-public class Player {
+import ippo.assignment2.collections.Items;
+
+public class Player extends Observable {
     private Direction direction;
     private Items items;
     private Room room;
@@ -68,6 +70,9 @@ public class Player {
         if (wall != null && wall.hasRoom()) {
             this.room = wall.getRoom();
         }
+
+        setChanged();
+        notifyObservers();
     }
 
     /**
@@ -84,6 +89,10 @@ public class Player {
             this.items.add(item);
             response = true;
         }
+
+        setChanged();
+        notifyObservers();
+
         return response;
     }
 
@@ -101,6 +110,10 @@ public class Player {
             this.room.add(item);
             response = true;
         }
+
+        setChanged();
+        notifyObservers();
+
         return response;
     }
 
@@ -118,18 +131,21 @@ public class Player {
             response = true;
         }
 
+        setChanged();
+        notifyObservers();
+
         return response;
     }
 
     /**
-     *
+     * @since 0.2.0
      */
     private void assertItems() {
         assert this.items != null : "Items is null";
     }
 
     /**
-     *
+     * @since 0.2.0
      */
     private void assertRoom() {
         assert this.room != null : "Room is null";

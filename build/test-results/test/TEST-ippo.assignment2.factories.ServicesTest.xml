@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.factories.ServicesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-23T22:25:42" hostname="joes-mbp.mynet" time="0.022">
+<testsuite name="ippo.assignment2.factories.ServicesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-23T23:49:14" hostname="joes-mbp.mynet" time="0.008">
   <properties/>
-  <testcase name="generatePlayersService()" classname="ippo.assignment2.factories.ServicesTest" time="0.004"/>
-  <testcase name="generateFromPropertiesNull()" classname="ippo.assignment2.factories.ServicesTest" time="0.005"/>
+  <testcase name="generatePlayersService()" classname="ippo.assignment2.factories.ServicesTest" time="0.003"/>
+  <testcase name="generateFromPropertiesNull()" classname="ippo.assignment2.factories.ServicesTest" time="0.002"/>
   <testcase name="generateNull()" classname="ippo.assignment2.factories.ServicesTest" time="0.0"/>
-  <testcase name="generateFromPropertiesPlayersService()" classname="ippo.assignment2.factories.ServicesTest" time="0.0"/>
+  <testcase name="generateFromPropertiesPlayersService()" classname="ippo.assignment2.factories.ServicesTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

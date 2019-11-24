@@ -9,5 +9,5 @@ import java.net.MalformedURLException;
  * @since 0.1.7
  */
 public interface IService {
-    public Player get() throws IOException;
+    public Player get(Boolean showImages) throws IOException;
 }

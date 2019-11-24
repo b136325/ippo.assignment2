@@ -16,12 +16,17 @@ import java.io.IOException;
  */
 public class Players implements IService {
 
+    public static Players valueOf(String value) {
+        return new Players();
+    }
     /**
      *
      * @return
      * @since 0.1.7
      */
-    public Player get() throws IOException {
+    public Player get(Boolean showImages) throws IOException {
+
+        showImages = showImages == null ? true : showImages;
 
         Wall innerWallLeft = new Wall(null, null);
         Wall innerWallRight = new Wall(null, null);
@@ -40,9 +45,13 @@ public class Players implements IService {
         Items roomItems = new Items();
         roomItems.add(roomItem);
 
-        Image imageLeft = new Image("https://javaconceptoftheday.com/wp-content/NumberPatternPrograms.png");
-        Image imageRight = new Image("https://sprudge.com/wp-content/uploads/2019/04/Edinburgh.jpg");
+        Image imageLeft = null;
+        Image imageRight = null;
 
+        if (showImages == true) {
+            imageLeft = new Image("https://javaconceptoftheday.com/wp-content/NumberPatternPrograms.png");
+            imageRight = new Image("https://sprudge.com/wp-content/uploads/2019/04/Edinburgh.jpg");
+        }
         Wall wallLeft = new Wall(imageLeft, innerRoom);
         Wall wallRight = new Wall(imageRight, null);
 

@@ -2,37 +2,195 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e2c042f-6700-4e54-8b51-bd3f30347d27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/PlayerService.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/collections/Walls.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/collections/Walls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/.Navigation 2.class.icloud" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/Navigation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/Navigation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Wall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/factories/.Services 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/.IService 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/.Players 2.class.icloud" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/IService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/Players.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/Players.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/ImageControllerViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/ImageControllerViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/properties/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Walls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/PlayerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/services/PlayersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/services/PlayersTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/.test 2.exec.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/.Items 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/.Items.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/.Walls 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/.Walls.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Items.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Walls.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/Walls.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.collections/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Header 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Header.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Image 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Image.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Main 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Main.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Navigation 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.Navigation.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Header.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Image.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Main.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/Navigation.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.controllers/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/.Services 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/.Services.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/Services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/Services.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.factories/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Direction 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Direction.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Item 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Item.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Player 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Player.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Room 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Room.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Wall 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.Wall.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Direction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Direction.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Item.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Player.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Player.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Room.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Room.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Wall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/Wall.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.models/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/.Players 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/.Players.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/Players.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/Players.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.services/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/.Properties 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/.Properties.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/Properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/Properties.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2.utils/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/.App 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/.Main 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/.Main.java 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/.index 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/.index.source 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/App.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/App.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/Main.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/ippo.assignment2/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.branchfc 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.branchnc 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.bundle 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.down 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.greenbar 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.package 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.prettify 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.prettify 2.js.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.redbar 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.report 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.report 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.sort 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.sort 2.js.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.source 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/.up 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacocoHtml/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ippo-assignment2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ippo-assignment2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.factories.ServicesTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.factories.ServicesTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.DirectionTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.DirectionTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.PlayerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.PlayerTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.utils.PropertiesTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.utils.PropertiesTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.factories.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.factories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.models.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.models.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.utils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/.TEST-ippo.assignment2.factories.ServicesTest 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/.TEST-ippo.assignment2.models.DirectionTest 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/.TEST-ippo.assignment2.models.PlayerTest 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/.TEST-ippo.assignment2.services.PlayersTest 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/.TEST-ippo.assignment2.utils.PropertiesTest 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.factories.ServicesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.factories.ServicesTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.DirectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.DirectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.PlayerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.PlayerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.utils.PropertiesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.utils.PropertiesTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/HeaderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/IService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/ImageControllerViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ImageControllerViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/HeaderControllerViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/HeaderViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/ImageControllerViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ImageViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainControllerViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/NavigationControllerViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/NavigationViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/services/PlayersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/services/PlayersTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,8 +260,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -111,8 +270,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TyzIwdZAffnMAV4XC1Yfd1gN7K" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -159,41 +321,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ippo.assignment2.Main" />
-      <module name="ippo-assignment2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ippo.assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServicesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.factories.ServicesTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ippo-assignment2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ippo-assignment2 [test]">
+    <configuration name="ippo-assignment2 [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -204,7 +333,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="assemble" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,7 +341,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ippo-assignment2 [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ippo-assignment2 [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -223,7 +352,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jacocoTestCoverageVerification" />
+            <option value="buildNeeded" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,7 +360,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ippo-assignment2 [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ippo-assignment2 [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -242,7 +371,45 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jacocoTestReport" />
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -252,11 +419,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ippo-assignment2 [jacocoTestReport]" />
-        <item itemvalue="Gradle.ippo-assignment2 [jacocoTestCoverageVerification]" />
-        <item itemvalue="Gradle.ippo-assignment2 [build]" />
-        <item itemvalue="Gradle.ServicesTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.ippo-assignment2 [test]" />
+        <item itemvalue="Gradle.ippo-assignment2 [buildNeeded]" />
+        <item itemvalue="Gradle.ippo-assignment2 [classes]" />
+        <item itemvalue="Gradle.ippo-assignment2 [clean]" />
+        <item itemvalue="Gradle.ippo-assignment2 [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -285,6 +452,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ippo_assignment2$App.ic" NAME="App Coverage Results" MODIFIED="1574470815053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
