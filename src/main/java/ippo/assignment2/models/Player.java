@@ -71,8 +71,8 @@ public class Player extends Observable {
             this.room = wall.getRoom();
         }
 
-        setChanged();
-        notifyObservers();
+        this.setChanged();
+        this.notifyObservers();
     }
 
     /**
@@ -90,8 +90,8 @@ public class Player extends Observable {
             response = true;
         }
 
-        setChanged();
-        notifyObservers();
+        this.setChanged();
+        this.notifyObservers();
 
         return response;
     }
@@ -111,8 +111,8 @@ public class Player extends Observable {
             response = true;
         }
 
-        setChanged();
-        notifyObservers();
+        this.setChanged();
+        this.notifyObservers();
 
         return response;
     }
@@ -131,8 +131,8 @@ public class Player extends Observable {
             response = true;
         }
 
-        setChanged();
-        notifyObservers();
+        this.setChanged();
+        this.notifyObservers();
 
         return response;
     }

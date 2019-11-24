@@ -1,23 +1,35 @@
 package ippo.assignment2.controllers;
 
+import ippo.assignment2.models.Player;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import java.net.URL;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.ResourceBundle;
 
 /**
  * @since 0.1.2
  */
-public class HeaderController {
+public class HeaderController extends BaseController implements Observer, Initializable {
 
     @FXML
     private Button pickUpButton;
 
     @FXML
     private Button putDownButton;
+
+    /**
+     *
+     * @param location
+     * @param resources
+     * @since 0.2.0
+     */
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {}
 
     /**
      *
@@ -37,4 +49,9 @@ public class HeaderController {
         this.putDownButton.setText("Clicked");
     }
 
+    @Override
+    public void update(Observable o, Object arg) {
+        Player player = (Player)o;
+        this.setPlayer(player);
+    }
 }

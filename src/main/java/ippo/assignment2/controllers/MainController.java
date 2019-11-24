@@ -1,12 +1,11 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.models.Player;
-import ippo.assignment2.services.Players;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-import java.io.IOException;
 import java.net.URL;
+import java.util.Observer;
 import java.util.ResourceBundle;
 
 /**
@@ -20,31 +19,22 @@ public class MainController extends BaseController implements Initializable {
     @FXML
     private ImageController imageController;
 
-    private Player player;
-
-    @FXML
-    private Players playerServices;
-
     @FXML
     private NavigationController navigationController;
 
-    /**
-     *
-     * @param url
-     * @param resourceBundle
-     * @since 0.1.3
-     */
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        try {
-            this.player = this.playerServices.get(true);
+    public void initialize(URL location, ResourceBundle resources) {}
 
-            headerController.setPlayer(this.player);
-            imageController.setPlayer(this.player);
-            navigationController.setPlayer(this.player);
+    @Override
+    public void setPlayer(Player player) {
+        super.setPlayer(player);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        this.headerController.setPlayer(this.player);
+        this.imageController.setPlayer(this.player);
+        this.navigationController.setPlayer(this.player);
+
+        this.player.addObserver(this.headerController);
+        this.player.addObserver(this.imageController);
+        this.player.addObserver(this.navigationController);
     }
 }

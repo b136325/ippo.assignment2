@@ -5,10 +5,10 @@
     <children>
         <BorderPane id="BorderPane" fx:id="rootBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <left>
-                <fx:include source="PlayerService.fxml" fx:id="playerService" />
+                <fx:include source="ImageViewer.fxml" fx:id="image" BorderPane.alignment="TOP_LEFT"/>
             </left>
             <top>
-                <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_LEFT" />
+                <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_RIGHT" />
             </top>
             <bottom>
                 <fx:include source="NavigationViewer.fxml" fx:id="navigation" BorderPane.alignment="BOTTOM_LEFT" />

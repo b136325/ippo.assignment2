@@ -43,9 +43,6 @@ public class App extends Application {
      */
     public void start(Stage stage) {
 
-        Injector injector = Guice.createInjector(new GuiceModule());
-        FXMLLoader fxmlLoader = new FXMLLoader();
-
         try {
 
             Player player = null;
@@ -74,9 +71,8 @@ public class App extends Application {
                 }
             }
 
-
             FXMLLoader loader = new FXMLLoader(getClass().getResource(this.mainControllerViewerPath));
-            AnchorPane page =  (AnchorPane) loader.load(getClass().getResource(this.mainControllerViewerPath));
+            AnchorPane page = loader.load();
             Scene scene = new Scene(page);
             stage.setScene(scene);
 
