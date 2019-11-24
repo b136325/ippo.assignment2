@@ -21,6 +21,14 @@ public class Items {
 
     /**
      *
+     * @since 0.2.1
+     */
+    public Integer count() {
+        return this.items.size();
+    }
+
+    /**
+     *
      * @param item
      * @return
      * @since 0.1.2

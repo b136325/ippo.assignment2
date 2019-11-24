@@ -4,7 +4,7 @@ import ippo.assignment2.collections.Items;
 import ippo.assignment2.collections.Walls;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Item;
-import ippo.assignment2.models.Player;
+import ippo.assignment2.models.PlayerObservable;
 import ippo.assignment2.models.Room;
 import ippo.assignment2.models.Wall;
 
@@ -24,7 +24,7 @@ public class Players implements IService {
      * @return
      * @since 0.1.7
      */
-    public Player get(Boolean showImages) throws IOException {
+    public PlayerObservable get(Boolean showImages) throws IOException {
 
         showImages = showImages == null ? true : showImages;
 
@@ -61,7 +61,7 @@ public class Players implements IService {
 
         Room room = new Room(roomItems, walls);
 
-        Player player = new Player(Direction.RIGHT, playerItems, room);
+        PlayerObservable player = new PlayerObservable(Direction.RIGHT, playerItems, room);
 
         return player;
     }

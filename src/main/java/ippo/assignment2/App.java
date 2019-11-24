@@ -1,7 +1,7 @@
 package ippo.assignment2;
 
 import ippo.assignment2.factories.Services;
-import ippo.assignment2.models.Player;
+import ippo.assignment2.models.PlayerObservable;
 import ippo.assignment2.services.IService;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -45,7 +45,7 @@ public class App extends Application {
 
         try {
 
-            Player player = null;
+            PlayerObservable player = null;
             Properties properties = null;
             String propertyName = "app.service";
             IService service = null;

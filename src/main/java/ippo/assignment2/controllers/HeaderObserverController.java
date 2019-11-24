@@ -1,6 +1,6 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.models.Player;
+import ippo.assignment2.models.PlayerObservable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 /**
  * @since 0.1.2
  */
-public class HeaderController extends BaseController implements Observer, Initializable {
+public class HeaderObserverController extends BaseController implements Observer, Initializable {
 
     @FXML
     private Button pickUpButton;
@@ -51,7 +51,7 @@ public class HeaderController extends BaseController implements Observer, Initia
 
     @Override
     public void update(Observable o, Object arg) {
-        Player player = (Player)o;
+        PlayerObservable player = (PlayerObservable)o;
         this.setPlayer(player);
     }
 }

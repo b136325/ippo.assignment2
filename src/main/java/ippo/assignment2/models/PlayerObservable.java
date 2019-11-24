@@ -3,9 +3,10 @@ package ippo.assignment2.models;
 import javafx.scene.image.Image;
 import java.util.Observable;
 
+import ippo.assignment2.assertions.Assert;
 import ippo.assignment2.collections.Items;
 
-public class Player extends Observable {
+public class PlayerObservable extends Observable {
     private Direction direction;
     private Items items;
     private Room room;
@@ -16,7 +17,7 @@ public class Player extends Observable {
      * @param items
      * @param room
      */
-    public Player(Direction direction, Items items, Room room) {
+    public PlayerObservable(Direction direction, Items items, Room room) {
         this.direction = direction;
         this.items = items;
         this.room = room;
@@ -28,7 +29,7 @@ public class Player extends Observable {
      * @return
      */
     public Image getCurrentImage(Direction direction) {
-        this.assertRoom();
+        Assert.room(this.room);
         return this.room.getImage(direction);
     }
 
@@ -60,7 +61,7 @@ public class Player extends Observable {
      *
      */
     public void moveForward() {
-        this.assertRoom();
+        Assert.room(this.room);
         Wall wall = null;
 
         if (this.room.hasWall(this.direction)) {
@@ -81,8 +82,8 @@ public class Player extends Observable {
      * @return
      */
     public Boolean pickUp(Item item) {
-        this.assertItems();
-        this.assertRoom();
+        Assert.items(this.items);
+        Assert.room(this.room);
         Boolean response = false;
 
         if (this.room.remove(item)) {
@@ -102,8 +103,8 @@ public class Player extends Observable {
      * @return
      */
     public Boolean putDown(Item item) {
-        this.assertItems();
-        this.assertRoom();
+        Assert.items(this.items);
+        Assert.room(this.room);
         Boolean response = false;
 
         if (this.items.remove(item)) {
@@ -123,7 +124,7 @@ public class Player extends Observable {
      * @return
      */
     public Boolean turn(Direction direction) {
-        this.assertRoom();
+        Assert.room(this.room);
         Boolean response = false;
 
         if (this.room.hasWall(direction)) {
@@ -135,19 +136,5 @@ public class Player extends Observable {
         this.notifyObservers();
 
         return response;
-    }
-
-    /**
-     * @since 0.2.0
-     */
-    private void assertItems() {
-        assert this.items != null : "Items is null";
-    }
-
-    /**
-     * @since 0.2.0
-     */
-    private void assertRoom() {
-        assert this.room != null : "Room is null";
     }
 }

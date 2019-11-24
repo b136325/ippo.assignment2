@@ -4,12 +4,15 @@
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="ippo.assignment2.controllers.MainController">
     <children>
         <BorderPane id="BorderPane" fx:id="rootBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_LEFT" />
+            </top>
+            <right>
+                <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" BorderPane.alignment="TOP_RIGHT"/>
+            </right>
             <left>
                 <fx:include source="ImageViewer.fxml" fx:id="image" BorderPane.alignment="TOP_LEFT"/>
             </left>
-            <top>
-                <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_RIGHT" />
-            </top>
             <bottom>
                 <fx:include source="NavigationViewer.fxml" fx:id="navigation" BorderPane.alignment="BOTTOM_LEFT" />
             </bottom>
