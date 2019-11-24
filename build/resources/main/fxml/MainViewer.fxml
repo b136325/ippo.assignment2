@@ -9,6 +9,7 @@
             </top>
             <right>
                 <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" BorderPane.alignment="TOP_RIGHT"/>
+                <fx:include source="RoomItemsViewer.fxml" fx:id="roomItems" BorderPane.alignment="BOTTOM_RIGHT"/>
             </right>
             <left>
                 <fx:include source="ImageViewer.fxml" fx:id="image" BorderPane.alignment="TOP_LEFT"/>

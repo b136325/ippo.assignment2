@@ -1,10 +1,7 @@
 package ippo.assignment2.assertions;
 
 import ippo.assignment2.collections.Items;
-import ippo.assignment2.controllers.HeaderObserverController;
-import ippo.assignment2.controllers.ImageObserverController;
-import ippo.assignment2.controllers.NavigationObserverController;
-import ippo.assignment2.controllers.PlayerItemsObserverController;
+import ippo.assignment2.controllers.*;
 import ippo.assignment2.models.PlayerObservable;
 import ippo.assignment2.models.Room;
 
@@ -74,5 +71,14 @@ public class Assert {
      */
     public static void room(Room room) {
         assert room != null : "Items is null";
+    }
+
+    /**
+     *
+     * @param roomItemsController
+     * @since 0.2.2
+     */
+    public static void roomItemsController(RoomItemsObserverController roomItemsController) {
+        assert roomItemsController != null : "RoomItemsController is null";
     }
 }

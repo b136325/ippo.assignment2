@@ -2,6 +2,14 @@
 
 ---
 
+### Tag 0.2.2
+
+- The introduction of a viewer for the room items.
+- However, at present this is simply a copy of the player items viewer.
+- In addition, an putDown button was added to the PlayerItemsViewer, along with a associated controller method.
+
+---
+
 ### Tag 0.2.1
 
 - The introduction of a viewer for the player items, along with an associated controller.

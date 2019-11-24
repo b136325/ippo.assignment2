@@ -25,9 +25,17 @@ public class MainController extends BaseController implements Initializable {
     @FXML
     private PlayerItemsObserverController playerItemsController;
 
+    @FXML
+    private RoomItemsObserverController roomItemsController;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {}
 
+    /**
+     *
+     * @param player
+     * @since 0.1.2
+     */
     @Override
     public void setPlayer(PlayerObservable player) {
         super.setPlayer(player);
@@ -45,16 +53,7 @@ public class MainController extends BaseController implements Initializable {
         Assert.imageController(this.imageController);
         Assert.navigationController(this.navigationController);
         Assert.playerItemsController(this.playerItemsController);
-    }
-
-    /**
-     * @since 0.2.1
-     */
-    private void passPlayerToChildControllers() {
-        this.headerController.setPlayer(this.player);
-        this.imageController.setPlayer(this.player);
-        this.navigationController.setPlayer(this.player);
-        this.playerItemsController.setPlayer(this.player);
+        Assert.roomItemsController(this.roomItemsController);
     }
 
     /**
@@ -65,5 +64,17 @@ public class MainController extends BaseController implements Initializable {
         this.player.addObserver(this.imageController);
         this.player.addObserver(this.navigationController);
         this.player.addObserver(this.playerItemsController);
+        this.player.addObserver(this.roomItemsController);
+    }
+
+    /**
+     * @since 0.2.1
+     */
+    private void passPlayerToChildControllers() {
+        this.headerController.setPlayer(this.player);
+        this.imageController.setPlayer(this.player);
+        this.navigationController.setPlayer(this.player);
+        this.playerItemsController.setPlayer(this.player);
+        this.roomItemsController.setPlayer(this.player);
     }
 }
