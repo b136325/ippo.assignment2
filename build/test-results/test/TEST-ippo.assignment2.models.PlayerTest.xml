@@ -1,31 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.models.PlayerTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2019-11-24T19:17:29" hostname="joes-mbp.mynet" time="0.088">
+<testsuite name="ippo.assignment2.models.PlayerTest" tests="25" skipped="0" failures="1" errors="0" timestamp="2019-11-24T20:00:58" hostname="joes-mbp.mynet" time="0.069">
   <properties/>
-  <testcase name="getItemsValid()" classname="ippo.assignment2.models.PlayerTest" time="0.01"/>
-  <testcase name="turnInvalid()" classname="ippo.assignment2.models.PlayerTest" time="0.007"/>
+  <testcase name="getItemsValid()" classname="ippo.assignment2.models.PlayerTest" time="0.011"/>
+  <testcase name="turnInvalid()" classname="ippo.assignment2.models.PlayerTest" time="0.005"/>
   <testcase name="pickUpAssertionThrownWhenItemsNull()" classname="ippo.assignment2.models.PlayerTest" time="0.003"/>
   <testcase name="pickUpInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="getDirectionInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="getRoomValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="pickUpAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="putDownValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="putDownAssertionThrownWhenItemsNull()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
-  <testcase name="moveForwardInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
-  <testcase name="constructorValid()" classname="ippo.assignment2.models.PlayerTest" time="0.003"/>
-  <testcase name="getCurrentImageAssertRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.005"/>
+  <testcase name="putDownValid()" classname="ippo.assignment2.models.PlayerTest" time="0.011">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
+	at ippo.assignment2.models.PlayerTest.putDownValid(PlayerTest.java:244)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="putDownAssertionThrownWhenItemsNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="moveForwardInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="constructorValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="getCurrentImageAssertRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="turnValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="putDownAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.004"/>
-  <testcase name="getItemsInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
-  <testcase name="moveForwardInValidWall()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="putDownAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
+  <testcase name="getItemsInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="moveForwardInValidWall()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="getDirectionValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="turnAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="putDownInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="moveForwardValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="getCurrentImageValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="putDownInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="moveForwardValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="getCurrentImageValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="moveForwardAssertRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="pickUpValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="getRoomInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="moveForwardValidWallWithoutRoom()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="getRoomInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="moveForwardValidWallWithoutRoom()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

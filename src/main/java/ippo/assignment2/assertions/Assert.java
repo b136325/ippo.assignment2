@@ -70,7 +70,7 @@ public class Assert {
      * @since 0.2.1
      */
     public static void room(Room room) {
-        assert room != null : "Items is null";
+        assert room != null : "Room is null";
     }
 
     /**

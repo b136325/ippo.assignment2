@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### Tag 0.2.7
+
+- Part complete mechanism to display multiple player item images.
+
+---
+
 ### Tag 0.2.6
 
 - Add a header.title property and display the text
