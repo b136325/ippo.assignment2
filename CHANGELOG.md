@@ -2,6 +2,19 @@
 
 ---
 
+### Tag 0.2.1
+
+- The introduction of a viewer for the player items, along with an associated controller.
+- The introduction of the Assert class with static assert methods.
+
+---
+
+### Tag 0.2.0
+
+The introduction of multiple images: left and right.
+
+---
+
 ### Tag 0.1.9
 
 The introduction of one image.
