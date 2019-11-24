@@ -2,6 +2,12 @@
 
 ---
 
+### Tag 0.2.3
+
+- Update README.md
+
+---
+
 ### Tag 0.2.2
 
 - The introduction of a viewer for the room items.
