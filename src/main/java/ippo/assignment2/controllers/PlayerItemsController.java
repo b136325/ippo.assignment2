@@ -12,12 +12,12 @@ import java.util.Observer;
 import java.util.ResourceBundle;
 
 import ippo.assignment2.collections.Items;
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 
 /**
  * @since 0.2.1
  */
-public class PlayerItemsObserverController extends BaseController implements Observer, Initializable {
+public class PlayerItemsController extends BaseController implements Observer, Initializable {
 
     @FXML
     private TextField counter;
@@ -48,7 +48,7 @@ public class PlayerItemsObserverController extends BaseController implements Obs
      * @since 0.2.1
      */
     @Override
-    public void setPlayer(PlayerObservable player) {
+    public void setPlayer(Player player) {
         super.setPlayer(player);
         this.updateView();
     }
@@ -61,7 +61,7 @@ public class PlayerItemsObserverController extends BaseController implements Obs
      */
     @Override
     public void update(Observable o, Object arg) {
-        PlayerObservable player = (PlayerObservable)o;
+        Player player = (Player)o;
         this.setPlayer(player);
     }
 

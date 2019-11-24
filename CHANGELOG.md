@@ -2,6 +2,12 @@
 
 ---
 
+### Tag 0.2.5
+
+- Restructure the views in terms of HBox and VBox components.
+
+---
+
 ### Tag 0.2.4
 
 - The addition of a Twitter Bootstrap styling theme from `https://github.com/dicolar/jbootx/blob/master/src/main/resources/bootstrap3overview.fxml`.

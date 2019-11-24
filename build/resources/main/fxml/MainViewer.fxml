@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  style="-fx-background-color: white;" stylesheets="@../css/bootstrap3.css"  fx:controller="ippo.assignment2.controllers.MainController">
-    <children>
-        <BorderPane id="BorderPane" fx:id="rootBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <top>
-                <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_LEFT" />
-            </top>
-            <right>
-                <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" BorderPane.alignment="TOP_RIGHT"/>
-                <fx:include source="RoomItemsViewer.fxml" fx:id="roomItems" BorderPane.alignment="BOTTOM_RIGHT"/>
-            </right>
-            <left>
-                <fx:include source="ImageViewer.fxml" fx:id="image" BorderPane.alignment="TOP_LEFT"/>
-            </left>
-            <bottom>
-                <fx:include source="NavigationViewer.fxml" fx:id="navigation" BorderPane.alignment="BOTTOM_LEFT" />
-            </bottom>
-        </BorderPane>
-    </children>
-</AnchorPane>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane prefHeight="3000.0"
+            prefViewportHeight="600.0"
+            prefViewportWidth="800.0"
+            prefWidth="1000.0"
+            style="-fx-background-color: white;"
+            stylesheets="@../css/bootstrap3.css"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ippo.assignment2.controllers.MainController">
+
+    <VBox layoutX="250.0"
+          layoutY="-38.0"
+          spacing="5.0"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_LEFT" />
+        <HBox prefHeight="39.0">
+            <VBox>
+                <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" BorderPane.alignment="TOP_LEFT"/>
+                <fx:include source="RoomItemsViewer.fxml" fx:id="roomItems" BorderPane.alignment="BOTTOM_LEFT"/>
+            </VBox>
+            <fx:include source="ImageViewer.fxml" fx:id="image" BorderPane.alignment="TOP_RIGHT"/>
+        </HBox>
+        <fx:include source="NavigationViewer.fxml" fx:id="navigation" BorderPane.alignment="BOTTOM_LEFT" />
+     </VBox>
+</ScrollPane>

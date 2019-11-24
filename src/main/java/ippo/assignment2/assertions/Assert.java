@@ -2,7 +2,7 @@ package ippo.assignment2.assertions;
 
 import ippo.assignment2.collections.Items;
 import ippo.assignment2.controllers.*;
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 
 /**
@@ -15,7 +15,7 @@ public class Assert {
      * @param headerController
      * @since 0.2.1
      */
-    public static void headerController(HeaderObserverController headerController) {
+    public static void headerController(HeaderController headerController) {
         assert headerController != null : "HeaderController is null";
     }
 
@@ -24,7 +24,7 @@ public class Assert {
      * @param imageController
      * @since 0.2.1
      */
-    public static void imageController(ImageObserverController imageController) {
+    public static void imageController(ImageController imageController) {
         assert imageController != null : "ImageController is null";
     }
 
@@ -42,7 +42,7 @@ public class Assert {
      * @param navigationController
      * @since 0.2.1
      */
-    public static void navigationController(NavigationObserverController navigationController) {
+    public static void navigationController(NavigationController navigationController) {
         assert navigationController != null : "NavigationController is null";
     }
 
@@ -51,7 +51,7 @@ public class Assert {
      * @param player
      * @since 0.2.1
      */
-    public static void player(PlayerObservable player) {
+    public static void player(Player player) {
         assert player != null : "Player is null";
     }
 
@@ -60,7 +60,7 @@ public class Assert {
      * @param playerItemsController
      * @since 0.2.1
      */
-    public static void playerItemsController(PlayerItemsObserverController playerItemsController) {
+    public static void playerItemsController(PlayerItemsController playerItemsController) {
         assert playerItemsController != null : "PlayerItemsController is null";
     }
 
@@ -78,7 +78,7 @@ public class Assert {
      * @param roomItemsController
      * @since 0.2.2
      */
-    public static void roomItemsController(RoomItemsObserverController roomItemsController) {
+    public static void roomItemsController(RoomItemsController roomItemsController) {
         assert roomItemsController != null : "RoomItemsController is null";
     }
 }

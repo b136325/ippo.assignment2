@@ -1,6 +1,6 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Wall;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,7 +15,7 @@ import java.util.*;
 /**
  * @since 0.1.2
  */
-public class NavigationObserverController extends BaseController implements Observer , Initializable {
+public class NavigationController extends BaseController implements Observer , Initializable {
 
     @FXML
     private Button backButton;
@@ -108,7 +108,7 @@ public class NavigationObserverController extends BaseController implements Obse
      * @since 0.2.0
      */
     @Override
-    public void setPlayer(PlayerObservable player) {
+    public void setPlayer(Player player) {
         super.setPlayer(player);
         this.setButtonsVisibility();
     }
@@ -139,7 +139,7 @@ public class NavigationObserverController extends BaseController implements Obse
      */
     @Override
     public void update(Observable o, Object arg) {
-        PlayerObservable player = (PlayerObservable)o;
+        Player player = (Player)o;
         this.setPlayer(player);
     }
 }

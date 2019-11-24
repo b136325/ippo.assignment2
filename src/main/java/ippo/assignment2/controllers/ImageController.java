@@ -1,7 +1,7 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.models.Direction;
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.Image;
@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 /**
  * @since 0.1.2
  */
-public class ImageObserverController extends BaseController implements Observer, Initializable {
+public class ImageController extends BaseController implements Observer, Initializable {
 
     @FXML
     private ImageView imageViewer;
@@ -36,7 +36,7 @@ public class ImageObserverController extends BaseController implements Observer,
      * @since 0.2.0
      */
     @Override
-    public void setPlayer(PlayerObservable player) {
+    public void setPlayer(Player player) {
         super.setPlayer(player);
         this.showImage();
     }
@@ -58,7 +58,7 @@ public class ImageObserverController extends BaseController implements Observer,
      */
     @Override
     public void update(Observable o, Object args) {
-        PlayerObservable player = (PlayerObservable)o;
+        Player player = (Player)o;
         this.setPlayer(player);
     }
 }

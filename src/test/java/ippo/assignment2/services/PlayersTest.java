@@ -2,7 +2,7 @@ package ippo.assignment2.services;
 
 import ippo.assignment2.collections.Items;
 import ippo.assignment2.models.Direction;
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 import org.junit.jupiter.api.Test;
 
@@ -19,8 +19,8 @@ public class PlayersTest {
 
     @Test
     public void getValid() throws IOException {
-        PlayerObservable player = this.playersService.get(false);
-        assertTrue(player instanceof PlayerObservable);
+        Player player = this.playersService.get(false);
+        assertTrue(player instanceof Player);
         assertTrue(player.getDirection() instanceof Direction);
         assertTrue(player.getItems() instanceof Items);
         assertTrue(player.getRoom() instanceof Room);

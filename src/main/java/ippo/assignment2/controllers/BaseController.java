@@ -1,21 +1,21 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.assertions.Assert;
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 
 /**
  * @since 0.2.0
  */
 public class BaseController {
 
-    protected PlayerObservable player;
+    protected Player player;
 
     /**
      *
      * @param player
      * @since 0.2.0
      */
-    public void setPlayer(PlayerObservable player) {
+    public void setPlayer(Player player) {
         Assert.player(this.player);
         this.player = player;
     }

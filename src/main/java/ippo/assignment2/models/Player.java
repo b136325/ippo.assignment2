@@ -6,7 +6,7 @@ import java.util.Observable;
 import ippo.assignment2.assertions.Assert;
 import ippo.assignment2.collections.Items;
 
-public class PlayerObservable extends Observable {
+public class Player extends Observable {
     private Direction direction;
     private Items items;
     private Room room;
@@ -17,7 +17,7 @@ public class PlayerObservable extends Observable {
      * @param items
      * @param room
      */
-    public PlayerObservable(Direction direction, Items items, Room room) {
+    public Player(Direction direction, Items items, Room room) {
         this.direction = direction;
         this.items = items;
         this.room = room;

@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import ippo.assignment2.assertions.Assert;
-import ippo.assignment2.models.PlayerObservable;
+import ippo.assignment2.models.Player;
 
 /**
  * @since 0.1.2
@@ -14,19 +14,19 @@ import ippo.assignment2.models.PlayerObservable;
 public class MainController extends BaseController implements Initializable {
 
     @FXML
-    private HeaderObserverController headerController;
+    private HeaderController headerController;
 
     @FXML
-    private ImageObserverController imageController;
+    private ImageController imageController;
 
     @FXML
-    private NavigationObserverController navigationController;
+    private NavigationController navigationController;
 
     @FXML
-    private PlayerItemsObserverController playerItemsController;
+    private PlayerItemsController playerItemsController;
 
     @FXML
-    private RoomItemsObserverController roomItemsController;
+    private RoomItemsController roomItemsController;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {}
@@ -37,7 +37,7 @@ public class MainController extends BaseController implements Initializable {
      * @since 0.1.2
      */
     @Override
-    public void setPlayer(PlayerObservable player) {
+    public void setPlayer(Player player) {
         super.setPlayer(player);
 
         this.assertChildControllers();

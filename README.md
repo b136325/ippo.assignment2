@@ -47,18 +47,19 @@ The child views are as follows:
 There is a one to one relationship between views and controllers, and the controllers associated with each view has been defined within the view's FXML using the `fx:controller` tag.
 Consequently, 
 
-- `HeaderViewer.fxml` is associated with `HeaderObservableController`
-- `ImageViewer.fxml` is associated with `ImageObservableController`
-- `NavigationViewer.fxml` is associated with `NavigationObservableController`
-- `PlayerItemsViewer.fxml` is associated with `PlayerItemsObservableController`
-- `RoomItemsViewer.fxml` is associated with `RoomItemsObservableController`
+- `HeaderViewer.fxml` is associated with `HeaderController`
+- `ImageViewer.fxml` is associated with `ImageController`
+- `NavigationViewer.fxml` is associated with `NavigationController`
+- `PlayerItemsViewer.fxml` is associated with `PlayerItemsController`
+- `RoomItemsViewer.fxml` is associated with `RoomItemsController`
 
 ---
 
 ### Styling
 - https://raw.githubusercontent.com/dicolar/jbootx/master/src/main/resources/bootstrap3.css
+- HBox and VBox layout
 
 ### Controllers
-- Guice
-
+- Guice: dependency injection
+- Name PlayerItemsController rather than PlayerItemsObserverController
 

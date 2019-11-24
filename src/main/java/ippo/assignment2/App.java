@@ -1,12 +1,9 @@
 package ippo.assignment2;
 
-import ippo.assignment2.factories.Services;
-import ippo.assignment2.models.PlayerObservable;
-import ippo.assignment2.services.IService;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,6 +11,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import ippo.assignment2.controllers.MainController;
+import ippo.assignment2.factories.Services;
+import ippo.assignment2.models.Player;
+import ippo.assignment2.services.IService;
 import ippo.assignment2.utils.Properties;
 
 /**
@@ -45,7 +45,7 @@ public class App extends Application {
 
         try {
 
-            PlayerObservable player = null;
+            Player player = null;
             Properties properties = null;
             String propertyName = "app.service";
             IService service = null;
@@ -72,7 +72,7 @@ public class App extends Application {
             }
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource(this.mainControllerViewerPath));
-            AnchorPane page = loader.load();
+            ScrollPane page = loader.load();
 
             Scene scene = new Scene(page);
             scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");

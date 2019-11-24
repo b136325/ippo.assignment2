@@ -13,7 +13,7 @@ public class PlayerTest {
     public void constructorValid() {
         Items items = new Items();
         Room room = new Room(null, null);
-        PlayerObservable player = new PlayerObservable(Direction.LEFT, items, room);
+        Player player = new Player(Direction.LEFT, items, room);
 
         assertEquals(player.getDirection(), Direction.LEFT);
         assertEquals(player.getItems(), items);
@@ -22,7 +22,7 @@ public class PlayerTest {
 
     @Test
     public void getCurrentImageAssertRoomNull() {
-        PlayerObservable player = new PlayerObservable(Direction.LEFT, null, null);
+        Player player = new Player(Direction.LEFT, null, null);
 
         assertThrows(AssertionError.class, () -> {
             player.getCurrentImage(Direction.RIGHT);
@@ -35,53 +35,53 @@ public class PlayerTest {
         Walls walls = new Walls();
         walls.add(Direction.RIGHT, wall);
         Room room = new Room(null, walls);
-        PlayerObservable player = new PlayerObservable(Direction.LEFT, null, room);
+        Player player = new Player(Direction.LEFT, null, room);
 
         assertEquals(player.getCurrentImage(Direction.RIGHT), null);
     }
 
     @Test
     public void getDirectionInValid() {
-        PlayerObservable player = new PlayerObservable(null, null, null);
+        Player player = new Player(null, null, null);
 
         assertEquals(player.getDirection(), null);
     }
 
     @Test
     public void getDirectionValid() {
-        PlayerObservable player = new PlayerObservable(Direction.BACK, null, null);
+        Player player = new Player(Direction.BACK, null, null);
 
         assertEquals(player.getDirection(), Direction.BACK);
     }
     @Test
     public void getItemsInValid() {
-        PlayerObservable player = new PlayerObservable(null, null, null);
+        Player player = new Player(null, null, null);
         assertEquals(player.getItems(), null);
     }
 
     @Test
     public void getItemsValid() {
         Items items = new Items();
-        PlayerObservable player = new PlayerObservable(null, items, null);
+        Player player = new Player(null, items, null);
         assertEquals(player.getItems(), items);
     }
 
     @Test
     public void getRoomInValid() {
         Room room = new Room(null, null);
-        PlayerObservable player = new PlayerObservable(null, null, room);
+        Player player = new Player(null, null, room);
         assertEquals(player.getRoom(), room);
     }
 
     @Test
     public void getRoomValid() {
-        PlayerObservable player = new PlayerObservable(null, null, null);
+        Player player = new Player(null, null, null);
         assertEquals(player.getRoom(), null);
     }
 
     @Test
     public void moveForwardAssertRoomNull() {
-        PlayerObservable player = new PlayerObservable(Direction.BACK, null, null);
+        Player player = new Player(Direction.BACK, null, null);
 
         assertThrows(AssertionError.class, () -> {
             player.moveForward();
@@ -97,7 +97,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items roomItems = new Items();
         Room outerRoom = new Room(roomItems, walls);
-        PlayerObservable player = new PlayerObservable(Direction.BACK, null, outerRoom);
+        Player player = new Player(Direction.BACK, null, outerRoom);
 
         player.moveForward();
         assertEquals(player.getRoom(), outerRoom);
@@ -111,7 +111,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items roomItems = new Items();
         Room outerRoom = new Room(roomItems, walls);
-        PlayerObservable player = new PlayerObservable(Direction.BACK, null, outerRoom);
+        Player player = new Player(Direction.BACK, null, outerRoom);
 
         player.moveForward();
         assertEquals(player.getRoom(), outerRoom);
@@ -126,7 +126,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items roomItems = new Items();
         Room room = new Room(roomItems, walls);
-        PlayerObservable player = new PlayerObservable(Direction.BACK, null, room);
+        Player player = new Player(Direction.BACK, null, room);
 
         player.moveForward();
         assertEquals(player.getRoom(), innerRoom);
@@ -141,7 +141,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items roomItems = new Items();
         Room outerRoom = new Room(roomItems, walls);
-        PlayerObservable player = new PlayerObservable(Direction.LEFT, null, outerRoom);
+        Player player = new Player(Direction.LEFT, null, outerRoom);
 
         player.moveForward();
         assertEquals(player.getRoom(), outerRoom);
@@ -152,7 +152,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items roomItems = new Items();
         Room roomNoItems = new Room(roomItems, null);
-        PlayerObservable player = new PlayerObservable(null, null, roomNoItems);
+        Player player = new Player(null, null, roomNoItems);
 
         assertThrows(AssertionError.class, () -> {
             player.pickUp(item);
@@ -164,7 +164,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items playerItems = new Items();
         playerItems.add(item);
-        PlayerObservable player = new PlayerObservable(null, playerItems, null);
+        Player player = new Player(null, playerItems, null);
 
         assertThrows(AssertionError.class, () -> {
             player.pickUp(item);
@@ -177,7 +177,7 @@ public class PlayerTest {
         Items roomItems = new Items();
         Room roomNoItems = new Room(roomItems, null);
         Items playerItems = new Items();
-        PlayerObservable player = new PlayerObservable(null, playerItems, roomNoItems);
+        Player player = new Player(null, playerItems, roomNoItems);
 
         assertEquals(player.pickUp(item), false);
         assertEquals(playerItems.has(item), false);
@@ -190,7 +190,7 @@ public class PlayerTest {
         roomItems.add(item);
         Room roomNoItems = new Room(roomItems, null);
         Items playerItems = new Items();
-        PlayerObservable player = new PlayerObservable(null, playerItems, roomNoItems);
+        Player player = new Player(null, playerItems, roomNoItems);
 
         assertEquals(player.pickUp(item), true);
         assertEquals(playerItems.has(item), true);
@@ -200,7 +200,7 @@ public class PlayerTest {
     public void putDownAssertionThrownWhenItemsNull() {
         Item item = new Item(null, null);
         Room room = new Room(null, null);
-        PlayerObservable player = new PlayerObservable(null, null, room);
+        Player player = new Player(null, null, room);
 
         assertThrows(AssertionError.class, () -> {
             player.putDown(item);
@@ -212,7 +212,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items playerItems = new Items();
         playerItems.add(item);
-        PlayerObservable player = new PlayerObservable(null, playerItems, null);
+        Player player = new Player(null, playerItems, null);
 
         assertThrows(AssertionError.class, () -> {
             player.pickUp(item);
@@ -225,7 +225,7 @@ public class PlayerTest {
         Items playerItems = new Items();
         Items roomItems = new Items();
         Room room = new Room(roomItems, null);
-        PlayerObservable player = new PlayerObservable(null, playerItems, room);
+        Player player = new Player(null, playerItems, room);
 
         assertEquals(player.putDown(item), false);
         assertEquals(playerItems.has(item), false);
@@ -238,7 +238,7 @@ public class PlayerTest {
         playerItems.add(item);
         Items roomItems = new Items();
         Room room = new Room(roomItems, null);
-        PlayerObservable player = new PlayerObservable(null, playerItems, room);
+        Player player = new Player(null, playerItems, room);
 
         assertEquals(player.putDown(item), true);
         assertEquals(playerItems.has(item), false);
@@ -249,7 +249,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         Items playerItems = new Items();
         playerItems.add(item);
-        PlayerObservable player = new PlayerObservable(null, playerItems, null);
+        Player player = new Player(null, playerItems, null);
 
         assertThrows(AssertionError.class, () -> {
             player.turn(Direction.BACK);
@@ -262,7 +262,7 @@ public class PlayerTest {
         Walls walls = new Walls();
         walls.add(Direction.BACK, wall);
         Room room = new Room(null, walls);
-        PlayerObservable player = new PlayerObservable(null, null, room);
+        Player player = new Player(null, null, room);
         player.turn(Direction.RIGHT);
 
         assertEquals(player.getDirection(), null);
@@ -274,7 +274,7 @@ public class PlayerTest {
         Walls walls = new Walls();
         walls.add(Direction.BACK, wall);
         Room room = new Room(null, walls);
-        PlayerObservable player = new PlayerObservable(null, null, room);
+        Player player = new Player(null, null, room);
         player.turn(Direction.BACK);
 
         assertEquals(player.getDirection(), Direction.BACK);
