@@ -37,6 +37,9 @@ public class PlayerItemsController extends BaseController implements Observer, I
     @Override
     public void initialize(URL location, ResourceBundle resources) {}
 
+    /**
+     * @since 0.2.6
+     */
     @FXML
     public void putDown() {
         //this.player.putDown();

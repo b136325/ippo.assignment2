@@ -4,6 +4,7 @@ import ippo.assignment2.collections.Items;
 import ippo.assignment2.models.Player;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
@@ -18,10 +19,13 @@ import java.util.ResourceBundle;
 public class RoomItemsController extends BaseController implements Observer, Initializable {
 
     @FXML
+    private TextField counter;
+
+    @FXML
     private ImageView imageViewer;
 
     @FXML
-    private TextField counter;
+    private Button pickUpButton;
 
     /**
      *
@@ -31,6 +35,14 @@ public class RoomItemsController extends BaseController implements Observer, Ini
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {}
+
+    /**
+     * @since 0.2.6
+     */
+    @FXML
+    public void pickUp() {
+        //this.player.pickUp();
+    }
 
     /**
      *
@@ -44,16 +56,6 @@ public class RoomItemsController extends BaseController implements Observer, Ini
     }
 
     /**
-     * @since 0.2.1
-     */
-    public void updateView() {
-        Items items = this.player.getRoom().getItems();
-        if (items != null) {
-            this.counter.setText(items.count().toString());
-        }
-    }
-
-    /**
      *
      * @param o
      * @param arg
@@ -63,5 +65,15 @@ public class RoomItemsController extends BaseController implements Observer, Ini
     public void update(Observable o, Object arg) {
         Player player = (Player)o;
         this.setPlayer(player);
+    }
+
+    /**
+     * @since 0.2.1
+     */
+    public void updateView() {
+        Items items = this.player.getRoom().getItems();
+        if (items != null) {
+            this.counter.setText(items.count().toString());
+        }
     }
 }

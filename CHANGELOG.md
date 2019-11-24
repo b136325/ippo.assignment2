@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### Tag 0.2.6
+
+- Add a header.title property and display the text
+- Improve layout
+
 ---
 
 ### Tag 0.2.5

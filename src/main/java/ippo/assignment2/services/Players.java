@@ -49,7 +49,9 @@ public class Players implements IService {
         Image imageRight = null;
 
         if (showImages == true) {
-            imageLeft = new Image("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/04/16/glasgow-main.jpg");
+            imageLeft = new Image(
+                    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/04/16/glasgow-main.jpg"
+            );
             imageRight = new Image("https://sprudge.com/wp-content/uploads/2019/04/Edinburgh.jpg");
         }
         Wall wallLeft = new Wall(imageLeft, innerRoom);

@@ -3,30 +3,30 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.ScrollPane?>
 
-<ScrollPane prefHeight="3000.0"
-            prefViewportHeight="600.0"
-            prefViewportWidth="800.0"
+<?import javafx.scene.control.Separator?>
+<ScrollPane fx:controller="ippo.assignment2.controllers.MainController"
+            prefHeight="800.0"
+            prefViewportHeight="800.0"
+            prefViewportWidth="1000.0"
             prefWidth="1000.0"
             style="-fx-background-color: white;"
-            stylesheets="@../css/bootstrap3.css"
+            stylesheets="@../css/bootstrap2.css"
             xmlns="http://javafx.com/javafx/8"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ippo.assignment2.controllers.MainController">
+            xmlns:fx="http://javafx.com/fxml/1">
 
-    <VBox layoutX="250.0"
-          layoutY="-38.0"
-          spacing="5.0"
-          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-
-        <fx:include source="HeaderViewer.fxml" fx:id="header" BorderPane.alignment="TOP_LEFT" />
-        <HBox prefHeight="39.0">
+    <VBox>
+        <fx:include source="HeaderViewer.fxml" fx:id="header" />
+        <Separator orientation="HORIZONTAL" />
+        <HBox prefWidth="200.0">
             <VBox>
-                <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" BorderPane.alignment="TOP_LEFT"/>
-                <fx:include source="RoomItemsViewer.fxml" fx:id="roomItems" BorderPane.alignment="BOTTOM_LEFT"/>
+                <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" />
+                <Separator orientation="HORIZONTAL" />
+                <fx:include source="RoomItemsViewer.fxml" fx:id="roomItems" />
             </VBox>
-            <fx:include source="ImageViewer.fxml" fx:id="image" BorderPane.alignment="TOP_RIGHT"/>
+            <Separator orientation="VERTICAL" />
+            <fx:include source="ImageViewer.fxml" fx:id="image" />
         </HBox>
-        <fx:include source="NavigationViewer.fxml" fx:id="navigation" BorderPane.alignment="BOTTOM_LEFT" />
+        <Separator orientation="HORIZONTAL" />
+        <fx:include source="NavigationViewer.fxml" fx:id="navigation" />
      </VBox>
 </ScrollPane>
