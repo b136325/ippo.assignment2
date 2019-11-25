@@ -129,12 +129,29 @@ public class PlayerItemsController extends BaseController implements Observer, I
     public void updateViewItem(Item item, ImageView imageViewer) {
         Image image = null;
 
+        ArrayList<ImageView> imageViewers = this.getImageViewers();
+        this.clearImageViewers(imageViewers);
+
         if (item != null && imageViewer != null) {
             image = item.getImage();
         }
 
         if (image != null) {
             imageViewer.setImage(image);
+        }
+    }
+
+    /**
+     *
+     * @param imageViewers
+     * @since 0.2.12
+     */
+    private void clearImageViewers(ArrayList<ImageView> imageViewers) {
+        Iterator<ImageView> imageViewersIterator = imageViewers.iterator();
+
+        while (imageViewersIterator.hasNext()) {
+            ImageView imageView = imageViewersIterator.next();
+            imageView.setImage(null);
         }
     }
 

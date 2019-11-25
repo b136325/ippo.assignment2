@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.models.PlayerTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:09:21" hostname="joes-mbp.mynet" time="0.05">
+<testsuite name="ippo.assignment2.models.PlayerTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:19:44" hostname="joes-mbp.mynet" time="0.036">
   <properties/>
   <testcase name="getItemsValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="turnInvalid()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
   <testcase name="pickUpAssertionThrownWhenItemsNull()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
-  <testcase name="pickUpInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
+  <testcase name="pickUpInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="getDirectionInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
-  <testcase name="getRoomValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
-  <testcase name="pickUpAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.004"/>
-  <testcase name="putDownValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="putDownAssertionThrownWhenItemsNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="moveForwardInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="getRoomValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="pickUpAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="putDownValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="putDownAssertionThrownWhenItemsNull()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="moveForwardInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="constructorValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
-  <testcase name="getCurrentImageAssertRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
-  <testcase name="turnValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="getCurrentImageAssertRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="turnValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="putDownAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="getItemsInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="moveForwardInValidWall()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
-  <testcase name="getDirectionValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
+  <testcase name="getDirectionValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <testcase name="turnAssertionThrownWhenRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="putDownInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.002"/>
+  <testcase name="putDownInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="moveForwardValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="getCurrentImageValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="moveForwardAssertRoomNull()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
-  <testcase name="pickUpValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
-  <testcase name="getRoomInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="pickUpValid()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
+  <testcase name="getRoomInValid()" classname="ippo.assignment2.models.PlayerTest" time="0.001"/>
   <testcase name="moveForwardValidWallWithoutRoom()" classname="ippo.assignment2.models.PlayerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

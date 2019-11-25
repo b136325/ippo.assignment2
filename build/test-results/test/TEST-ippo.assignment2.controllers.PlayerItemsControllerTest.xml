@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.controllers.PlayerItemsControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:09:26" hostname="joes-mbp.mynet" time="1.064">
+<testsuite name="ippo.assignment2.controllers.PlayerItemsControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:19:50" hostname="joes-mbp.mynet" time="1.32">
   <properties/>
-  <testcase name="counterTest()" classname="ippo.assignment2.controllers.PlayerItemsControllerTest" time="0.413"/>
-  <testcase name="putDownButtonTest()" classname="ippo.assignment2.controllers.PlayerItemsControllerTest" time="0.34"/>
-  <testcase name="imageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsControllerTest" time="0.309"/>
+  <testcase name="counterTest()" classname="ippo.assignment2.controllers.PlayerItemsControllerTest" time="0.54"/>
+  <testcase name="putDownButtonTest()" classname="ippo.assignment2.controllers.PlayerItemsControllerTest" time="0.394"/>
+  <testcase name="imageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsControllerTest" time="0.382"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

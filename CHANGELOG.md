@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### Tag 0.2.12
+
+- The addition of a `clearImageViewers` method within PlayersItemsController to keep the view in sync.
+
+---
+
 ### Tag 0.2.11
 
 - Refactor PlayerItemsController in order to create a new `deriveItemIndexFromActionEvent` method.

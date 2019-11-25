@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.services.PlayersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:09:27" hostname="joes-mbp.mynet" time="1.18">
+<testsuite name="ippo.assignment2.services.PlayersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:19:51" hostname="joes-mbp.mynet" time="1.075">
   <properties/>
-  <testcase name="getValid()" classname="ippo.assignment2.services.PlayersTest" time="1.18"/>
+  <testcase name="getValid()" classname="ippo.assignment2.services.PlayersTest" time="1.075"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
