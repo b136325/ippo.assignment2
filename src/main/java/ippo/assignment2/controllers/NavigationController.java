@@ -6,11 +6,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-
-import ippo.assignment2.models.Direction;
-
 import java.net.URL;
 import java.util.*;
+
+import ippo.assignment2.models.Direction;
 
 /**
  * @since 0.1.2

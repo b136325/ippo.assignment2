@@ -1,10 +1,7 @@
 package ippo.assignment2.controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.Observable;
@@ -44,15 +41,6 @@ public class HeaderController extends BaseController implements Observer, Initia
             String propertyValue = this.properties.getValue(propertyName);
             this.title.setText(propertyValue);
         }
-    }
-
-    /**
-     *
-     * @return
-     * @since 0.2.8
-     */
-    public TextField getTitle() {
-        return this.title;
     }
 
     /**

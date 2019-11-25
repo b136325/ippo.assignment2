@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane
+        fx:controller="ippo.assignment2.controllers.NavigationController"
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+    <Label text="Navigation"/>
+    <HBox>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <Button fx:id="leftButton" onAction="#turnLeft" styleClass="primary" text="Left"  />
+        <Separator orientation="VERTICAL" />
+        <Button fx:id="forwardButton" onAction="#goForward" styleClass="primary" text="Forward" />
+        <Separator orientation="VERTICAL" />
+        <Button fx:id="rightButton" onAction="#turnRight" styleClass="primary" text="Right" />
+        <Separator orientation="VERTICAL" />
+        <Button fx:id="backButton" onAction="#goBack" styleClass="primary" text="Back" />
+        <TextField fx:id="logger" text="" />
+    </HBox>
+</AnchorPane>

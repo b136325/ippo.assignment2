@@ -1,5 +1,14 @@
 ## CHANGELOG
 
+---
+
+### Tag 0.2.9
+
+- Install TestFX via Gradle.
+- Complete basic (non-data) related GUI tests using TestFX.
+
+---
+
 ### Tag 0.2.8
 
 - Complete all collection and model unit tests.

@@ -1,0 +1,52 @@
+package ippo.assignment2.controllers;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+public class PlayerItemsControllerTest extends BaseControllerTest {
+
+    private TextField counter;
+    private ImageView imageViewer1;
+    private ImageView imageViewer2;
+    private ImageView imageViewer3;
+    private ImageView imageViewer4;
+    private Button putDownButton;
+
+    @Override
+    public String getViewerPath() {
+        return "/fxml/PlayerItemsViewer.fxml";
+    }
+
+    @BeforeEach
+    public void setUp() {
+        this.counter = (TextField) this.findGuiElement("#counter");
+        this.imageViewer1 = (ImageView) this.findGuiElement("#imageViewer1");
+        this.imageViewer2 = (ImageView) this.findGuiElement("#imageViewer2");
+        this.imageViewer3 = (ImageView) this.findGuiElement("#imageViewer3");
+        this.imageViewer4 = (ImageView) this.findGuiElement("#imageViewer4");
+        this.putDownButton = (Button) this.findGuiElement("#putDownButton");
+    }
+
+    @Test
+    public void counterTest() {
+        assertEquals(this.counter.getText(), "");
+    }
+
+    @Test
+    public void imageViewerTest() {
+        assertNull(this.imageViewer1.getImage());
+        assertNull(this.imageViewer2.getImage());
+        assertNull(this.imageViewer3.getImage());
+        assertNull(this.imageViewer4.getImage());
+    }
+
+    @Test
+    public void putDownButtonTest() {
+        assertEquals(this.putDownButton.getText(), "Put Down");
+    }
+}

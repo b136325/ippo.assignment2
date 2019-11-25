@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.image.ImageView?>
+<ScrollPane fx:controller="ippo.assignment2.controllers.PlayerItemsController"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <VBox>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <Label text="Player items"/>
+        <Separator orientation="HORIZONTAL" />
+        <ImageView fx:id="imageViewer1" fitHeight="50" fitWidth="50" />
+        <ImageView fx:id="imageViewer2" fitHeight="50" fitWidth="50" />
+        <ImageView fx:id="imageViewer4" fitHeight="50" fitWidth="50" />
+        <Separator orientation="HORIZONTAL" />
+        <Button fx:id="putDownButton"
+                mnemonicParsing="false"
+                onAction="#putDown"
+                text="Put Down" />
+        <TextField fx:id="counter" text="" />
+    </VBox>
+</ScrollPane>

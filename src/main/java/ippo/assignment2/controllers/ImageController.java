@@ -1,17 +1,16 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.models.Direction;
-import ippo.assignment2.models.Player;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
-
 import java.net.URL;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.ResourceBundle;
+
+import ippo.assignment2.models.Direction;
+import ippo.assignment2.models.Player;
 
 /**
  * @since 0.1.2
