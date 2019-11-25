@@ -37,9 +37,19 @@ public class Players implements IService {
 
         Room innerRoom = new Room(null, innerRoomWalls);
 
-        Item playerItem = new Item(null, "playerItem");
+        Image playerItemOneImage = new Image(
+                "https://i.guim.co.uk/img/media/72e7a42d0fdc7820d1a5e7a8f0baef1fc4ea50d9/0_491_3054_1832/master/3054.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=836c679577a4d05899b78b63e088fae6"
+        );
+        Item playerItemOne = new Item(playerItemOneImage, "playerItemOne");
+
+        Image playerItemTwoImage = new Image(
+                "https://i.guim.co.uk/img/media/48fca4d8ef0949ab5d3ed3e4ac885ffb655a69a3/0_159_3298_1979/master/3298.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=f406663d3ac3c6c38834ded9ccb69e40"
+        );
+        Item playerItemTwo = new Item(playerItemTwoImage, "playerItemTwo");
+
         Items playerItems = new Items();
-        playerItems.add(playerItem);
+        playerItems.add(playerItemOne);
+        playerItems.add(playerItemTwo);
 
         Item roomItem = new Item(null, "roomItem");
         Items roomItems = new Items();

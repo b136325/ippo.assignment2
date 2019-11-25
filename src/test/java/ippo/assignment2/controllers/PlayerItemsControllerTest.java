@@ -15,7 +15,10 @@ public class PlayerItemsControllerTest extends BaseControllerTest {
     private ImageView imageViewer2;
     private ImageView imageViewer3;
     private ImageView imageViewer4;
-    private Button putDownButton;
+    private Button putDownButton1;
+    private Button putDownButton2;
+    private Button putDownButton3;
+    private Button putDownButton4;
 
     @Override
     public String getViewerPath() {
@@ -29,7 +32,10 @@ public class PlayerItemsControllerTest extends BaseControllerTest {
         this.imageViewer2 = (ImageView) this.findGuiElement("#imageViewer2");
         this.imageViewer3 = (ImageView) this.findGuiElement("#imageViewer3");
         this.imageViewer4 = (ImageView) this.findGuiElement("#imageViewer4");
-        this.putDownButton = (Button) this.findGuiElement("#putDownButton");
+        this.putDownButton1 = (Button) this.findGuiElement("#putDownButton1");
+        this.putDownButton2 = (Button) this.findGuiElement("#putDownButton2");
+        this.putDownButton3 = (Button) this.findGuiElement("#putDownButton3");
+        this.putDownButton4 = (Button) this.findGuiElement("#putDownButton4");
     }
 
     @Test
@@ -47,6 +53,9 @@ public class PlayerItemsControllerTest extends BaseControllerTest {
 
     @Test
     public void putDownButtonTest() {
-        assertEquals(this.putDownButton.getText(), "Put Down");
+        assertEquals(this.putDownButton1.getText(), "Put Down");
+        assertEquals(this.putDownButton2.getText(), "Put Down");
+        assertEquals(this.putDownButton3.getText(), "Put Down");
+        assertEquals(this.putDownButton4.getText(), "Put Down");
     }
 }

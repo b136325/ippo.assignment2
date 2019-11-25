@@ -1,8 +1,10 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.models.Item;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -34,8 +36,16 @@ public class PlayerItemsController extends BaseController implements Observer, I
     private ImageView imageViewer4;
 
     @FXML
-    private Button putDownButton;
+    private Button putDownButton1;
 
+    @FXML
+    private Button putDownButton2;
+
+    @FXML
+    private Button putDownButton3;
+
+    @FXML
+    private Button putDownButton4;
 
     /**
      *
@@ -65,8 +75,16 @@ public class PlayerItemsController extends BaseController implements Observer, I
      * @since 0.2.6
      */
     @FXML
-    public void putDown() {
-        //this.player.putDown();
+    public void putDown(ActionEvent actionEvent) {
+        Node node = (Node) actionEvent.getSource();
+        String nodeId = node.getId();
+
+        String itemIndexString = nodeId.replaceAll("[^\\d.]", "");
+        Integer itemIndex = Integer.parseInt(itemIndexString);
+        itemIndex = itemIndex -1;
+
+        Item item = this.player.getItems().get(itemIndex);
+        this.player.putDown(item);
     }
 
     /**
@@ -101,13 +119,19 @@ public class PlayerItemsController extends BaseController implements Observer, I
 
         ArrayList<ImageView> imageViewers = this.getImageViewers();
 
-        for (Integer i = 1; i <= items.count(); i++) {
+        for (Integer i = 0; i < items.count(); i++) {
             Item item = items.get(i);
             ImageView imageViewer = imageViewers.get(i);
             this.updateViewItem(item, imageViewer);
         }
     }
 
+    /**
+     *
+     * @param item
+     * @param imageViewer
+     * @since 0.2.1
+     */
     public void updateViewItem(Item item, ImageView imageViewer) {
         Image image = null;
 

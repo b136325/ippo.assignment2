@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e2c042f-6700-4e54-8b51-bd3f30347d27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/BaseControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/HeaderControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/ImageViewerControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/NavigationControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/PlayerItemsControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/RoomItemsControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/fxml/HeaderViewer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/fxml/ImageViewer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/fxml/NavigationViewer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/fxml/PlayerItemsViewer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/fxml/RoomItemsViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,48 +14,42 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/controllers/.PlayerItemsController.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/Players.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/services/Players.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/utils/.Properties 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/collections/.ItemsTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/collections/.WallsTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/factories/.ServicesTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/.DirectionTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/.ItemTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/.RoomTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/models/.WallTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/services/.PlayersTest 2.class.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/utils/.PropertiesTest 2.class.icloud" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.ItemsTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.WallsTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.factories.ServicesTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.DirectionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.ItemTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.PlayerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.RoomTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.WallTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.utils.PropertiesTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ippo-assignment2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ippo-assignment2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.controllers.RoomItemsControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.controllers.RoomItemsControllerTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.collections.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.factories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.models.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.utils.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/.HeaderViewer.fxml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/.ImageViewer.fxml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/.MainViewer.fxml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/.NavigationViewer.fxml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/.PlayerItemsViewer.fxml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/.RoomItemsViewer.fxml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/properties/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.ItemsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.WallsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.factories.ServicesTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.DirectionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.ItemTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.PlayerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.RoomTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.WallTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.utils.PropertiesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.controllers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.controllers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/css/.bootstrap2 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/HeaderViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/ImageViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/MainViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/NavigationViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/PlayerItemsViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/PlayerItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/PlayerItemsViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/RoomItemsViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/images/.edinburgh-lothians 2.jpg.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/properties/.app 2.properties.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/fxml/PlayerItemsViewer 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/fxml/PlayerItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/fxml/PlayerItemsViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/properties/.app 2.properties.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.controllers.RoomItemsControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.controllers.RoomItemsControllerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/HeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/HeaderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/PlayerItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/PlayerItemsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/RoomItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/RoomItemsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/PlayerItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/PlayerItemsViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/PlayerItemsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/PlayerItemsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/fxml/PlayerItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/fxml/PlayerItemsViewer.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,66 +185,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RoomItemsControllerTest">
-    <configuration name="HeaderControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.controllers.HeaderControllerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ImageViewerControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.controllers.ImageViewerControllerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="NavigationControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.controllers.NavigationControllerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Gradle.ippo-assignment2 [build]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ippo.assignment2.Main" />
+      <module name="ippo-assignment2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ippo.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="PlayerItemsControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -283,33 +219,70 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RoomItemsControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ippo-assignment2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.controllers.RoomItemsControllerTest&quot;" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ippo-assignment2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RoomItemsControllerTest" />
-        <item itemvalue="Gradle.ImageViewerControllerTest" />
-        <item itemvalue="Gradle.HeaderControllerTest" />
-        <item itemvalue="Gradle.NavigationControllerTest" />
         <item itemvalue="Gradle.PlayerItemsControllerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.ippo-assignment2 [build]" />
+        <item itemvalue="Gradle.ippo-assignment2 [classes]" />
+        <item itemvalue="Gradle.ippo-assignment2 [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -380,16 +353,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="211" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
           <line>50</line>
           <option name="timeStamp" value="212" />
         </line-breakpoint>
@@ -400,26 +363,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
           <line>49</line>
           <option name="timeStamp" value="216" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/collections/Items.java</url>
-          <line>43</line>
-          <properties class="ippo.assignment2.collections.Items" method="get">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="209" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

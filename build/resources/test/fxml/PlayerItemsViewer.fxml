@@ -14,15 +14,35 @@
         </padding>
         <Label text="Player items"/>
         <Separator orientation="HORIZONTAL" />
-        <ImageView fx:id="imageViewer1" fitHeight="50" fitWidth="50" />
-        <ImageView fx:id="imageViewer2" fitHeight="50" fitWidth="50" />
-        <ImageView fx:id="imageViewer3" fitHeight="50" fitWidth="50" />
-        <ImageView fx:id="imageViewer4" fitHeight="50" fitWidth="50" />
-        <Separator orientation="HORIZONTAL" />
-        <Button fx:id="putDownButton"
-                mnemonicParsing="false"
-                onAction="#putDown"
-                text="Put Down" />
+        <HBox>
+            <ImageView fx:id="imageViewer1" fitHeight="50" fitWidth="50" />
+            <Button fx:id="putDownButton1"
+                    mnemonicParsing="false"
+                    onAction="#putDown"
+                    text="Put Down" />
+        </HBox>
+        <HBox>
+            <ImageView fx:id="imageViewer2" fitHeight="50" fitWidth="50" />
+            <Button fx:id="putDownButton2"
+                    mnemonicParsing="false"
+                    onAction="#putDown"
+                    text="Put Down" />
+        </HBox>
+        <HBox>
+            <ImageView fx:id="imageViewer3" fitHeight="50" fitWidth="50" />
+            <Button fx:id="putDownButton3"
+                    mnemonicParsing="false"
+                    onAction="#putDown"
+                    text="Put Down" />
+        </HBox>
+        <HBox>
+            <ImageView fx:id="imageViewer4" fitHeight="50" fitWidth="50" />
+            <Button fx:id="putDownButton4"
+                    mnemonicParsing="false"
+                    onAction="#putDown"
+                    text="Put Down" />
+        </HBox>
+
         <TextField fx:id="counter" text="" />
     </VBox>
 </ScrollPane>

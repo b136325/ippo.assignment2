@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+### Tag 0.2.10
+
+- Add four player item images with associated buttons.
+- Use the same `onAction` callback for each button.
+- The `putDown` process is working.
+- However, the display is not re-rendering correctly.
+
 ---
 
 ### Tag 0.2.9
