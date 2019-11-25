@@ -1,9 +1,8 @@
 package ippo.assignment2.collections;
 
-import java.util.HashMap;
-
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Wall;
+import java.util.HashMap;
 import javafx.scene.image.Image;
 
 /**

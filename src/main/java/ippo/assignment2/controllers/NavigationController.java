@@ -1,6 +1,8 @@
 package ippo.assignment2.controllers;
 
+import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
+import ippo.assignment2.models.Room;
 import ippo.assignment2.models.Wall;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -8,8 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.*;
-
-import ippo.assignment2.models.Direction;
 
 /**
  * @since 0.1.2
@@ -91,12 +91,17 @@ public class NavigationController extends BaseController implements Observer , I
      * @since 0.2.0
      */
     public void setButtonVisibility(Map.Entry mapElement) {
-        if (this.player != null) {
+        Room room = null;
 
+        if (this.player != null) {
+            room = this.player.getRoom();
+        }
+
+        if (room != null) {
             Button button = (Button) mapElement.getValue();
             Direction direction = (Direction) mapElement.getKey();
 
-            Wall wall = this.player.getRoom().getWall(direction);
+            Wall wall = room.getWall(direction);
             Boolean isDisabled = (wall == null);
             button.setDisable(isDisabled);
         }

@@ -1,5 +1,13 @@
 ## CHANGELOG
 
+---
+
+### Tag 0.3.0
+
+- For each of the TestFX integration tests the addition of a controller and populated `player` data within the controller.
+
+---
+
 ### Tag 0.2.12
 
 - The addition of a `clearImageViewers` method within PlayersItemsController to keep the view in sync.

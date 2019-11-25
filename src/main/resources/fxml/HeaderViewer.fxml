@@ -12,4 +12,5 @@
     </padding>
     <Label text="Header"/>
     <TextField fx:id="title" text="" />
+    <TextField fx:id="username" text="" />
 </HBox>

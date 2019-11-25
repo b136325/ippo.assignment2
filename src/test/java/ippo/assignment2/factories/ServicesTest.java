@@ -3,11 +3,10 @@ package ippo.assignment2.factories;
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.Players;
 import ippo.assignment2.utils.Properties;
-import org.junit.jupiter.api.Test;
 import java.io.IOException;
-
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 public class ServicesTest {
 

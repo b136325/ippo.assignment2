@@ -1,7 +1,6 @@
 package ippo.assignment2.collections;
 
 import ippo.assignment2.models.Item;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

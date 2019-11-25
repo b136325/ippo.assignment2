@@ -6,7 +6,7 @@ import ippo.assignment2.models.Player;
 /**
  * @since 0.2.0
  */
-public class BaseController {
+public class BaseController implements IController {
 
     protected Player player;
 
@@ -16,7 +16,7 @@ public class BaseController {
      * @since 0.2.0
      */
     public void setPlayer(Player player) {
-        Assert.player(this.player);
+        Assert.player(player);
         this.player = player;
     }
 }

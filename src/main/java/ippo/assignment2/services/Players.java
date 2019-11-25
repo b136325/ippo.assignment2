@@ -7,24 +7,19 @@ import ippo.assignment2.models.Item;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 import ippo.assignment2.models.Wall;
-
 import javafx.scene.image.Image;
-import java.io.IOException;
 
 /**
  * @since 0.1.7
  */
 public class Players implements IService {
 
-    public static Players valueOf(String value) {
-        return new Players();
-    }
     /**
      *
      * @return
      * @since 0.1.7
      */
-    public Player get(Boolean showImages) throws IOException {
+    public Player get(Boolean showImages) {
 
         showImages = showImages == null ? true : showImages;
 
@@ -73,7 +68,7 @@ public class Players implements IService {
 
         Room room = new Room(roomItems, walls);
 
-        Player player = new Player(Direction.RIGHT, playerItems, room);
+        Player player = new Player(Direction.RIGHT, playerItems, room, "Username1");
 
         return player;
     }

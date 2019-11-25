@@ -1,16 +1,15 @@
 package ippo.assignment2.controllers;
 
+import ippo.assignment2.models.Player;
+import ippo.assignment2.utils.Properties;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.ResourceBundle;
-
-import ippo.assignment2.models.Player;
-import ippo.assignment2.utils.Properties;
-import javafx.scene.control.TextField;
 
 /**
  * @since 0.1.2
@@ -21,6 +20,9 @@ public class HeaderController extends BaseController implements Observer, Initia
 
     @FXML
     private TextField title;
+
+    @FXML
+    private TextField username;
 
     /**
      *
@@ -53,5 +55,10 @@ public class HeaderController extends BaseController implements Observer, Initia
     public void update(Observable o, Object arg) {
         Player player = (Player)o;
         this.setPlayer(player);
+        String username = player.getUsername();
+
+        if (username != null) {
+            this.username.setText(username);
+        }
     }
 }

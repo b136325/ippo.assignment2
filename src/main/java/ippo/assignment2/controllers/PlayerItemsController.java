@@ -1,6 +1,8 @@
 package ippo.assignment2.controllers;
 
+import ippo.assignment2.collections.Items;
 import ippo.assignment2.models.Item;
+import ippo.assignment2.models.Player;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,9 +13,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.net.URL;
 import java.util.*;
-
-import ippo.assignment2.collections.Items;
-import ippo.assignment2.models.Player;
 
 /**
  * @since 0.2.1
@@ -109,14 +108,17 @@ public class PlayerItemsController extends BaseController implements Observer, I
      */
     public void updateView() {
         Items items = this.player.getItems();
-        this.counter.setText(items.count().toString());
+        if (items == null) {
+            this.counter.setText("0");
+        } else {
+            this.counter.setText(items.count().toString());
+            ArrayList<ImageView> imageViewers = this.getImageViewers();
 
-        ArrayList<ImageView> imageViewers = this.getImageViewers();
-
-        for (Integer i = 0; i < items.count(); i++) {
-            Item item = items.get(i);
-            ImageView imageViewer = imageViewers.get(i);
-            this.updateViewItem(item, imageViewer);
+            for (Integer i = 0; i < items.count(); i++) {
+                Item item = items.get(i);
+                ImageView imageViewer = imageViewers.get(i);
+                this.updateViewItem(item, imageViewer);
+            }
         }
     }
 

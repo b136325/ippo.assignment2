@@ -1,12 +1,11 @@
 package ippo.assignment2.collections;
 
+import ippo.assignment2.models.Direction;
+import ippo.assignment2.models.Wall;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import ippo.assignment2.models.Direction;
-import ippo.assignment2.models.Wall;
 
 public class WallsTest {
 

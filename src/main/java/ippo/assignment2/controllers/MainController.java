@@ -1,12 +1,11 @@
 package ippo.assignment2.controllers;
 
+import ippo.assignment2.assertions.Assert;
+import ippo.assignment2.models.Player;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import ippo.assignment2.assertions.Assert;
-import ippo.assignment2.models.Player;
 
 /**
  * @since 0.1.2
@@ -39,7 +38,6 @@ public class MainController extends BaseController implements Initializable {
     @Override
     public void setPlayer(Player player) {
         super.setPlayer(player);
-
         this.assertChildControllers();
         this.passPlayerToChildControllers();
         this.enableChildControllersToObservePlayerChanges();

@@ -1,10 +1,9 @@
 package ippo.assignment2.models;
 
-import javafx.scene.image.Image;
-import java.util.Observable;
-
 import ippo.assignment2.assertions.Assert;
 import ippo.assignment2.collections.Items;
+import javafx.scene.image.Image;
+import java.util.Observable;
 
 /**
  * @since 0.1.2
@@ -13,6 +12,7 @@ public class Player extends Observable {
     private Direction direction;
     private Items items;
     private Room room;
+    private String username;
 
     /**
      *
@@ -21,10 +21,11 @@ public class Player extends Observable {
      * @param room
      * @since 0.1.2
      */
-    public Player(Direction direction, Items items, Room room) {
+    public Player(Direction direction, Items items, Room room, String username) {
         this.direction = direction;
         this.items = items;
         this.room = room;
+        this.username = username;
     }
 
     /**
@@ -63,6 +64,15 @@ public class Player extends Observable {
      */
     public Room getRoom() {
         return this.room;
+    }
+
+    /**
+     *
+     * @return
+     * @since 0.3.0
+     */
+    public String getUsername() {
+        return this.username;
     }
 
     /**

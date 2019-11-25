@@ -1,13 +1,12 @@
 package ippo.assignment2.models;
 
+import ippo.assignment2.collections.Items;
+import ippo.assignment2.collections.Walls;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-
-import ippo.assignment2.collections.Items;
-import ippo.assignment2.collections.Walls;
 
 public class RoomTest {
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.controllers.ImageViewerControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:19:50" hostname="joes-mbp.mynet" time="0.305">
+<testsuite name="ippo.assignment2.controllers.ImageViewerControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T20:37:05" hostname="joes-mbp.mynet" time="0.277">
   <properties/>
-  <testcase name="buttonTitleTest()" classname="ippo.assignment2.controllers.ImageViewerControllerTest" time="0.305"/>
+  <testcase name="imageViewerHasNullImageTest()" classname="ippo.assignment2.controllers.ImageViewerControllerTest" time="0.277"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

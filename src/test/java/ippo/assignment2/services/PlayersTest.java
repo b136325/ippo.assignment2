@@ -5,9 +5,7 @@ import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PlayersTest {

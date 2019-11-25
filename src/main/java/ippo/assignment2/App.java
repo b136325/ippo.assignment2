@@ -1,20 +1,18 @@
 package ippo.assignment2;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.ScrollPane;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import ippo.assignment2.controllers.MainController;
 import ippo.assignment2.factories.Services;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.services.IService;
 import ippo.assignment2.utils.Properties;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
+import javafx.stage.Stage;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @since 0.1.2

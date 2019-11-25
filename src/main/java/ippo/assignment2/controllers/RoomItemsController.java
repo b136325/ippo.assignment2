@@ -1,5 +1,8 @@
 package ippo.assignment2.controllers;
 
+import ippo.assignment2.collections.Items;
+import ippo.assignment2.models.Player;
+import ippo.assignment2.models.Room;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -10,8 +13,6 @@ import java.util.Observable;
 import java.util.Observer;
 import java.util.ResourceBundle;
 
-import ippo.assignment2.collections.Items;
-import ippo.assignment2.models.Player;
 /**
  * @since 0.2.1
  */
@@ -70,7 +71,15 @@ public class RoomItemsController extends BaseController implements Observer, Ini
      * @since 0.2.1
      */
     public void updateView() {
-        Items items = this.player.getRoom().getItems();
+        Items items = null;
+        Room room = null;
+
+        room = this.player.getRoom();
+
+        if (room != null) {
+            items = room.getItems();
+        }
+
         if (items != null) {
             this.counter.setText(items.count().toString());
         }
