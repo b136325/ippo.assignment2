@@ -6,6 +6,9 @@ import java.util.Observable;
 import ippo.assignment2.assertions.Assert;
 import ippo.assignment2.collections.Items;
 
+/**
+ * @since 0.1.2
+ */
 public class Player extends Observable {
     private Direction direction;
     private Items items;
@@ -16,6 +19,7 @@ public class Player extends Observable {
      * @param direction
      * @param items
      * @param room
+     * @since 0.1.2
      */
     public Player(Direction direction, Items items, Room room) {
         this.direction = direction;
@@ -27,6 +31,7 @@ public class Player extends Observable {
      *
      * @param direction
      * @return
+     * @since 0.1.2
      */
     public Image getCurrentImage(Direction direction) {
         Assert.room(this.room);
@@ -36,6 +41,7 @@ public class Player extends Observable {
     /**
      *
      * @return
+     * @since 0.1.2
      */
     public Direction getDirection() {
         return this.direction;
@@ -44,6 +50,7 @@ public class Player extends Observable {
     /**
      *
      * @return
+     * @since 0.1.2
      */
     public Items getItems() {
         return this.items;
@@ -52,13 +59,14 @@ public class Player extends Observable {
     /**
      *
      * @return
+     * @since 0.1.2
      */
     public Room getRoom() {
         return this.room;
     }
 
     /**
-     *
+     * @since 0.1.2
      */
     public void moveForward() {
         Assert.room(this.room);
@@ -80,6 +88,7 @@ public class Player extends Observable {
      *
      * @param item
      * @return
+     * @since 0.1.2
      */
     public Boolean pickUp(Item item) {
         Assert.items(this.items);
@@ -101,6 +110,7 @@ public class Player extends Observable {
      *
      * @param item
      * @return
+     * @since 0.1.2
      */
     public Boolean putDown(Item item) {
         Assert.items(this.items);
@@ -122,6 +132,7 @@ public class Player extends Observable {
      *
      * @param direction
      * @return
+     * @since 0.1.2
      */
     public Boolean turn(Direction direction) {
         Assert.room(this.room);

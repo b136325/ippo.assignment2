@@ -75,8 +75,6 @@ public class App extends Application {
             ScrollPane page = loader.load();
 
             Scene scene = new Scene(page);
-            //scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
-
             stage.setScene(scene);
 
             MainController mainController = loader.getController();

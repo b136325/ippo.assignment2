@@ -28,6 +28,19 @@ public class Walls {
 
     /**
      *
+     * @return
+     * @since 0.2.8
+     */
+    public Integer count() {
+        Integer count = this.walls.size();
+        if (count == null) {
+            count = 0;
+        }
+        return count;
+    }
+
+    /**
+     *
      * @param direction
      * @return
      * @since 0.1.2

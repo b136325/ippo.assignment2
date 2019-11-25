@@ -46,6 +46,21 @@ public class HeaderController extends BaseController implements Observer, Initia
         }
     }
 
+    /**
+     *
+     * @return
+     * @since 0.2.8
+     */
+    public TextField getTitle() {
+        return this.title;
+    }
+
+    /**
+     *
+     * @param o
+     * @param arg
+     * @since 0.2.0
+     */
     @Override
     public void update(Observable o, Object arg) {
         Player player = (Player)o;

@@ -4,6 +4,9 @@ import ippo.assignment2.collections.Items;
 import ippo.assignment2.collections.Walls;
 import javafx.scene.image.Image;
 
+/**
+ * @since 0.1.2
+ */
 public class Room {
 
     private Items items;
@@ -13,6 +16,7 @@ public class Room {
      *
      * @param items
      * @param walls
+     * @since 0.1.2
      */
     public Room(Items items, Walls walls) {
         this.items = items;
@@ -22,6 +26,7 @@ public class Room {
     /**
      *
      * @param item
+     * @since 0.1.2
      */
     public void add(Item item) {
         this.items.add(item);
@@ -31,14 +36,19 @@ public class Room {
      *
      * @param direction
      * @return
+     * @since 0.1.2
      */
     public Image getImage(Direction direction) {
+        if (this.walls == null) {
+            return null;
+        }
         return this.walls.getImage(direction);
     }
 
     /**
      *
      * @return
+     * @since 0.1.2
      */
     public Items getItems() {
         return this.items;
@@ -48,8 +58,12 @@ public class Room {
      *
      * @param direction
      * @return
+     * @since 0.1.2
      */
     public Wall getWall(Direction direction) {
+        if (this.walls == null) {
+            return null;
+        }
         return this.walls.getWall(direction);
     }
 
@@ -57,8 +71,12 @@ public class Room {
      *
      * @param direction
      * @return
+     * @since 0.1.2
      */
     public Boolean hasWall(Direction direction) {
+        if (this.walls == null) {
+            return false;
+        }
         return this.walls.hasWall(direction);
     }
 
@@ -66,6 +84,7 @@ public class Room {
      *
      * @param item
      * @return
+     * @since 0.1.2
      */
     public Boolean remove(Item item) {
         assert this.items != null : "Items is null";

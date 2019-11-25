@@ -28,8 +28,8 @@ public class Players implements IService {
 
         showImages = showImages == null ? true : showImages;
 
-        Wall innerWallLeft = new Wall(null, null);
-        Wall innerWallRight = new Wall(null, null);
+        Wall innerWallLeft = new Wall(null, null, "LEFT WALL");
+        Wall innerWallRight = new Wall(null, null, "RIGHT WALL");
 
         Walls innerRoomWalls = new Walls();
         innerRoomWalls.add(Direction.LEFT, innerWallLeft);
@@ -54,8 +54,8 @@ public class Players implements IService {
             );
             imageRight = new Image("https://sprudge.com/wp-content/uploads/2019/04/Edinburgh.jpg");
         }
-        Wall wallLeft = new Wall(imageLeft, innerRoom);
-        Wall wallRight = new Wall(imageRight, null);
+        Wall wallLeft = new Wall(imageLeft, innerRoom, "INNER LEFT WALL");
+        Wall wallRight = new Wall(imageRight, null, "INNER RIGHT WALL");
 
         Walls walls = new Walls();
         walls.add(Direction.LEFT, wallLeft);

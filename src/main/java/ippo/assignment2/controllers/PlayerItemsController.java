@@ -54,10 +54,10 @@ public class PlayerItemsController extends BaseController implements Observer, I
      */
     public ArrayList<ImageView>  getImageViewers() {
         ArrayList<ImageView>  imageViewers = new ArrayList<ImageView> ();
-        imageViewers.add(1, this.imageViewer1);
-        imageViewers.add( 2, this.imageViewer2);
-        imageViewers.add(3, this.imageViewer3);
-        imageViewers.add(4, this.imageViewer4);
+        imageViewers.add(this.imageViewer1);
+        imageViewers.add( this.imageViewer2);
+        imageViewers.add(this.imageViewer3);
+        imageViewers.add(this.imageViewer4);
 
         return imageViewers;
     }
@@ -102,7 +102,7 @@ public class PlayerItemsController extends BaseController implements Observer, I
 
         ArrayList<ImageView> imageViewers = this.getImageViewers();
 
-        for (int i = 1; i <= items.count(); i++) {
+        for (Integer i = 1; i <= items.count(); i++) {
             Item item = items.get(i);
             ImageView imageViewer = imageViewers.get(i);
             this.updateViewItem(item, imageViewer);

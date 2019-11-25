@@ -9,6 +9,7 @@
 - Overview
 - Entry point
 - Models
+    Collections
 - Views
 - Styling
 - Controllers
@@ -28,6 +29,8 @@ It also loads the main view, `MainViewer.fxml`, and its associated controller, u
 ---
 
 ### Models
+
+#### Collections
 
 ---
 

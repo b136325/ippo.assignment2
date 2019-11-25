@@ -2,13 +2,15 @@ package ippo.assignment2.collections;
 
 import ippo.assignment2.models.Item;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * @since 0.1.2
  */
 public class Items {
-    private HashMap<Integer, Item> items = new HashMap<Integer, Item>();
+    private HashSet<Item> items = new HashSet<>();
 
     /**
      *
@@ -16,8 +18,7 @@ public class Items {
      * @since 0.1.2
      */
     public void add(Item item) {
-        Integer index = this.count() + 1;
-        this.items.put(index, item);
+        this.items.add(item);
     }
 
     /**
@@ -25,7 +26,13 @@ public class Items {
      * @since 0.2.1
      */
     public Integer count() {
-        return this.items.size();
+        Integer count = this.items.size();
+
+        if (count == null) {
+            count = 0;
+        }
+
+        return count;
     }
 
     /**
@@ -35,11 +42,12 @@ public class Items {
      * @since 0.2.7
      */
     public Item get(Integer index) {
-        Item item = null;
-        if (this.items.containsKey(index)) {
-            item = this.items.get(index);
+        try {
+            List<Item> itemsList = new ArrayList<>(this.items);
+            return itemsList.get(index);
+        } catch(Exception e) {
+            return null;
         }
-        return item;
     }
 
     /**
@@ -49,7 +57,7 @@ public class Items {
      * @since 0.1.2
      */
     public Boolean has(Item item) {
-        return this.items.containsValue(item);
+        return this.items.contains(item);
     }
 
     /**
@@ -61,10 +69,11 @@ public class Items {
     public Boolean remove(Item item) {
         Boolean response = false;
 
-        if (this.items.containsValue(item)) {
+        if (this.items.contains(item)) {
             this.items.remove(item);
             response = true;
         }
+
         return response;
     }
 }

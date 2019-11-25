@@ -31,7 +31,7 @@ public class PlayerTest {
 
     @Test
     public void getCurrentImageValid() {
-        Wall wall = new Wall(null, null);
+        Wall wall = new Wall(null, null, null);
         Walls walls = new Walls();
         walls.add(Direction.RIGHT, wall);
         Room room = new Room(null, walls);
@@ -91,7 +91,7 @@ public class PlayerTest {
     @Test
     public void moveForwardInValid() {
         Room innerRoom = new Room(null, null);
-        Wall wall = new Wall(null, innerRoom);
+        Wall wall = new Wall(null, innerRoom, null);
         Walls walls = new Walls();
         walls.add(Direction.LEFT, wall);
         Item item = new Item(null, null);
@@ -120,7 +120,7 @@ public class PlayerTest {
     @Test
     public void moveForwardValid() {
         Room innerRoom = new Room(null, null);
-        Wall wall = new Wall(null, innerRoom);
+        Wall wall = new Wall(null, innerRoom, null);
         Walls walls = new Walls();
         walls.add(Direction.BACK, wall);
         Item item = new Item(null, null);
@@ -134,7 +134,7 @@ public class PlayerTest {
 
     @Test
     public void moveForwardValidWallWithoutRoom() {
-        Wall wall = new Wall(null, null);
+        Wall wall = new Wall(null, null, null);
         Walls walls = new Walls();
         walls.add(Direction.LEFT, wall);
 
@@ -258,7 +258,7 @@ public class PlayerTest {
 
     @Test
     public void turnInvalid() {
-        Wall wall = new Wall(null, null);
+        Wall wall = new Wall(null, null, null);
         Walls walls = new Walls();
         walls.add(Direction.BACK, wall);
         Room room = new Room(null, walls);
@@ -270,7 +270,7 @@ public class PlayerTest {
 
     @Test
     public void turnValid() {
-        Wall wall = new Wall(null, null);
+        Wall wall = new Wall(null, null, null);
         Walls walls = new Walls();
         walls.add(Direction.BACK, wall);
         Room room = new Room(null, walls);

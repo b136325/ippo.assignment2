@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### Tag 0.2.8
+
+- Complete all collection and model unit tests.
+
+---
+
 ### Tag 0.2.7
 
 - Part complete mechanism to display multiple player item images.
