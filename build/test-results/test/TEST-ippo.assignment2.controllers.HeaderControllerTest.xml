@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.controllers.HeaderControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:02:07" hostname="joes-mbp.mynet" time="0.308">
+<testsuite name="ippo.assignment2.controllers.HeaderControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T05:09:25" hostname="joes-mbp.mynet" time="0.29">
   <properties/>
-  <testcase name="titleTest()" classname="ippo.assignment2.controllers.HeaderControllerTest" time="0.308"/>
+  <testcase name="titleTest()" classname="ippo.assignment2.controllers.HeaderControllerTest" time="0.29"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -76,13 +76,7 @@ public class PlayerItemsController extends BaseController implements Observer, I
      */
     @FXML
     public void putDown(ActionEvent actionEvent) {
-        Node node = (Node) actionEvent.getSource();
-        String nodeId = node.getId();
-
-        String itemIndexString = nodeId.replaceAll("[^\\d.]", "");
-        Integer itemIndex = Integer.parseInt(itemIndexString);
-        itemIndex = itemIndex -1;
-
+        Integer itemIndex = this.deriveItemIndexFromActionEvent(actionEvent);
         Item item = this.player.getItems().get(itemIndex);
         this.player.putDown(item);
     }
@@ -142,5 +136,22 @@ public class PlayerItemsController extends BaseController implements Observer, I
         if (image != null) {
             imageViewer.setImage(image);
         }
+    }
+
+    /**
+     *
+     * @param actionEvent
+     * @return
+     * @since 0.2.11
+     */
+    private Integer deriveItemIndexFromActionEvent(ActionEvent actionEvent) {
+        Node node = (Node) actionEvent.getSource();
+        String nodeId = node.getId();
+
+        String itemIndexString = nodeId.replaceAll("[^\\d.]", "");
+        Integer itemIndex = Integer.parseInt(itemIndexString);
+        itemIndex = itemIndex -1;
+
+        return itemIndex;
     }
 }

@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### Tag 0.2.11
+
+- Refactor PlayerItemsController in order to create a new `deriveItemIndexFromActionEvent` method.
+
+---
+
 ### Tag 0.2.10
 
 - Add four player item images with associated buttons.
