@@ -1,22 +1,15 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.models.Player;
 import ippo.assignment2.utils.Properties;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import java.io.IOException;
-import java.net.URL;
-import java.util.Observable;
-import java.util.Observer;
-import java.util.ResourceBundle;
 
 /**
+ * An Observer controller for HeaderViewer.fxml.
  * @since 0.1.2
  */
-public class HeaderController extends BaseController implements Observer, Initializable {
-
-    private Properties properties;
+public class HeaderController extends AbstractObserverController implements IController {
 
     @FXML
     private TextField title;
@@ -26,35 +19,39 @@ public class HeaderController extends BaseController implements Observer, Initia
 
     /**
      *
-     * @param location
-     * @param resources
-     * @since 0.2.0
+     * @since 0.3.1
      */
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        String propertyName = "header.title";
+    public void updateView() {
         try {
-            this.properties = new Properties();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            this.updateViewTitle();
+            this.updateViewUsername();
+        } catch(Exception e) {
 
-        if (this.properties.has(propertyName)) {
-            String propertyValue = this.properties.getValue(propertyName);
+        }
+    }
+
+    /**
+     *
+     * @throws IOException
+     * @since 0.3.1
+     */
+    private void updateViewTitle() throws IOException {
+        Properties properties = new Properties();
+        String propertyName = "header.title";
+
+        if (properties.has(propertyName)) {
+            String propertyValue = properties.getValue(propertyName);
             this.title.setText(propertyValue);
         }
     }
 
     /**
      *
-     * @param o
-     * @param arg
-     * @since 0.2.0
+     * @throws IOException
+     * @since 0.3.1
      */
-    @Override
-    public void update(Observable o, Object arg) {
-        Player player = (Player)o;
-        this.setPlayer(player);
+    private void updateViewUsername() {
         String username = player.getUsername();
 
         if (username != null) {

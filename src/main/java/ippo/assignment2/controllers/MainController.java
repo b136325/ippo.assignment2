@@ -1,16 +1,13 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.assertions.Assert;
-import ippo.assignment2.models.Player;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 /**
+ *  An Observer controller for MainViewer.fxml.
  * @since 0.1.2
  */
-public class MainController extends BaseController implements Initializable {
+public class MainController extends AbstractObserverController implements IController {
 
     @FXML
     private HeaderController headerController;
@@ -27,17 +24,10 @@ public class MainController extends BaseController implements Initializable {
     @FXML
     private RoomItemsController roomItemsController;
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {}
-
     /**
-     *
-     * @param player
-     * @since 0.1.2
+     * @since 0.3.1
      */
-    @Override
-    public void setPlayer(Player player) {
-        super.setPlayer(player);
+    public void updateView() {
         this.assertChildControllers();
         this.passPlayerToChildControllers();
         this.enableChildControllersToObservePlayerChanges();

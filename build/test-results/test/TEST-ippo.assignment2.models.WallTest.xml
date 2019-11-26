@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.models.WallTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-11-25T20:37:00" hostname="joes-mbp.mynet" time="0.02">
+<testsuite name="ippo.assignment2.models.WallTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-11-26T00:40:26" hostname="joes-mbp.mynet" time="0.008">
   <properties/>
   <testcase name="hasRoomInvalid()" classname="ippo.assignment2.models.WallTest" time="0.001"/>
   <testcase name="getRoomTestValidWithName()" classname="ippo.assignment2.models.WallTest" time="0.001"/>
-  <testcase name="constructorNullTest()" classname="ippo.assignment2.models.WallTest" time="0.002"/>
-  <testcase name="getRoomTestValid()" classname="ippo.assignment2.models.WallTest" time="0.001"/>
-  <testcase name="getNameTestValid()" classname="ippo.assignment2.models.WallTest" time="0.001"/>
+  <testcase name="constructorNullTest()" classname="ippo.assignment2.models.WallTest" time="0.0"/>
+  <testcase name="getRoomTestValid()" classname="ippo.assignment2.models.WallTest" time="0.0"/>
+  <testcase name="getNameTestValid()" classname="ippo.assignment2.models.WallTest" time="0.0"/>
   <testcase name="getNameTestValidWithRoom()" classname="ippo.assignment2.models.WallTest" time="0.001"/>
   <testcase name="getRoomTestInvalid()" classname="ippo.assignment2.models.WallTest" time="0.0"/>
   <testcase name="getNameTestInvalid()" classname="ippo.assignment2.models.WallTest" time="0.0"/>

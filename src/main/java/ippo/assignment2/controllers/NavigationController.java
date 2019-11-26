@@ -1,20 +1,18 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.models.Direction;
-import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 import ippo.assignment2.models.Wall;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import java.net.URL;
 import java.util.*;
 
 /**
+ * An Observer controller for NavigationViewer.fxml.
  * @since 0.1.2
  */
-public class NavigationController extends BaseController implements Observer , Initializable {
+public class NavigationController extends AbstractObserverController implements IController {
 
     @FXML
     private Button backButton;
@@ -32,29 +30,6 @@ public class NavigationController extends BaseController implements Observer , I
     private Button rightButton;
 
     /**
-     *
-     * @param location
-     * @param resources
-     * @since 0.2.0
-     */
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {}
-
-    /**
-     * @since 0.2.0
-     */
-    public HashMap<Direction, Button>  getButtons() {
-        HashMap<Direction, Button> buttonsByDirection = new HashMap<Direction, Button>();
-
-        buttonsByDirection.put(Direction.BACK, this.backButton);
-        buttonsByDirection.put(Direction.FORWARD, this.forwardButton);
-        buttonsByDirection.put(Direction.LEFT, this.leftButton);
-        buttonsByDirection.put(Direction.RIGHT, this.rightButton);
-
-        return buttonsByDirection;
-    }
-
-    /**
      * @since 0.1.3
      */
     @FXML
@@ -69,52 +44,6 @@ public class NavigationController extends BaseController implements Observer , I
     public void goForward() {
         this.player.moveForward();
         this.logger.setText(this.player.getRoom().toString());
-    }
-
-    /**
-     * @since 0.2.0
-     */
-    public void setButtonsVisibility() {
-        if (this.player != null) {
-
-            HashMap<Direction, Button> buttons = this.getButtons();
-            Iterator buttonsIterator = buttons.entrySet().iterator();
-
-            while (buttonsIterator.hasNext()) {
-                Map.Entry mapElement = (Map.Entry)buttonsIterator.next();
-                this.setButtonVisibility(mapElement);
-            }
-        }
-    }
-
-    /**
-     * @since 0.2.0
-     */
-    public void setButtonVisibility(Map.Entry mapElement) {
-        Room room = null;
-
-        if (this.player != null) {
-            room = this.player.getRoom();
-        }
-
-        if (room != null) {
-            Button button = (Button) mapElement.getValue();
-            Direction direction = (Direction) mapElement.getKey();
-
-            Wall wall = room.getWall(direction);
-            Boolean isDisabled = (wall == null);
-            button.setDisable(isDisabled);
-        }
-    }
-    /**
-     *
-     * @param player
-     * @since 0.2.0
-     */
-    @Override
-    public void setPlayer(Player player) {
-        super.setPlayer(player);
-        this.setButtonsVisibility();
     }
 
     /**
@@ -136,14 +65,53 @@ public class NavigationController extends BaseController implements Observer , I
     }
 
     /**
-     *
-     * @param o
-     * @param arg
      * @since 0.2.0
      */
     @Override
-    public void update(Observable o, Object arg) {
-        Player player = (Player)o;
-        this.setPlayer(player);
+    public void updateView() {
+        if (this.player != null) {
+
+            HashMap<Direction, Button> buttons = this.getButtons();
+            Iterator buttonsIterator = buttons.entrySet().iterator();
+
+            while (buttonsIterator.hasNext()) {
+                Map.Entry mapElement = (Map.Entry)buttonsIterator.next();
+                this.updateViewButtonVisibility(mapElement);
+            }
+        }
+    }
+
+    /**
+     * @since 0.2.0
+     */
+    public HashMap<Direction, Button>  getButtons() {
+        HashMap<Direction, Button> buttonsByDirection = new HashMap<Direction, Button>();
+
+        buttonsByDirection.put(Direction.BACK, this.backButton);
+        buttonsByDirection.put(Direction.FORWARD, this.forwardButton);
+        buttonsByDirection.put(Direction.LEFT, this.leftButton);
+        buttonsByDirection.put(Direction.RIGHT, this.rightButton);
+
+        return buttonsByDirection;
+    }
+
+    /**
+     * @since 0.3.1
+     */
+    private void updateViewButtonVisibility(Map.Entry mapElement) {
+        Room room = null;
+
+        if (this.player != null) {
+            room = this.player.getRoom();
+        }
+
+        if (room != null) {
+            Button button = (Button) mapElement.getValue();
+            Direction direction = (Direction) mapElement.getKey();
+
+            Wall wall = room.getWall(direction);
+            Boolean isDisabled = (wall == null);
+            button.setDisable(isDisabled);
+        }
     }
 }

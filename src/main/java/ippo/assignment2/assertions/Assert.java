@@ -6,6 +6,7 @@ import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 
 /**
+ * A class of static assertion methods.
  * @since 0.2.1
  */
 public class Assert {

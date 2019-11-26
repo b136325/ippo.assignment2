@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.utils.PropertiesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-25T20:37:00" hostname="joes-mbp.mynet" time="0.015">
+<testsuite name="ippo.assignment2.utils.PropertiesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T00:40:26" hostname="joes-mbp.mynet" time="0.018">
   <properties/>
-  <testcase name="hasValueTrue()" classname="ippo.assignment2.utils.PropertiesTest" time="0.012"/>
+  <testcase name="hasValueTrue()" classname="ippo.assignment2.utils.PropertiesTest" time="0.015"/>
   <testcase name="hasValueFalse()" classname="ippo.assignment2.utils.PropertiesTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

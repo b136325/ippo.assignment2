@@ -6,6 +6,7 @@ import java.util.HashMap;
 import javafx.scene.image.Image;
 
 /**
+ * A collection of Wall models.
  * @since 0.1.2
  */
 public class Walls {

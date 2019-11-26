@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
+ * A collection of Item models.
  * @since 0.1.2
  */
 public class Items {

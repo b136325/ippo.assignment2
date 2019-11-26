@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.models.ItemTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-25T20:37:00" hostname="joes-mbp.mynet" time="0.005">
+<testsuite name="ippo.assignment2.models.ItemTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T00:40:26" hostname="joes-mbp.mynet" time="0.001">
   <properties/>
-  <testcase name="getNameTest()" classname="ippo.assignment2.models.ItemTest" time="0.002"/>
-  <testcase name="constructorNullTest()" classname="ippo.assignment2.models.ItemTest" time="0.001"/>
+  <testcase name="getNameTest()" classname="ippo.assignment2.models.ItemTest" time="0.0"/>
+  <testcase name="constructorNullTest()" classname="ippo.assignment2.models.ItemTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

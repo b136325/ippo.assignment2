@@ -2,6 +2,12 @@
 
 ---
 
+### Tag 0.3.1
+
+- Reactor BaseController to AbstractObserverController and modify the child controllers.
+
+---
+
 ### Tag 0.3.0
 
 - For each of the TestFX integration tests the addition of a controller and populated `player` data within the controller.
