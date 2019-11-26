@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.collections.WallsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T00:40:33" hostname="joes-mbp.mynet" time="0.003">
+<testsuite name="ippo.assignment2.collections.WallsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T03:01:44" hostname="joes-mbp.mynet" time="0.005">
   <properties/>
   <testcase name="addTestWithDifferentDirectionKeys()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
-  <testcase name="getWallTest()" classname="ippo.assignment2.collections.WallsTest" time="0.001"/>
+  <testcase name="getWallTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
   <testcase name="hasWallTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
   <testcase name="getImageTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
-  <testcase name="addTestWithSameDirectionKeys()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
-  <testcase name="countTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
+  <testcase name="addTestWithSameDirectionKeys()" classname="ippo.assignment2.collections.WallsTest" time="0.001"/>
+  <testcase name="countTest()" classname="ippo.assignment2.collections.WallsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -4,6 +4,8 @@ import ippo.assignment2.models.Player;
 import java.util.Observable;
 
 /**
+ * An interface for concrete controllers.
+ *
  * @since 0.3.0
  */
 public interface IController {

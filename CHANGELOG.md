@@ -1,4 +1,9 @@
 ## CHANGELOG
+---
+
+### Tag 0.3.2
+
+- Update the JavaDoc annotations for the controllers.
 
 ---
 

@@ -1,6 +1,6 @@
 package ippo.assignment2.models;
 
-import ippo.assignment2.assertions.Assert;
+import ippo.assignment2.assertions.AssertNotNull;
 import ippo.assignment2.collections.Items;
 import javafx.scene.image.Image;
 import java.util.Observable;
@@ -35,7 +35,7 @@ public class Player extends Observable {
      * @since 0.1.2
      */
     public Image getCurrentImage(Direction direction) {
-        Assert.room(this.room);
+        AssertNotNull.room(this.room);
         return this.room.getImage(direction);
     }
 
@@ -79,7 +79,7 @@ public class Player extends Observable {
      * @since 0.1.2
      */
     public void moveForward() {
-        Assert.room(this.room);
+        AssertNotNull.room(this.room);
         Wall wall = null;
 
         if (this.room.hasWall(this.direction)) {
@@ -101,8 +101,8 @@ public class Player extends Observable {
      * @since 0.1.2
      */
     public Boolean pickUp(Item item) {
-        Assert.items(this.items);
-        Assert.room(this.room);
+        AssertNotNull.items(this.items);
+        AssertNotNull.room(this.room);
         Boolean response = false;
 
         if (this.room.remove(item)) {
@@ -123,8 +123,8 @@ public class Player extends Observable {
      * @since 0.1.2
      */
     public Boolean putDown(Item item) {
-        Assert.items(this.items);
-        Assert.room(this.room);
+        AssertNotNull.items(this.items);
+        AssertNotNull.room(this.room);
         Boolean response = false;
 
         if (this.items.remove(item)) {
@@ -145,7 +145,7 @@ public class Player extends Observable {
      * @since 0.1.2
      */
     public Boolean turn(Direction direction) {
-        Assert.room(this.room);
+        AssertNotNull.room(this.room);
         Boolean response = false;
 
         if (this.room.hasWall(direction)) {

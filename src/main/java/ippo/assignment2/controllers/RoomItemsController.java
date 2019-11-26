@@ -1,38 +1,59 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.collections.Items;
-import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import java.util.Observable;
 
 /**
  * An Observer controller for RoomItemsViewer.fxml.
+ *
  * @since 0.2.1
  */
 public class RoomItemsController extends AbstractObserverController implements IController {
 
+    /**
+     * A reference to the counter TextField (defined within RoomItemsViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private TextField counter;
 
+    /**
+     * A reference to the imageViewer (defined within RoomItemsViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private ImageView imageViewer;
 
+    /**
+     * A reference to the pickUpButton (defined within RoomItemsViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private Button pickUpButton;
 
     /**
+     * 'Pick up' one of the room's items.
+     *
+     * @param actionEvent The event associated with the button click.
+     *
      * @since 0.2.6
      */
     @FXML
-    public void pickUp() {
-        //this.player.pickUp();
+    public void pickUp(ActionEvent actionEvent) {
+        //@TODO this.player.pickUp();
     }
 
     /**
+     * Update the view following a change to the model.
+     *
      * @since 0.2.1
      */
     @Override

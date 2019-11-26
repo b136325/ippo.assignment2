@@ -6,14 +6,18 @@ import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 
 /**
- * A class of static assertion methods.
+ * A class of static assertion 'not null' methods.
+ *
  * @since 0.2.1
  */
-public class Assert {
+public class AssertNotNull {
 
     /**
+     * Assert that the received 'headerController' param is not null.
      *
-     * @param headerController
+     * @param headerController The controller to be checked.
+     * @throws AssertionError if the controller is null.
+     *
      * @since 0.2.1
      */
     public static void headerController(HeaderController headerController) {
@@ -21,8 +25,11 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'imageController' param is not null.
      *
-     * @param imageController
+     * @param imageController The controller to be checked.
+     * @throws AssertionError if the controller is null.
+     *
      * @since 0.2.1
      */
     public static void imageController(ImageController imageController) {
@@ -30,8 +37,11 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'items' param is not null.
      *
-     * @param items
+     * @param items The items object to be checked.
+     * @throws AssertionError if the object is null.
+     *
      * @since 0.2.1
      */
     public static void items(Items items) {
@@ -39,8 +49,11 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'navigationController' param is not null.
      *
-     * @param navigationController
+     * @param navigationController The controller to be checked.
+     * @throws AssertionError if the controller is null.
+     *
      * @since 0.2.1
      */
     public static void navigationController(NavigationController navigationController) {
@@ -48,8 +61,11 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'player' param is not null.
      *
-     * @param player
+     * @param player The player to be checked.
+     * @throws AssertionError if the player is null.
+     *
      * @since 0.2.1
      */
     public static void player(Player player) {
@@ -57,8 +73,11 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'playerItemsController' param is not null.
      *
-     * @param playerItemsController
+     * @param playerItemsController The controller to be checked.
+     * @throws AssertionError if the controller is null.
+     *
      * @since 0.2.1
      */
     public static void playerItemsController(PlayerItemsController playerItemsController) {
@@ -66,8 +85,11 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'room' param is not null.
      *
-     * @param room
+     * @param room The Room object to be checked.
+     * @throws AssertionError if the room is null.
+     *
      * @since 0.2.1
      */
     public static void room(Room room) {
@@ -75,9 +97,12 @@ public class Assert {
     }
 
     /**
+     * Assert that the received 'roomItemsController' param is not null.
      *
-     * @param roomItemsController
-     * @since 0.2.2
+     * @param roomItemsController The controller to be checked.
+     * @throws AssertionError if the controller is null.
+     *
+     * @since 0.2.1
      */
     public static void roomItemsController(RoomItemsController roomItemsController) {
         assert roomItemsController != null : "RoomItemsController is null";

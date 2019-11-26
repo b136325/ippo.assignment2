@@ -7,15 +7,23 @@ import javafx.scene.image.ImageView;
 
 /**
  * An Observer controller for ImageViewer.fxml.
+ *
  * @since 0.1.2
  */
 public class ImageController extends AbstractObserverController implements IController {
 
+    /**
+     * A reference to the imageViewer (defined within ImageViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private ImageView imageViewer;
 
     /**
-     * @since 0.2.0
+     * Update the view following a change to the model.
+     *
+     * @since 0.2.1
      */
     public void updateView() {
         Direction direction = this.player.getDirection();

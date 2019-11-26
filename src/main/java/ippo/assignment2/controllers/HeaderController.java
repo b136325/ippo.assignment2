@@ -11,15 +11,26 @@ import java.io.IOException;
  */
 public class HeaderController extends AbstractObserverController implements IController {
 
+    /**
+     * A reference to the title TextField (defined within HeaderViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private TextField title;
 
+    /**
+     * A reference to the username TextField (defined within HeaderViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private TextField username;
 
     /**
+     * Update the view following a change to the model.
      *
-     * @since 0.3.1
+     * @since 0.2.1
      */
     @Override
     public void updateView() {
@@ -32,8 +43,9 @@ public class HeaderController extends AbstractObserverController implements ICon
     }
 
     /**
+     * Update the title within the HeaderViewer.
      *
-     * @throws IOException
+     * @throws IOException When instantiating Properties fails.
      * @since 0.3.1
      */
     private void updateViewTitle() throws IOException {
@@ -47,8 +59,8 @@ public class HeaderController extends AbstractObserverController implements ICon
     }
 
     /**
+     * Update the username within the HeaderViewer.
      *
-     * @throws IOException
      * @since 0.3.1
      */
     private void updateViewUsername() {

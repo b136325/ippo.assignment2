@@ -1,31 +1,59 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.assertions.Assert;
+import ippo.assignment2.assertions.AssertNotNull;
 import javafx.fxml.FXML;
 
 /**
  *  An Observer controller for MainViewer.fxml.
+ *
  * @since 0.1.2
  */
 public class MainController extends AbstractObserverController implements IController {
 
+    /**
+     * A reference to the child headerController (defined within HeaderViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private HeaderController headerController;
 
+    /**
+     * A reference to the child imageController (defined within ImageViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private ImageController imageController;
 
+    /**
+     * A reference to the child navigationController (defined within NavigationViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private NavigationController navigationController;
 
+    /**
+     * A reference to the child playerItemsController (defined within PlayerItemsViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private PlayerItemsController playerItemsController;
 
+    /**
+     * A reference to the child roomItemsController (defined within RoomItemsViewer.fxml).
+     *
+     * @since 0.2.1
+     */
     @FXML
     private RoomItemsController roomItemsController;
 
     /**
-     * @since 0.3.1
+     * Update the view following a change to the model.
+     *
+     * @since 0.2.1
      */
     public void updateView() {
         this.assertChildControllers();
@@ -34,17 +62,21 @@ public class MainController extends AbstractObserverController implements IContr
     }
 
     /**
+     * Ensure that all of the child controllers are valid.
+     *
      * @since 0.2.1
      */
     private void assertChildControllers() {
-        Assert.headerController(this.headerController);
-        Assert.imageController(this.imageController);
-        Assert.navigationController(this.navigationController);
-        Assert.playerItemsController(this.playerItemsController);
-        Assert.roomItemsController(this.roomItemsController);
+        AssertNotNull.headerController(this.headerController);
+        AssertNotNull.imageController(this.imageController);
+        AssertNotNull.navigationController(this.navigationController);
+        AssertNotNull.playerItemsController(this.playerItemsController);
+        AssertNotNull.roomItemsController(this.roomItemsController);
     }
 
     /**
+     * Register the child controllers to observe player model changes.
+     *
      * @since 0.2.1
      */
     private void enableChildControllersToObservePlayerChanges() {
@@ -56,6 +88,8 @@ public class MainController extends AbstractObserverController implements IContr
     }
 
     /**
+     * Pass 'this.player' to the child controllers.
+     *
      * @since 0.2.1
      */
     private void passPlayerToChildControllers() {
