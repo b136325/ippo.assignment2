@@ -1,15 +1,11 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.collections.ItemsCollection;
 import ippo.assignment2.helpers.ControllerTestHelper;
-import ippo.assignment2.models.Direction;
-import ippo.assignment2.models.Item;
+import ippo.assignment2.mocks.PlayerItemsControllerMock;
 import ippo.assignment2.models.Player;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import java.io.IOException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,11 +13,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 /**
+ * Test the view of the PlayerItemsController.
+ *
  * @since 0.3.0
  */
 public class PlayerItemsControllerTest extends ControllerTestHelper {
 
-    private TextField counter;
+    private Label counter;
     private ImageView imageViewer1;
     private ImageView imageViewer2;
     private ImageView imageViewer3;
@@ -32,24 +30,22 @@ public class PlayerItemsControllerTest extends ControllerTestHelper {
     private Button putDownButton4;
 
     /**
+     * Retrieve mock data from PlayerItemsControllerMock.
      *
-     * @return
+     * @return The mock data to be passed to the PlayerItemsController.
+     *
      * @since 0.3.0
      */
     @Override
     public Player buildControllerTestData() {
-        Image imageOne = new Image("/images/edinburgh.jpg");
-        Item itemOne = new Item(imageOne, "Edinburgh");
-        ItemsCollection items = new ItemsCollection();
-        items.add(itemOne);
-        Player player = new Player(Direction.BACK, items, null, "Username1");
-
-        return player;
+        return PlayerItemsControllerMock.createSimpleDataMock();
     }
 
     /**
+     * Return the path to the .fxml file associated with the PlayerItemsController.
      *
-     * @return
+     * @return The path to the associated .fxml file.
+     *
      * @since 0.3.0
      */
     @Override
@@ -58,13 +54,13 @@ public class PlayerItemsControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Populate local properties (fields) with references to the image and button elements.
      *
-     * @throws IOException
      * @since 0.3.0
      */
     @BeforeEach
     public void setUp() {
-        this.counter = (TextField) this.findGuiElement("#counter");
+        this.counter = (Label) this.findGuiElement("#counter");
         this.imageViewer1 = (ImageView) this.findGuiElement("#imageViewer1");
         this.imageViewer2 = (ImageView) this.findGuiElement("#imageViewer2");
         this.imageViewer3 = (ImageView) this.findGuiElement("#imageViewer3");
@@ -76,6 +72,8 @@ public class PlayerItemsControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Test that the counter contains the expected number of items.
+     *
      * @since 0.3.0
      */
     @Test
@@ -84,6 +82,8 @@ public class PlayerItemsControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Test that only one Item image has been shown.
+     *
      * @since 0.3.0
      */
     @Test
@@ -92,16 +92,5 @@ public class PlayerItemsControllerTest extends ControllerTestHelper {
         assertNull(this.imageViewer2.getImage());
         assertNull(this.imageViewer3.getImage());
         assertNull(this.imageViewer4.getImage());
-    }
-
-    /**
-     * @since 0.3.0
-     */
-    @Test
-    public void putDownButtonTest() {
-        assertEquals(this.putDownButton1.getText(), "Put Down");
-        assertEquals(this.putDownButton2.getText(), "Put Down");
-        assertEquals(this.putDownButton3.getText(), "Put Down");
-        assertEquals(this.putDownButton4.getText(), "Put Down");
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.controllers.NavigationControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T10:33:42" hostname="joes-mbp.mynet" time="3.747">
+<testsuite name="ippo.assignment2.controllers.NavigationControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T21:20:19" hostname="joes-mbp.mynet" time="2.974">
   <properties/>
-  <testcase name="buttonTitleTest()" classname="ippo.assignment2.controllers.NavigationControllerTest" time="3.429"/>
-  <testcase name="buttonDisabilityTest()" classname="ippo.assignment2.controllers.NavigationControllerTest" time="0.318"/>
+  <testcase name="buttonTitleTest()" classname="ippo.assignment2.controllers.NavigationControllerTest" time="2.66"/>
+  <testcase name="buttonDisabilityTest()" classname="ippo.assignment2.controllers.NavigationControllerTest" time="0.314"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

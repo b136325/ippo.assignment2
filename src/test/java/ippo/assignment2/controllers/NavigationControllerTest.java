@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 /**
+ * Test the view of the NavigationController.
+ *
  * @since 0.3.0
  */
 public class NavigationControllerTest extends ControllerTestHelper {
@@ -21,8 +23,10 @@ public class NavigationControllerTest extends ControllerTestHelper {
     public TextField logger;
 
     /**
+     * Construct mock data.
      *
-     * @return
+     * @return The mock data to be passed to the NavigationController.
+     *
      * @since 0.3.0
      */
     @Override
@@ -32,8 +36,10 @@ public class NavigationControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Return the path to the .fxml file associated with the NavigationController.
      *
-     * @return
+     * @return The path to the associated .fxml file.
+     *
      * @since 0.3.0
      */
     @Override

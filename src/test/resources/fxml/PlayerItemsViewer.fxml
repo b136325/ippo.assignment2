@@ -43,6 +43,6 @@
                     text="Put Down" />
         </HBox>
 
-        <TextField fx:id="counter" text="" />
+        <Label fx:id="counter" text="" />
     </VBox>
 </ScrollPane>

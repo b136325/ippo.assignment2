@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 /**
+ * Test the view of the RoomItemsController.
+ *
  * @since 0.3.0
  */
 public class RoomItemsControllerTest extends ControllerTestHelper {
@@ -19,8 +21,10 @@ public class RoomItemsControllerTest extends ControllerTestHelper {
     private Button pickUpButton;
 
     /**
+     * Construct mock data.
      *
-     * @return
+     * @return The mock data to be passed to the RoomItemsController.
+     *
      * @since 0.3.0
      */
     @Override
@@ -30,8 +34,10 @@ public class RoomItemsControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Return the path to the .fxml file associated with the RoomItemsController.
      *
-     * @return
+     * @return The path to the associated .fxml file.
+     *
      * @since 0.3.0
      */
     @Override

@@ -3,7 +3,13 @@
 
 ---
 
-### Tag 0.3.2
+### Tag 0.3.4
+
+- Updated TestFX integration tests.
+
+---
+
+### Tag 0.3.2 and 0.3.3
 
 - Update the JavaDoc annotations for the controllers.
 - Update the JavaDoc annotations for the collections, factories and services.

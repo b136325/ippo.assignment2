@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T21:20:23" hostname="joes-mbp.mynet" time="2.944">
+  <properties/>
+  <testcase name="beforePutDownImageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.517"/>
+  <testcase name="counterTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.37"/>
+  <testcase name="afterPutDownButtonDisabilityTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.354"/>
+  <testcase name="beforePutDownButtonTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.389"/>
+  <testcase name="afterPutDownCounterTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.909"/>
+  <testcase name="afterPutDownImageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.4"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

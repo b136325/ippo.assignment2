@@ -9,14 +9,18 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
+ * Test the view of the HeaderController.
+ *
  * @since 0.3.0
  */
 public class HeaderControllerTest extends ControllerTestHelper {
     public TextField title;
 
     /**
+     * Construct mock data.
      *
-     * @return
+     * @return The mock data to be passed to the HeaderController.
+     *
      * @since 0.3.0
      */
     @Override
@@ -26,8 +30,10 @@ public class HeaderControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Return the path to the .fxml file associated with the HeaderController.
      *
-     * @return
+     * @return The path to the associated .fxml file.
+     *
      * @since 0.3.0
      */
     @Override
@@ -45,7 +51,6 @@ public class HeaderControllerTest extends ControllerTestHelper {
     public void titleTest() {
         String expectedTitleText = this.properties.getValue("header.title");
         String foundTitleText = this.title.getText();
-
         assertEquals(foundTitleText, expectedTitleText);
     }
 }

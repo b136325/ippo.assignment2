@@ -6,8 +6,7 @@ import ippo.assignment2.models.Item;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import java.util.*;
 
@@ -19,12 +18,12 @@ import java.util.*;
 public class PlayerItemsController extends AbstractObserverController implements IController {
 
     /**
-     * A reference to the counter TextField (defined within PlayerItemsViewer.fxml).
+     * A reference to the counter Label (defined within PlayerItemsViewer.fxml).
      *
      * @since 0.2.1
      */
     @FXML
-    private TextField counter;
+    private Label counter;
 
     /**
      * A reference to imageViewer1 (defined within PlayerItemsViewer.fxml).
@@ -118,42 +117,32 @@ public class PlayerItemsController extends AbstractObserverController implements
      */
     @Override
     public void updateView() {
-        ItemsCollection items = this.player.getItems();
+        ItemsCollection playerItems = this.player.getItems();
+        this.updateCounter(playerItems);
 
-        if (items == null) {
+        ArrayList<ImageView> imageViewers = this.getImageViewers();
+        this.updateImageViewers(playerItems, imageViewers);
 
-            // Update the visible counter when there are no items.
-            this.counter.setText("0");
-        } else {
-
-            // Update the visible counter with the number of player items.
-            this.counter.setText(items.count().toString());
-
-            // Retrieve a list of the child ImageViews
-            ArrayList<ImageView> imageViewers = this.getImageViewers();
-
-            for (Integer i = 0; i < items.count(); i++) {
-                Item item = items.get(i);
-                ImageView imageViewer = imageViewers.get(i);
-                this.updateViewItem(item, imageViewer);
-            }
-        }
+        ArrayList<Button>  putDownButtons = this.getPutDownButtons();
+        this.updatePutDownButtonsDisability(playerItems, putDownButtons);
     }
 
     /**
-     * Clear all images from the image viewers.
+     * Construct a list of the 'put down' buttons
+     * associated with this controller.
      *
-     * @param imageViewers A list of all child image viewers.
+     * @return A list of buttons.
      *
-     * @since 0.2.12
+     * @since 0.3.3
      */
-    private void clearImageViewers(ArrayList<ImageView> imageViewers) {
-        Iterator<ImageView> imageViewersIterator = imageViewers.iterator();
+    private ArrayList<Button>  getPutDownButtons() {
+        ArrayList<Button>  putDownButtons = new ArrayList<Button> ();
+        putDownButtons.add(this.putDownButton1);
+        putDownButtons.add( this.putDownButton2);
+        putDownButtons.add(this.putDownButton3);
+        putDownButtons.add(this.putDownButton4);
 
-        while (imageViewersIterator.hasNext()) {
-            ImageView imageView = imageViewersIterator.next();
-            imageView.setImage(null);
-        }
+        return putDownButtons;
     }
 
     /**
@@ -175,25 +164,65 @@ public class PlayerItemsController extends AbstractObserverController implements
     }
 
     /**
-     * Update the item image within an image viewer.
+     * Update the visible counter with the current number of player items.
      *
-     * @param item The item with an image.
-     * @param imageViewer The image viewer to be updated.
+     * @param playerItems A collection of the player's Item objects.
      *
-     * @since 0.2.1
+     * @since 0.3.3
      */
-    private void updateViewItem(Item item, ImageView imageViewer) {
-        Image image = null;
+    private void updateCounter(ItemsCollection playerItems) {
+        String counterValue = (playerItems == null ? "0" : playerItems.count().toString());
+        this.counter.setText(counterValue);
+    }
 
-        ArrayList<ImageView> imageViewers = this.getImageViewers();
-        this.clearImageViewers(imageViewers);
-
-        if (item != null && imageViewer != null) {
-            image = item.getImage();
+    /**
+     * This method updates each imageViewer with the associated (by index)
+     * Item object image.
+     *
+     * @param playerItems A collection of the player's Item objects.
+     * @param imageViewers A list of the imageViewers associated with this controller.
+     *
+     * @since 0.3.3
+     */
+    private void updateImageViewers(ItemsCollection playerItems, ArrayList<ImageView> imageViewers) {
+        if (playerItems == null || imageViewers == null) {
+            return;
         }
 
-        if (image != null) {
-            imageViewer.setImage(image);
+        for (Integer i = 0; i < imageViewers.size(); i++) {
+            ImageView imageViewer = imageViewers.get(i);
+            Item playerItem = playerItems.get(i);
+
+            if (playerItem != null && playerItem.getImage() != null) {
+                imageViewer.setImage(playerItem.getImage());
+            } else {
+                imageViewer.setImage(null);
+            }
+        }
+    }
+
+    /**
+     * This method determines whether or not a 'put down' button is disabled
+     * based upon whether or not the associated (by index) Item object
+     * is valid and contains an image. If the Item object is valid the
+     * associated button will not be disabled. Otherwise it will be.
+     *
+     * @param playerItems A collection of the player's Item objects.
+     * @param putDownButtons A list of the 'put down' buttons.
+     *
+     * @since 0.3.3
+     */
+    private void updatePutDownButtonsDisability(ItemsCollection playerItems, ArrayList<Button> putDownButtons) {
+        if (playerItems == null || putDownButtons == null) {
+            return;
+        }
+
+        for (Integer i = 0; i < putDownButtons.size(); i++) {
+            Button putDownButton = putDownButtons.get(i);
+            Item playerItem = playerItems.get(i);
+
+            Boolean isDisabled = (playerItem == null || playerItem.getImage() == null);
+            putDownButton.setDisable(isDisabled);
         }
     }
 }

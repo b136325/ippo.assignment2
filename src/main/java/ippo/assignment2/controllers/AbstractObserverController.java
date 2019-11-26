@@ -20,6 +20,17 @@ public abstract class AbstractObserverController implements Observer {
     protected Player player;
 
     /**
+     * A method that the returns the player associated with the controller.
+     *
+     * @return The player associated with the controller or null.
+     *
+     * @since 0.2.0
+     */
+    public Player getPlayer() {
+        return this.player;
+    }
+
+    /**
      * A method that the receives a 'player' which will be used to
      * update the view associated with the controller.
      *

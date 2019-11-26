@@ -9,6 +9,7 @@ import java.util.Observable;
  * @since 0.3.0
  */
 public interface IController {
+    Player getPlayer();
     void setPlayer(Player player);
     void update(Observable o, Object arg);
     void updateView();

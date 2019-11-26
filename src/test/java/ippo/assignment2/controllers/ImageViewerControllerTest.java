@@ -10,14 +10,18 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 /**
+ * Test the view of the ImageViewerController.
+ *
  * @since 0.3.0
  */
 public class ImageViewerControllerTest extends ControllerTestHelper {
     public ImageView imageViewer;
 
     /**
+     * Construct mock data.
      *
-     * @return
+     * @return The mock data to be passed to the ImageViewerController.
+     *
      * @since 0.3.0
      */
     @Override
@@ -28,8 +32,10 @@ public class ImageViewerControllerTest extends ControllerTestHelper {
     }
 
     /**
+     * Return the path to the .fxml file associated with the ImageViewerController.
      *
-     * @return
+     * @return The path to the associated .fxml file.
+     *
      * @since 0.3.0
      */
     @Override
