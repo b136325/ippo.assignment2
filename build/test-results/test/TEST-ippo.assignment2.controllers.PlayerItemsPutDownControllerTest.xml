@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T23:08:05" hostname="joes-mbp.mynet" time="3.779">
+<testsuite name="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T23:49:01" hostname="joes-mbp.mynet" time="3.041">
   <properties/>
-  <testcase name="beforePutDownImageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.532"/>
-  <testcase name="counterTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.462"/>
-  <testcase name="afterPutDownButtonDisabilityTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.454"/>
-  <testcase name="beforePutDownButtonTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.491"/>
-  <testcase name="afterPutDownCounterTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="1.192"/>
-  <testcase name="afterPutDownImageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.639"/>
+  <testcase name="beforePutDownImageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.489"/>
+  <testcase name="counterTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.387"/>
+  <testcase name="afterPutDownButtonDisabilityTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.425"/>
+  <testcase name="beforePutDownButtonTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.405"/>
+  <testcase name="afterPutDownCounterTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.924"/>
+  <testcase name="afterPutDownImageViewerTest()" classname="ippo.assignment2.controllers.PlayerItemsPutDownControllerTest" time="0.403"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

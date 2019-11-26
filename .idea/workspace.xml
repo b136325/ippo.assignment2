@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e2c042f-6700-4e54-8b51-bd3f30347d27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dundee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/edinburgh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/glasgow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/mocks/RoomItemsControllerMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -19,8 +15,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/utils/Properties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/utils/PropertiesTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.ItemsTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.ItemsTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.WallsTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.WallsTest.html" afterDir="false" />
@@ -38,7 +32,7 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.RoomTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.RoomTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.WallTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.WallTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.utils.PropertiesTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.utils.PropertiesSingletonTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.utils.PropertiesSingletonTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.collections.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.collections.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.controllers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.controllers.html" afterDir="false" />
@@ -46,11 +40,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.models.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.models.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.utils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/HeaderViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/HeaderViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/RoomItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/RoomItemsViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/images/edinburgh-lothians.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/fxml/HeaderViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/fxml/HeaderViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/fxml/RoomItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/fxml/RoomItemsViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.ItemsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.ItemsTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.WallsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.WallsTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.controllers.HeaderControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.controllers.HeaderControllerTest.xml" afterDir="false" />
@@ -67,25 +56,10 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.RoomTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.RoomTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.WallTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.WallTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.utils.PropertiesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.utils.PropertiesSingletonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.utils.PropertiesSingletonTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/HeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/HeaderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/RoomItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/RoomItemsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/factories/ServicesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/factories/ServicesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/PlayersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/PlayersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/utils/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/utils/PropertiesSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/HeaderViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/HeaderViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/RoomItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/RoomItemsViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/edinburgh-lothians.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/HeaderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/HeaderControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/MainControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/MainControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/RoomItemsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/controllers/RoomItemsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/factories/ServicesFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/factories/ServicesFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/helpers/ControllerTestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/helpers/ControllerTestHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/utils/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/utils/PropertiesSingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/fxml/HeaderViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/fxml/HeaderViewer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/fxml/RoomItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/fxml/RoomItemsViewer.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

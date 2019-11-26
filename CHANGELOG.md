@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### Tag 0.3.6
+
+- Refactor App.
+
+---
+
 ### Tag 0.3.5
 
 - Refactor the Properties class into PropertiesSingleton.

@@ -19,7 +19,7 @@ public class ServicesFactory {
      *
      * @since 0.1.7
      */
-    public IService createService(String serviceName) {
+    public static IService createService(String serviceName) {
         IService service = null;
 
         switch(serviceName) {
@@ -40,7 +40,7 @@ public class ServicesFactory {
      *
      * @since 0.1.7
      */
-    public IService createServiceFromProperties(PropertiesSingleton properties, String propertyName) {
+    public static IService createServiceFromProperties(PropertiesSingleton properties, String propertyName) {
         String serviceClassName = null;
         IService service = null;
 

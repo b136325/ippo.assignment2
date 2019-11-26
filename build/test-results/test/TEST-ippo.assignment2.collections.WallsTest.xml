@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.collections.WallsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T23:08:11" hostname="joes-mbp.mynet" time="0.004">
+<testsuite name="ippo.assignment2.collections.WallsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-26T23:49:05" hostname="joes-mbp.mynet" time="0.004">
   <properties/>
-  <testcase name="addTestWithDifferentDirectionKeys()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
+  <testcase name="addTestWithDifferentDirectionKeys()" classname="ippo.assignment2.collections.WallsTest" time="0.001"/>
   <testcase name="getWallTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
   <testcase name="hasWallTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
-  <testcase name="getImageTest()" classname="ippo.assignment2.collections.WallsTest" time="0.001"/>
+  <testcase name="getImageTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
   <testcase name="addTestWithSameDirectionKeys()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
   <testcase name="countTest()" classname="ippo.assignment2.collections.WallsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
