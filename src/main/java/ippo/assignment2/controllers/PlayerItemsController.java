@@ -1,6 +1,6 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.collections.Items;
+import ippo.assignment2.collections.ItemsCollection;
 import ippo.assignment2.utils.ActionEventHelper;
 import ippo.assignment2.models.Item;
 import javafx.event.ActionEvent;
@@ -118,7 +118,7 @@ public class PlayerItemsController extends AbstractObserverController implements
      */
     @Override
     public void updateView() {
-        Items items = this.player.getItems();
+        ItemsCollection items = this.player.getItems();
 
         if (items == null) {
 

@@ -1,7 +1,7 @@
 package ippo.assignment2.services;
 
-import ippo.assignment2.collections.Items;
-import ippo.assignment2.collections.Walls;
+import ippo.assignment2.collections.ItemsCollection;
+import ippo.assignment2.collections.WallsCollection;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Item;
 import ippo.assignment2.models.Player;
@@ -12,7 +12,7 @@ import javafx.scene.image.Image;
 /**
  * @since 0.1.7
  */
-public class Players implements IService {
+public class PlayersService implements IService {
 
     /**
      *
@@ -26,7 +26,7 @@ public class Players implements IService {
         Wall innerWallLeft = new Wall(null, null, "LEFT WALL");
         Wall innerWallRight = new Wall(null, null, "RIGHT WALL");
 
-        Walls innerRoomWalls = new Walls();
+        WallsCollection innerRoomWalls = new WallsCollection();
         innerRoomWalls.add(Direction.LEFT, innerWallLeft);
         innerRoomWalls.add(Direction.RIGHT, innerWallRight);
 
@@ -42,12 +42,12 @@ public class Players implements IService {
         );
         Item playerItemTwo = new Item(playerItemTwoImage, "playerItemTwo");
 
-        Items playerItems = new Items();
+        ItemsCollection playerItems = new ItemsCollection();
         playerItems.add(playerItemOne);
         playerItems.add(playerItemTwo);
 
         Item roomItem = new Item(null, "roomItem");
-        Items roomItems = new Items();
+        ItemsCollection roomItems = new ItemsCollection();
         roomItems.add(roomItem);
 
         Image imageLeft = null;
@@ -62,7 +62,7 @@ public class Players implements IService {
         Wall wallLeft = new Wall(imageLeft, innerRoom, "INNER LEFT WALL");
         Wall wallRight = new Wall(imageRight, null, "INNER RIGHT WALL");
 
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         walls.add(Direction.LEFT, wallLeft);
         walls.add(Direction.RIGHT, wallRight);
 

@@ -6,15 +6,24 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * A collection of Item models.
+ * A collection of unique Item models.
+ *
  * @since 0.1.2
  */
-public class Items {
+public class ItemsCollection {
+
+    /**
+     * An empty HashSet, which will be used to contain unique Item objects.
+     *
+     * @since 0.1.2
+     */
     private HashSet<Item> items = new HashSet<>();
 
     /**
+     * Add an Item object to the collection.
      *
-     * @param item
+     * @param item The Item object to be added.
+     *
      * @since 0.1.2
      */
     public void add(Item item) {
@@ -22,6 +31,9 @@ public class Items {
     }
 
     /**
+     * Return the number of Item objects within the collection.
+     *
+     * @return The number of Item objects within the collection or zero.
      *
      * @since 0.2.1
      */
@@ -36,9 +48,11 @@ public class Items {
     }
 
     /**
+     * Retrieve an Item by index (starting at zero).
      *
-     * @param index
-     * @return
+     * @param index The index of the Item to ve retrieved.
+     * @return An Item or null.
+     *
      * @since 0.2.7
      */
     public Item get(Integer index) {
@@ -51,9 +65,12 @@ public class Items {
     }
 
     /**
+     * Check whether or not an Item exists within the collection.
      *
-     * @param item
-     * @return
+     * @param item The Item to be checked.
+     * @return True or false depending upon whether or not the
+     *         received Item exists within the collection.
+     *
      * @since 0.1.2
      */
     public Boolean has(Item item) {
@@ -61,9 +78,13 @@ public class Items {
     }
 
     /**
+     * Remove an Item object from the collection.
      *
-     * @param item
-     * @return
+     * @param item The Item object to be removed.
+     * @return True or false depending upon whether or not the Item was removed.
+     *         False will be returned when the Item object did not exist, already,
+     *         within the collection.
+     *
      * @since 0.1.2
      */
     public Boolean remove(Item item) {

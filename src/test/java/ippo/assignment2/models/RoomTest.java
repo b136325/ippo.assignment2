@@ -1,7 +1,7 @@
 package ippo.assignment2.models;
 
-import ippo.assignment2.collections.Items;
-import ippo.assignment2.collections.Walls;
+import ippo.assignment2.collections.ItemsCollection;
+import ippo.assignment2.collections.WallsCollection;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -23,9 +23,9 @@ public class RoomTest {
     @Test
     public void constructorNotNullTest() {
         Wall wall = new Wall(null, null, null);
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wall);
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         Room room = new Room(items, walls);
 
         assertEquals(room.getItems(), items);
@@ -39,7 +39,7 @@ public class RoomTest {
 
     @Test
     public void addTest() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         Room room = new Room(items, null);
         assertTrue(room.getItems().count() == 0);
 
@@ -55,7 +55,7 @@ public class RoomTest {
     @Test
     public void getImageInvalid() {
         Wall wall = new Wall(null, null, null);
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wall);
         Room room = new Room(null, walls);
 
@@ -64,7 +64,7 @@ public class RoomTest {
 
     @Test
     public void getImageValid() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         Room room = new Room(null, walls);
 
         assertTrue(room.getImage(Direction.RIGHT) == null);
@@ -72,7 +72,7 @@ public class RoomTest {
 
     @Test
     public void getItemsInvalid() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         Room room = new Room(null, walls);
 
         assertTrue(room.getItems() == null);
@@ -80,8 +80,8 @@ public class RoomTest {
 
     @Test
     public void getItemsValid() {
-        Walls walls = new Walls();
-        Items items = new Items();
+        WallsCollection walls = new WallsCollection();
+        ItemsCollection items = new ItemsCollection();
         Room room = new Room(items, walls);
 
         assertTrue(room.getItems() == items);
@@ -90,7 +90,7 @@ public class RoomTest {
 
     @Test
     public void getWallInvalid() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         Room room = new Room(null, walls);
 
         assertNull(room.getWall(Direction.BACK));
@@ -102,7 +102,7 @@ public class RoomTest {
     @Test
     public void getWallValid() {
         Wall wallRight = new Wall(null, null, "Wall Right");
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wallRight);
         Room room = new Room(null, walls);
 
@@ -116,7 +116,7 @@ public class RoomTest {
 
     @Test
     public void hasWallInvalid() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         Room room = new Room(null, walls);
 
         assertFalse(room.hasWall(Direction.BACK));
@@ -137,7 +137,7 @@ public class RoomTest {
 
     @Test
     public void removeTest() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         Room room = new Room(items, null);
 
         Item itemOne = new Item(null, "Item One");

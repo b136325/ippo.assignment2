@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.collections.ItemsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-26T03:01:44" hostname="joes-mbp.mynet" time="0.003">
+<testsuite name="ippo.assignment2.collections.ItemsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-26T10:33:49" hostname="joes-mbp.mynet" time="0.004">
   <properties/>
-  <testcase name="getTestFirstIndex()" classname="ippo.assignment2.collections.ItemsTest" time="0.0"/>
-  <testcase name="addTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.0"/>
-  <testcase name="hasTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.001"/>
+  <testcase name="getTestFirstIndex()" classname="ippo.assignment2.collections.ItemsTest" time="0.001"/>
+  <testcase name="addTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.001"/>
+  <testcase name="hasTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.0"/>
   <testcase name="removeTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.0"/>
   <testcase name="countTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

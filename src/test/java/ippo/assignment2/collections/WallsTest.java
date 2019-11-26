@@ -11,7 +11,7 @@ public class WallsTest {
 
     @Test
     public void addTestWithDifferentDirectionKeys() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         assertTrue(walls.count() == 0);
 
         Wall wallOne = new Wall(null, null, "Wall One");
@@ -25,7 +25,7 @@ public class WallsTest {
 
     @Test
     public void addTestWithSameDirectionKeys() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         assertTrue(walls.count() == 0);
 
         Wall wallOne = new Wall(null, null, "Wall One");
@@ -39,7 +39,7 @@ public class WallsTest {
 
     @Test
     public void countTest() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
         assertTrue(walls.count() == 0);
 
         Wall wallOne = new Wall(null, null, "Wall One");
@@ -57,7 +57,7 @@ public class WallsTest {
 
     @Test
     public void getImageTest() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
 
         Wall wallOne = new Wall(null, null, "Wall One");
         walls.add(Direction.RIGHT, wallOne);
@@ -70,7 +70,7 @@ public class WallsTest {
 
     @Test
     public void getWallTest() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
 
         Wall wallOne = new Wall(null, null, "Wall One");
         walls.add(Direction.RIGHT, wallOne);
@@ -84,7 +84,7 @@ public class WallsTest {
 
     @Test
     public void hasWallTest() {
-        Walls walls = new Walls();
+        WallsCollection walls = new WallsCollection();
 
         Wall wallOne = new Wall(null, null, "Wall One");
         Wall wallTwo = new Wall(null, null, "Wall Two");

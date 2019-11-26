@@ -1,7 +1,7 @@
 package ippo.assignment2.models;
 
-import ippo.assignment2.collections.Items;
-import ippo.assignment2.collections.Walls;
+import ippo.assignment2.collections.ItemsCollection;
+import ippo.assignment2.collections.WallsCollection;
 import javafx.scene.image.Image;
 
 /**
@@ -9,8 +9,8 @@ import javafx.scene.image.Image;
  */
 public class Room {
 
-    private Items items;
-    private Walls walls;
+    private ItemsCollection items;
+    private WallsCollection walls;
 
     /**
      *
@@ -18,7 +18,7 @@ public class Room {
      * @param walls
      * @since 0.1.2
      */
-    public Room(Items items, Walls walls) {
+    public Room(ItemsCollection items, WallsCollection walls) {
         this.items = items;
         this.walls = walls;
     }
@@ -50,7 +50,7 @@ public class Room {
      * @return
      * @since 0.1.2
      */
-    public Items getItems() {
+    public ItemsCollection getItems() {
         return this.items;
     }
 

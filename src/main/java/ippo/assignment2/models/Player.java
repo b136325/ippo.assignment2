@@ -1,27 +1,32 @@
 package ippo.assignment2.models;
 
 import ippo.assignment2.assertions.AssertNotNull;
-import ippo.assignment2.collections.Items;
+import ippo.assignment2.collections.ItemsCollection;
 import javafx.scene.image.Image;
 import java.util.Observable;
 
 /**
+ * The player model.
+ *
  * @since 0.1.2
  */
 public class Player extends Observable {
     private Direction direction;
-    private Items items;
+    private ItemsCollection items;
     private Room room;
     private String username;
 
     /**
+     * The constructor for the player model.
      *
-     * @param direction
-     * @param items
-     * @param room
+     * @param direction The player's initial direction.
+     * @param items A collection of the player's items.
+     * @param room The room currently 'occupied' by the player.
+     * @param username The player's username.
+     *
      * @since 0.1.2
      */
-    public Player(Direction direction, Items items, Room room, String username) {
+    public Player(Direction direction, ItemsCollection items, Room room, String username) {
         this.direction = direction;
         this.items = items;
         this.room = room;
@@ -29,9 +34,12 @@ public class Player extends Observable {
     }
 
     /**
+     * Find the current image by direction.
      *
-     * @param direction
-     * @return
+     * @param direction The direction with which to find the current image.
+     * @return The image associated with the received direction or null.
+     * @throws AssertionError When this.room is null.
+     *
      * @since 0.1.2
      */
     public Image getCurrentImage(Direction direction) {
@@ -40,8 +48,10 @@ public class Player extends Observable {
     }
 
     /**
+     * Find the player's current direction.
      *
-     * @return
+     * @return The player's current direction or null.
+     *
      * @since 0.1.2
      */
     public Direction getDirection() {
@@ -49,17 +59,21 @@ public class Player extends Observable {
     }
 
     /**
+     * Find the player's collection of items.
      *
-     * @return
+     * @return A collection of items or null.
+     *
      * @since 0.1.2
      */
-    public Items getItems() {
+    public ItemsCollection getItems() {
         return this.items;
     }
 
     /**
+     * Find the room currently 'occupied' by the player.
      *
-     * @return
+     * @return A room object or null.
+     *
      * @since 0.1.2
      */
     public Room getRoom() {
@@ -67,8 +81,10 @@ public class Player extends Observable {
     }
 
     /**
+     * Find the player's username.
      *
-     * @return
+     * @return The player's username or null.
+     *
      * @since 0.3.0
      */
     public String getUsername() {
@@ -76,6 +92,10 @@ public class Player extends Observable {
     }
 
     /**
+     * Enable the player to move forward to the next room.
+     *
+     * @throws AssertionError When this.room is null.
+     *
      * @since 0.1.2
      */
     public void moveForward() {
@@ -90,14 +110,21 @@ public class Player extends Observable {
             this.room = wall.getRoom();
         }
 
+        // Notify observing controllers that the model has changed.
         this.setChanged();
         this.notifyObservers();
     }
 
     /**
+     * Pick up an item from the current room.
      *
-     * @param item
-     * @return
+     * @param item The item to be picked up.
+     * @return True or false depending upon whether or not
+     *         the item was picked up successfully.
+     *
+     * @throws AssertionError When this.items is null.
+     * @throws AssertionError When this.room is null.
+     *
      * @since 0.1.2
      */
     public Boolean pickUp(Item item) {
@@ -110,6 +137,7 @@ public class Player extends Observable {
             response = true;
         }
 
+        // Notify observing controllers that the model has changed.
         this.setChanged();
         this.notifyObservers();
 
@@ -117,9 +145,15 @@ public class Player extends Observable {
     }
 
     /**
+     * Put down an item into the current room.
      *
-     * @param item
-     * @return
+     * @param item The item to be placed in the room.
+     * @return True or false depending upon whether or not
+     *         the item was placed successfully.
+     *
+     * @throws AssertionError When this.items is null.
+     * @throws AssertionError When this.room is null.
+     *
      * @since 0.1.2
      */
     public Boolean putDown(Item item) {
@@ -132,6 +166,7 @@ public class Player extends Observable {
             response = true;
         }
 
+        // Notify observing controllers that the model has changed.
         this.setChanged();
         this.notifyObservers();
 
@@ -139,9 +174,12 @@ public class Player extends Observable {
     }
 
     /**
+     * Enable a player to turn by direction.
      *
-     * @param direction
-     * @return
+     * @param direction The direction to turn.
+     * @return True or false depending upon whether or not the player was turned.
+     * @throws AssertionError When this.room is null.
+     *
      * @since 0.1.2
      */
     public Boolean turn(Direction direction) {
@@ -153,6 +191,7 @@ public class Player extends Observable {
             response = true;
         }
 
+        // Notify observing controllers that the model has changed.
         this.setChanged();
         this.notifyObservers();
 

@@ -1,6 +1,6 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.collections.Items;
+import ippo.assignment2.collections.ItemsCollection;
 import ippo.assignment2.models.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -58,7 +58,7 @@ public class RoomItemsController extends AbstractObserverController implements I
      */
     @Override
     public void updateView() {
-        Items items = null;
+        ItemsCollection items = null;
         Room room = null;
 
         room = this.player.getRoom();

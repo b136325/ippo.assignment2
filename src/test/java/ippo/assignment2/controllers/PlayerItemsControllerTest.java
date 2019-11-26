@@ -1,6 +1,6 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.collections.Items;
+import ippo.assignment2.collections.ItemsCollection;
 import ippo.assignment2.helpers.ControllerTestHelper;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Item;
@@ -40,7 +40,7 @@ public class PlayerItemsControllerTest extends ControllerTestHelper {
     public Player buildControllerTestData() {
         Image imageOne = new Image("/images/edinburgh.jpg");
         Item itemOne = new Item(imageOne, "Edinburgh");
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         items.add(itemOne);
         Player player = new Player(Direction.BACK, items, null, "Username1");
 

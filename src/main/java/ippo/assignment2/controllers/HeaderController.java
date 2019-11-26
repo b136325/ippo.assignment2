@@ -38,7 +38,7 @@ public class HeaderController extends AbstractObserverController implements ICon
             this.updateViewTitle();
             this.updateViewUsername();
         } catch(Exception e) {
-
+            // @TODO add a mechanism for logging errors.
         }
     }
 

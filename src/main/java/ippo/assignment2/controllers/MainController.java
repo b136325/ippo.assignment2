@@ -67,11 +67,11 @@ public class MainController extends AbstractObserverController implements IContr
      * @since 0.2.1
      */
     private void assertChildControllers() {
-        AssertNotNull.headerController(this.headerController);
-        AssertNotNull.imageController(this.imageController);
-        AssertNotNull.navigationController(this.navigationController);
-        AssertNotNull.playerItemsController(this.playerItemsController);
-        AssertNotNull.roomItemsController(this.roomItemsController);
+        AssertNotNull.controller(this.headerController);
+        AssertNotNull.controller(this.imageController);
+        AssertNotNull.controller(this.navigationController);
+        AssertNotNull.controller(this.playerItemsController);
+        AssertNotNull.controller(this.roomItemsController);
     }
 
     /**

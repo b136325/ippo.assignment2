@@ -10,7 +10,7 @@ public class ItemsTest {
 
     @Test
     public void addTest() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         assertTrue(items.count() == 0);
 
         Item item = new Item(null, null);
@@ -21,7 +21,7 @@ public class ItemsTest {
 
     @Test
     public void countTest() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         assertTrue(items.count() == 0);
 
         Item itemOne = new Item(null, null);
@@ -47,7 +47,7 @@ public class ItemsTest {
 
     @Test
     public void getTestFirstIndex() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         Item itemOne = new Item(null, "ItemOne");
         items.add(itemOne);
 
@@ -59,7 +59,7 @@ public class ItemsTest {
 
     @Test
     public void hasTest() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         Item itemOne = new Item(null, "ItemOne");
         items.add(itemOne);
         Item itemTwo = new Item(null, "ItemTwo");
@@ -74,7 +74,7 @@ public class ItemsTest {
 
     @Test
     public void removeTest() {
-        Items items = new Items();
+        ItemsCollection items = new ItemsCollection();
         Item itemOne = new Item(null, "ItemOne");
         items.add(itemOne);
         Item itemTwo = new Item(null, "ItemTwo");

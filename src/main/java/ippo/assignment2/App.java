@@ -1,7 +1,7 @@
 package ippo.assignment2;
 
 import ippo.assignment2.controllers.MainController;
-import ippo.assignment2.factories.Services;
+import ippo.assignment2.factories.ServicesFactory;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.services.IService;
 import ippo.assignment2.utils.Properties;
@@ -47,7 +47,7 @@ public class App extends Application {
             Properties properties = null;
             String propertyName = "app.service";
             IService service = null;
-            Services serviceFactory = null;
+            ServicesFactory serviceFactory = null;
 
             try {
                 properties = new Properties();
@@ -55,8 +55,8 @@ public class App extends Application {
                 e.printStackTrace();
             }
 
-            serviceFactory = new Services();
-            service = serviceFactory.generateFromProperties(
+            serviceFactory = new ServicesFactory();
+            service = serviceFactory.createServiceFromProperties(
                     properties,
                     propertyName
             );
