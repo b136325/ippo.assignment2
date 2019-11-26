@@ -4,7 +4,7 @@ import ippo.assignment2.controllers.MainController;
 import ippo.assignment2.factories.ServicesFactory;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.services.IService;
-import ippo.assignment2.utils.Properties;
+import ippo.assignment2.utils.PropertiesSingleton;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -20,10 +20,7 @@ import java.util.logging.Logger;
 public class App extends Application {
 
     private final String  mainControllerViewerPath = "/fxml/MainViewer.fxml";
-    private Properties properties = new Properties();
-
-    public App() throws IOException {
-    }
+    private PropertiesSingleton properties = PropertiesSingleton.getInstance();
 
     /**
      *
@@ -44,20 +41,13 @@ public class App extends Application {
         try {
 
             Player player = null;
-            Properties properties = null;
             String propertyName = "app.service";
             IService service = null;
             ServicesFactory serviceFactory = null;
 
-            try {
-                properties = new Properties();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
             serviceFactory = new ServicesFactory();
             service = serviceFactory.createServiceFromProperties(
-                    properties,
+                    this.properties,
                     propertyName
             );
 

@@ -3,7 +3,7 @@ package ippo.assignment2.controllers;
 import ippo.assignment2.helpers.ControllerTestHelper;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,7 +14,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @since 0.3.0
  */
 public class HeaderControllerTest extends ControllerTestHelper {
-    public TextField title;
+
+    /**
+     * A reference to the title Label (defined within HeaderViewer.fxml).
+     *
+     * @since 0.3.5
+     */
+    public Label title;
+
+    /**
+     * A reference to the username Label (defined within HeaderViewer.fxml).
+     *
+     * @since 0.3.5
+     */
+    public Label username;
 
     /**
      * Construct mock data.
@@ -44,7 +57,8 @@ public class HeaderControllerTest extends ControllerTestHelper {
 
     @BeforeEach
     public void setUp() {
-        this.title = (TextField) this.findGuiElement("#title");
+        this.title = (Label) this.findGuiElement("#title");
+        this.username = (Label) this.findGuiElement("#username");
     }
 
     @Test
@@ -52,5 +66,10 @@ public class HeaderControllerTest extends ControllerTestHelper {
         String expectedTitleText = this.properties.getValue("header.title");
         String foundTitleText = this.title.getText();
         assertEquals(foundTitleText, expectedTitleText);
+    }
+
+    @Test
+    public void usernameTest() {
+        assertEquals(this.username.getText(), "Username1");
     }
 }

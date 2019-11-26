@@ -1,8 +1,8 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.utils.Properties;
+import ippo.assignment2.utils.PropertiesSingleton;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 import java.io.IOException;
 
 /**
@@ -12,20 +12,20 @@ import java.io.IOException;
 public class HeaderController extends AbstractObserverController implements IController {
 
     /**
-     * A reference to the title TextField (defined within HeaderViewer.fxml).
+     * A reference to the title Label (defined within HeaderViewer.fxml).
      *
      * @since 0.2.1
      */
     @FXML
-    private TextField title;
+    private Label title;
 
     /**
-     * A reference to the username TextField (defined within HeaderViewer.fxml).
+     * A reference to the username Label (defined within HeaderViewer.fxml).
      *
      * @since 0.2.1
      */
     @FXML
-    private TextField username;
+    private Label username;
 
     /**
      * Update the view following a change to the model.
@@ -45,11 +45,10 @@ public class HeaderController extends AbstractObserverController implements ICon
     /**
      * Update the title within the HeaderViewer.
      *
-     * @throws IOException When instantiating Properties fails.
      * @since 0.3.1
      */
-    private void updateViewTitle() throws IOException {
-        Properties properties = new Properties();
+    private void updateViewTitle() {
+        PropertiesSingleton properties = PropertiesSingleton.getInstance();
         String propertyName = "header.title";
 
         if (properties.has(propertyName)) {

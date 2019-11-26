@@ -2,7 +2,7 @@ package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.PlayersService;
-import ippo.assignment2.utils.Properties;
+import ippo.assignment2.utils.PropertiesSingleton;
 
 /**
  * A simple concrete factory that creates IService objects.
@@ -40,7 +40,7 @@ public class ServicesFactory {
      *
      * @since 0.1.7
      */
-    public IService createServiceFromProperties(Properties properties, String propertyName) {
+    public IService createServiceFromProperties(PropertiesSingleton properties, String propertyName) {
         String serviceClassName = null;
         IService service = null;
 

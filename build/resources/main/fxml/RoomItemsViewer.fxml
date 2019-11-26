@@ -9,15 +9,41 @@
       xmlns="http://javafx.com/javafx/8"
       xmlns:fx="http://javafx.com/fxml/1">
 
-    <padding>
-        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
-    </padding>
-    <Label text="Room items"/>
-    <ImageView fx:id="imageViewer"/>
-    <Separator orientation="HORIZONTAL" />
-    <Button fx:id="pickUpButton"
-            mnemonicParsing="false"
-            onAction="#pickUp"
-            text="Pick up" />
-    <TextField fx:id="counter" text="" />
+    <VBox>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <Label text="Room items"/>
+        <Separator orientation="HORIZONTAL" />
+        <HBox>
+            <ImageView fx:id="imageViewer1" fitHeight="50" fitWidth="50" />
+            <Button fx:id="pickUpButton1"
+                    mnemonicParsing="false"
+                    onAction="#pickUp"
+                    text="Pick Up" />
+        </HBox>
+        <HBox>
+            <ImageView fx:id="imageViewer2" fitHeight="50" fitWidth="50" />
+            <Button fx:id="pickUpButton2"
+                    mnemonicParsing="false"
+                    onAction="#pickUp"
+                    text="Pick Up" />
+        </HBox>
+        <HBox>
+            <ImageView fx:id="imageViewer3" fitHeight="50" fitWidth="50" />
+            <Button fx:id="pickUpButton3"
+                    mnemonicParsing="false"
+                    onAction="#pickUp"
+                    text="Pick Up" />
+        </HBox>
+        <HBox>
+            <ImageView fx:id="imageViewer4" fitHeight="50" fitWidth="50" />
+            <Button fx:id="pickUpButton4"
+                    mnemonicParsing="false"
+                    onAction="#pickUp"
+                    text="Pick Up" />
+        </HBox>
+
+        <Label fx:id="counter" text="" />
+    </VBox>
 </VBox>

@@ -4,8 +4,8 @@ import ippo.assignment2.helpers.ControllerTestHelper;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
-import ippo.assignment2.utils.Properties;
-import javafx.scene.control.TextField;
+import ippo.assignment2.utils.PropertiesSingleton;
+import javafx.scene.control.Label;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -17,7 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @since 0.3.0
  */
 public class MainControllerTest extends ControllerTestHelper {
-    public TextField title;
+    public PropertiesSingleton properties = PropertiesSingleton.getInstance();
+    public Label title;
 
     /**
      * Construct mock data.
@@ -52,8 +53,7 @@ public class MainControllerTest extends ControllerTestHelper {
      */
     @BeforeEach
     public void setUp() throws IOException {
-        this.properties = new Properties();
-        this.title = (TextField) this.findGuiElement("#title");
+        this.title = (Label) this.findGuiElement("#title");
     }
 
     /**

@@ -11,6 +11,6 @@
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
     <Label text="Header"/>
-    <TextField fx:id="title" text="" />
-    <TextField fx:id="username" text="" />
+    <Label fx:id="title" text="" />
+    <Label fx:id="username" text="" />
 </HBox>

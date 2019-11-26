@@ -2,7 +2,7 @@ package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.PlayersService;
-import ippo.assignment2.utils.Properties;
+import ippo.assignment2.utils.PropertiesSingleton;
 import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -38,14 +38,14 @@ public class ServicesFactoryTest {
 
     @Test
     public void createServiceFromPropertiesNull() throws IOException {
-        Properties properties = new Properties();
+        PropertiesSingleton properties = PropertiesSingleton.getInstance();
         String propertyName = "UNKNOWN_PROPERTY_NAME";
         assertNull(this.servicesFactory.createServiceFromProperties(properties, propertyName));
     }
 
     @Test
     public void createServiceFromPropertiesPlayersService() throws IOException {
-        Properties properties = new Properties();
+        PropertiesSingleton properties = PropertiesSingleton.getInstance();
         String propertyName = "navigation.service";
         IService service = this.servicesFactory.createServiceFromProperties(properties, propertyName);
         assertTrue(service instanceof PlayersService);

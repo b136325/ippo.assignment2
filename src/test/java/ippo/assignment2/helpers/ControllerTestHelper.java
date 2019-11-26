@@ -2,7 +2,7 @@ package ippo.assignment2.helpers;
 
 import ippo.assignment2.controllers.IController;
 import ippo.assignment2.models.Player;
-import ippo.assignment2.utils.Properties;
+import ippo.assignment2.utils.PropertiesSingleton;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -16,7 +16,7 @@ import org.testfx.framework.junit5.ApplicationTest;
  */
 public abstract class ControllerTestHelper extends ApplicationTest {
     protected IController controller;
-    protected Properties properties;
+    protected PropertiesSingleton properties;
 
     /**
      *
@@ -29,7 +29,7 @@ public abstract class ControllerTestHelper extends ApplicationTest {
         this.loadNode(stage);
         Player player = this.buildControllerTestData();
         this.setPlayer(player);
-        this.properties = new Properties();
+        this.properties = PropertiesSingleton.getInstance();
     }
 
     /**

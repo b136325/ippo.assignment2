@@ -32,13 +32,11 @@ public class PlayersService implements IService {
 
         Room innerRoom = new Room(null, innerRoomWalls);
 
-        Image playerItemOneImage = new Image(
-                "https://i.guim.co.uk/img/media/72e7a42d0fdc7820d1a5e7a8f0baef1fc4ea50d9/0_491_3054_1832/master/3054.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=836c679577a4d05899b78b63e088fae6"
-        );
+        Image playerItemOneImage = new Image("images/edinburgh.jpg");
         Item playerItemOne = new Item(playerItemOneImage, "playerItemOne");
 
         Image playerItemTwoImage = new Image(
-                "https://i.guim.co.uk/img/media/48fca4d8ef0949ab5d3ed3e4ac885ffb655a69a3/0_159_3298_1979/master/3298.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=f406663d3ac3c6c38834ded9ccb69e40"
+                "images/glasgow.jpg"
         );
         Item playerItemTwo = new Item(playerItemTwoImage, "playerItemTwo");
 
@@ -46,7 +44,10 @@ public class PlayersService implements IService {
         playerItems.add(playerItemOne);
         playerItems.add(playerItemTwo);
 
-        Item roomItem = new Item(null, "roomItem");
+        Image roomItemOneImage = new Image(
+                "images/dundee.jpg"
+        );
+        Item roomItem = new Item(roomItemOneImage, "roomItem");
         ItemsCollection roomItems = new ItemsCollection();
         roomItems.add(roomItem);
 
@@ -55,9 +56,9 @@ public class PlayersService implements IService {
 
         if (showImages == true) {
             imageLeft = new Image(
-                    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/04/16/glasgow-main.jpg"
+                    "images/edinburgh.jpg"
             );
-            imageRight = new Image("https://sprudge.com/wp-content/uploads/2019/04/Edinburgh.jpg");
+            imageRight = new Image("images/dundee.jpg");
         }
         Wall wallLeft = new Wall(imageLeft, innerRoom, "INNER LEFT WALL");
         Wall wallRight = new Wall(imageRight, null, "INNER RIGHT WALL");

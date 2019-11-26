@@ -1,7 +1,7 @@
 package ippo.assignment2.controllers;
 
 import ippo.assignment2.helpers.ControllerTestHelper;
-import ippo.assignment2.models.Direction;
+import ippo.assignment2.mocks.RoomItemsControllerMock;
 import ippo.assignment2.models.Player;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
@@ -17,8 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
  */
 public class RoomItemsControllerTest extends ControllerTestHelper {
 
-    private ImageView imageViewer;
-    private Button pickUpButton;
+    public ImageView imageViewer1;
+    public Button pickUpButton1;
 
     /**
      * Construct mock data.
@@ -29,8 +29,7 @@ public class RoomItemsControllerTest extends ControllerTestHelper {
      */
     @Override
     public Player buildControllerTestData() {
-        Player player = new Player(Direction.BACK, null, null, "Username1");
-        return player;
+        return RoomItemsControllerMock.createMock();
     }
 
     /**
@@ -50,8 +49,8 @@ public class RoomItemsControllerTest extends ControllerTestHelper {
      */
     @BeforeEach
     public void setUp() {
-        this.pickUpButton= (Button) this.findGuiElement("#pickUpButton");
-        this.imageViewer = (ImageView) this.findGuiElement("#imageViewer");
+        this.pickUpButton1 = (Button) this.findGuiElement("#pickUpButton1");
+        this.imageViewer1 = (ImageView) this.findGuiElement("#imageViewer1");
     }
 
     /**
@@ -59,7 +58,7 @@ public class RoomItemsControllerTest extends ControllerTestHelper {
      */
     @Test
     public void imageViewerTest() {
-        assertNull(this.imageViewer.getImage());
+        assertNull(this.imageViewer1.getImage());
     }
 
     /**
@@ -67,6 +66,6 @@ public class RoomItemsControllerTest extends ControllerTestHelper {
      */
     @Test
     public void pickUpButtonTest() {
-        assertEquals(this.pickUpButton.getText(), "Pick up");
+        assertEquals(this.pickUpButton1.getText(), "Pick Up");
     }
 }
