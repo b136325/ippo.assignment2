@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### Tag 0.4.2
+
+- Updated styling.
+
+---
+
 ### Tag 0.4.1
 
 - The introduction of a `PlayersJsonService`, which calls the `JsonModelBuilder` to generate models.

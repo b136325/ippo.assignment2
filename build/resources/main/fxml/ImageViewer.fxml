@@ -6,11 +6,12 @@
 <?import javafx.scene.image.ImageView?>
 
 <HBox fx:controller="ippo.assignment2.controllers.ImageController"
+      spacing="20"
       xmlns="http://javafx.com/javafx/8"
       xmlns:fx="http://javafx.com/fxml/1">
     <padding>
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
     <Label text="Image viewer"/>
-    <ImageView fx:id="imageViewer" fitHeight="300" fitWidth="300" />
+    <ImageView fx:id="imageViewer" fitHeight="500" fitWidth="500" />
 </HBox>

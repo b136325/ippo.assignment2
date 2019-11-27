@@ -5,45 +5,53 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.ImageView?>
 
-<VBox fx:controller="ippo.assignment2.controllers.RoomItemsController"
-      xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1">
+<TitledPane
+        fx:controller="ippo.assignment2.controllers.RoomItemsController"
+        minWidth="200.0"
+        styleClass="primary"
+        text="Room items"
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1">
 
-    <VBox>
+    <VBox spacing="10">
         <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
         </padding>
-        <Label text="Room items"/>
-        <Separator orientation="HORIZONTAL" />
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer1" fitHeight="50" fitWidth="50" />
             <Button fx:id="pickUpButton1"
                     mnemonicParsing="false"
                     onAction="#pickUp"
+                    styleClass="success"
                     text="Pick Up" />
         </HBox>
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer2" fitHeight="50" fitWidth="50" />
             <Button fx:id="pickUpButton2"
                     mnemonicParsing="false"
                     onAction="#pickUp"
+                    styleClass="success"
                     text="Pick Up" />
         </HBox>
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer3" fitHeight="50" fitWidth="50" />
             <Button fx:id="pickUpButton3"
                     mnemonicParsing="false"
                     onAction="#pickUp"
+                    styleClass="success"
                     text="Pick Up" />
         </HBox>
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer4" fitHeight="50" fitWidth="50" />
             <Button fx:id="pickUpButton4"
                     mnemonicParsing="false"
                     onAction="#pickUp"
+                    styleClass="success"
                     text="Pick Up" />
         </HBox>
-
-        <Label fx:id="counter" text="" />
+        <HBox spacing="10">
+            <Label text="The number of room items: " />
+            <Label fx:id="counter" text="" />
+        </HBox>
     </VBox>
-</VBox>
+</TitledPane>

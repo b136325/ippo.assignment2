@@ -6,6 +6,7 @@ import ippo.assignment2.models.Wall;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+
 import java.util.*;
 
 /**
@@ -166,6 +167,16 @@ public class NavigationController extends AbstractObserverController implements 
             Wall wall = room.getWall(direction);
             Boolean isDisabled = (wall == null);
             button.setDisable(isDisabled);
+
+            // However, if the direction of the button currently being
+            // examined is FORWARD and the wall associated with the
+            // player's direction has an adjoining room, then enable the forward button.
+            if (direction == Direction.FORWARD
+                    && (room.getWall(this.player.getDirection()) != null)
+                    && (room.getWall(this.player.getDirection()).getRoom() != null)) {
+
+                button.setDisable(false);
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.collections.ItemsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:03:47" hostname="joes-mbp.mynet" time="0.002">
+<testsuite name="ippo.assignment2.collections.ItemsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:56:13" hostname="joes-mbp.mynet" time="0.002">
   <properties/>
   <testcase name="getTestFirstIndex()" classname="ippo.assignment2.collections.ItemsTest" time="0.0"/>
   <testcase name="addTest()" classname="ippo.assignment2.collections.ItemsTest" time="0.001"/>

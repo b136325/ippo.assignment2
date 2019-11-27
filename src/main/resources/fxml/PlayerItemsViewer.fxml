@@ -5,44 +5,53 @@
 <?import javafx.scene.control.*?>
 
 <?import javafx.scene.image.ImageView?>
-<ScrollPane fx:controller="ippo.assignment2.controllers.PlayerItemsController"
-            xmlns="http://javafx.com/javafx/8"
-            xmlns:fx="http://javafx.com/fxml/1">
-    <VBox>
+<TitledPane
+    fx:controller="ippo.assignment2.controllers.PlayerItemsController"
+    minWidth="200.0"
+    styleClass="primary"
+    text="Player items"
+    xmlns="http://javafx.com/javafx/8"
+    xmlns:fx="http://javafx.com/fxml/1">
+
+    <VBox spacing="10">
         <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
         </padding>
-        <Label text="Player items"/>
-        <Separator orientation="HORIZONTAL" />
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer1" fitHeight="50" fitWidth="50" />
             <Button fx:id="putDownButton1"
                     mnemonicParsing="false"
                     onAction="#putDown"
+                    styleClass="danger"
                     text="Put Down" />
         </HBox>
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer2" fitHeight="50" fitWidth="50" />
             <Button fx:id="putDownButton2"
                     mnemonicParsing="false"
                     onAction="#putDown"
+                    styleClass="danger"
                     text="Put Down" />
         </HBox>
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer3" fitHeight="50" fitWidth="50" />
             <Button fx:id="putDownButton3"
                     mnemonicParsing="false"
                     onAction="#putDown"
+                    styleClass="danger"
                     text="Put Down" />
         </HBox>
-        <HBox>
+        <HBox spacing="10">
             <ImageView fx:id="imageViewer4" fitHeight="50" fitWidth="50" />
             <Button fx:id="putDownButton4"
                     mnemonicParsing="false"
                     onAction="#putDown"
+                    styleClass="danger"
                     text="Put Down" />
         </HBox>
-
-        <Label fx:id="counter" text="" />
+        <HBox spacing="10">
+            <Label text="The number of player items: " />
+            <Label fx:id="counter" text="" />
+        </HBox>
     </VBox>
-</ScrollPane>
+</TitledPane>

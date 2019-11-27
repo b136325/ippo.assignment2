@@ -17,7 +17,7 @@
     <VBox>
         <fx:include source="HeaderViewer.fxml" fx:id="header" />
         <Separator orientation="HORIZONTAL" />
-        <HBox prefWidth="200.0">
+        <HBox prefWidth="300.0">
             <VBox>
                 <fx:include source="PlayerItemsViewer.fxml" fx:id="playerItems" />
                 <Separator orientation="HORIZONTAL" />

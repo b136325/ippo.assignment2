@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e2c042f-6700-4e54-8b51-bd3f30347d27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/PlayersJsonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/services/PlayersJsonServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,11 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FIXES.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ippo/assignment2/models/Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ippo/assignment2/services/PlayersTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.builders.JsonModelBuilderTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.builders.JsonModelBuilderTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.ItemsTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.collections.ItemsTest.html" afterDir="false" />
@@ -41,7 +35,8 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.WallTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.models.WallTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.parsers.JsonFileParserTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.parsers.JsonFileParserTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.properties.PropertiesSingletonTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.properties.PropertiesSingletonTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersJsonServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersJsonServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ippo.assignment2.services.PlayersServiceTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.builders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.builders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.collections.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.collections.html" afterDir="false" />
@@ -52,11 +47,13 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.parsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.parsers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.properties.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.properties.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ippo.assignment2.services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/JSON/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/JSON/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/HeaderViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/HeaderViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/ImageViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/ImageViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/NavigationViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/NavigationViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/PlayerItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/PlayerItemsViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fxml/RoomItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fxml/RoomItemsViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/properties/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/JSON/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/JSON/test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/properties/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/fxml/MainViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/fxml/MainViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.builders.JsonModelBuilderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.builders.JsonModelBuilderTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.ItemsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.ItemsTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.WallsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.collections.WallsTest.xml" afterDir="false" />
@@ -76,22 +73,18 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.WallTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.models.WallTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.parsers.JsonFileParserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.parsers.JsonFileParserTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.properties.PropertiesSingletonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.properties.PropertiesSingletonTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersJsonServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersJsonServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ippo.assignment2.services.PlayersServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/factories/ServicesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/factories/ServicesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/models/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/PlayersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/services/PlayersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/utils/ActionEventHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/utils/ActionEventHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/JSON/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/JSON/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/HeaderViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/HeaderViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/ImageViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ImageViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/NavigationViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/NavigationViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/PlayerItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/PlayerItemsViewer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/RoomItemsViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/RoomItemsViewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/factories/ServicesFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/factories/ServicesFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/models/DirectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/models/DirectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/properties/PropertiesSingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/properties/PropertiesSingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ippo/assignment2/services/PlayersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ippo/assignment2/services/PlayersServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/JSON/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/JSON/test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/fxml/MainViewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/fxml/MainViewer.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,46 +205,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ippo.assignment2 [build]">
-    <configuration name="PlayersJsonServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.services.PlayersJsonServiceTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PlayersServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ippo.assignment2.services.PlayersServiceTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ippo.assignment2.Main" />
+      <module name="ippo-assignment2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ippo.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="PropertiesSingletonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -311,13 +277,32 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ippo.assignment2 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ippo.assignment2 [test]" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.PropertiesSingletonTest" />
         <item itemvalue="Gradle.ippo.assignment2 [build]" />
         <item itemvalue="Gradle.ippo.assignment2 [clean]" />
-        <item itemvalue="Gradle.PlayersServiceTest" />
-        <item itemvalue="Gradle.PlayersJsonServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -349,6 +334,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ippo/assignment2/controllers/NavigationController.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ippo_assignment2$App.ic" NAME="App Coverage Results" MODIFIED="1574470815053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
