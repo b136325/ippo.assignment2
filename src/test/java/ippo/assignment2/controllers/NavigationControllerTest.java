@@ -3,6 +3,7 @@ package ippo.assignment2.controllers;
 import ippo.assignment2.helpers.ControllerTestHelper;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,11 +17,48 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
  * @since 0.3.0
  */
 public class NavigationControllerTest extends ControllerTestHelper {
-    public Button backButton;
-    public Button forwardButton;
-    public Button leftButton;
-    public Button rightButton;
-    public TextField logger;
+
+    /**
+     * A reference to the (movement) forwardButton (defined within NavigationViewer.fxml).
+     *
+     * @since 0.4.3
+     */
+    private Button forwardButton;
+
+    /**
+     * A reference to the (orientation) northButton (defined within NavigationViewer.fxml).
+     *
+     * @since 0.4.3
+     */
+    private Button northButton;
+
+    /**
+     * A reference to the (orientation) eastButton (defined within NavigationViewer.fxml).
+     *
+     * @since 0.4.3
+     */
+    private Button eastButton;
+
+    /**
+     * A reference to the (orientation) southButton (defined within NavigationViewer.fxml).
+     *
+     * @since 0.4.3
+     */
+    private Button southButton;
+
+    /**
+     * A reference to the (orientation) westButton (defined within NavigationViewer.fxml).
+     *
+     * @since 0.4.3
+     */
+    private Button westButton;
+
+    /**
+     * A reference to the logger TextField (defined within NavigationViewer.fxml).
+     *
+     * @since 0.2.1
+     */
+    private TextField logger;
 
     /**
      * Construct mock data.
@@ -31,7 +69,7 @@ public class NavigationControllerTest extends ControllerTestHelper {
      */
     @Override
     public Player buildControllerTestData() {
-        Player player = new Player(Direction.BACK, null, null, "Username1");
+        Player player = new Player(Direction.SOUTH, null, null, "Username1");
         return player;
     }
 
@@ -52,10 +90,15 @@ public class NavigationControllerTest extends ControllerTestHelper {
      */
     @BeforeEach
     public void setUp() {
-        this.backButton = (Button) this.findGuiElement("#backButton");
+        // MOVEMENT
         this.forwardButton = (Button) this.findGuiElement("#forwardButton");
-        this.leftButton = (Button) this.findGuiElement("#leftButton");
-        this.rightButton = (Button) this.findGuiElement("#rightButton");
+
+        // DIRECTION
+        this.northButton = (Button) this.findGuiElement("#northButton");
+        this.eastButton = (Button) this.findGuiElement("#eastButton");
+        this.southButton = (Button) this.findGuiElement("#southButton");
+        this.westButton = (Button) this.findGuiElement("#westButton");
+
         this.logger = (TextField) this.findGuiElement("#logger");
     }
 
@@ -64,10 +107,14 @@ public class NavigationControllerTest extends ControllerTestHelper {
      */
     @Test
     public void buttonTitleTest() {
-        assertEquals(this.backButton.getText(), "Back");
-        assertEquals(this.forwardButton.getText(), "Forward");
-        assertEquals(this.leftButton.getText(), "Left");
-        assertEquals(this.rightButton.getText(),"Right");
+        // MOVEMENT
+        assertEquals(this.forwardButton.getText(), "Forwards");
+
+        // DIRECTION
+        assertEquals(this.northButton.getText(), "North");
+        assertEquals(this.eastButton.getText(), "East");
+        assertEquals(this.southButton.getText(), "South");
+        assertEquals(this.westButton.getText(), "West");
     }
 
     /**
@@ -75,9 +122,9 @@ public class NavigationControllerTest extends ControllerTestHelper {
      */
     @Test
     public void buttonDisabilityTest() {
-        assertFalse(this.backButton.isDisabled());
-        assertFalse(this.forwardButton.isDisabled());
-        assertFalse(this.leftButton.isDisabled());
-        assertFalse(this.rightButton.isDisabled());
+        assertFalse(this.northButton.isDisabled());
+        assertFalse(this.eastButton.isDisabled());
+        assertFalse(this.southButton.isDisabled());
+        assertFalse(this.westButton.isDisabled());
     }
 }

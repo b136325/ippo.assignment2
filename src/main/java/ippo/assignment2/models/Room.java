@@ -16,9 +16,12 @@ public class Room {
     private WallsCollection walls;
 
     /**
+     * The constructor for the Room model class.
      *
-     * @param items
-     * @param walls
+     * @param items A collection of items within the room.
+     * @param walls A collection of walls.
+     * @param name The name of the room.
+     *
      * @since 0.1.2
      */
     public Room(ItemsCollection items, WallsCollection walls, String name) {
@@ -28,18 +31,25 @@ public class Room {
     }
 
     /**
+     * Add an item to a room.
      *
-     * @param item
+     * @param item The Item to be added.
+     *
      * @since 0.1.2
      */
     public void add(Item item) {
-        this.items.add(item);
+        if (this.items != null) {
+            this.items.add(item);
+        }
     }
 
     /**
+     * A 'getter' method that returns the image associated
+     * with a wall by direction. Or null.
      *
-     * @param direction
-     * @return
+     * @param direction The direction of the wall.
+     * @return An Image or null.
+     *
      * @since 0.1.2
      */
     public Image getImage(Direction direction) {
@@ -50,8 +60,11 @@ public class Room {
     }
 
     /**
+     * A 'getter' method that returns the Items collection
+     * associated with the room.
      *
-     * @return
+     * @return The Items collection or null.
+     *
      * @since 0.1.2
      */
     public ItemsCollection getItems() {
@@ -70,9 +83,11 @@ public class Room {
     }
 
     /**
+     * A 'getter' method that returns a wall by direction.
      *
-     * @param direction
-     * @return
+     * @param direction The direction of the wall.
+     * @return A Wall object or null.
+     *
      * @since 0.1.2
      */
     public Wall getWall(Direction direction) {
@@ -83,9 +98,13 @@ public class Room {
     }
 
     /**
+     * A 'utility' method that returns true or false
+     * depending upon whether or not the room has a
+     * wall associated with the received direction.
      *
-     * @param direction
-     * @return
+     * @param direction The direction to check.
+     * @return True or false.
+     *
      * @since 0.1.2
      */
     public Boolean hasWall(Direction direction) {
@@ -96,9 +115,14 @@ public class Room {
     }
 
     /**
+     * A method that may be used to remove an
+     * Item from the Items collection. Note
+     * that this method requires that this.items
+     * is not null.
      *
-     * @param item
-     * @return
+     * @param item The Item to be removed.
+     * @return True when the item has been removed. Otherwise, false.
+     *
      * @since 0.1.2
      */
     public Boolean remove(Item item) {

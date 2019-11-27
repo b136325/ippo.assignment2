@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.services.PlayersServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:56:13" hostname="joes-mbp.mynet" time="0.0">
+<testsuite name="ippo.assignment2.services.PlayersServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T16:40:33" hostname="joes-mbp.mynet" time="0.0">
   <properties/>
   <testcase name="getValid()" classname="ippo.assignment2.services.PlayersServiceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

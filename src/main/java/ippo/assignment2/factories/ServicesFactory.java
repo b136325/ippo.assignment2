@@ -1,6 +1,7 @@
 package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
+import ippo.assignment2.services.PlayersEdinburghService;
 import ippo.assignment2.services.PlayersJsonService;
 import ippo.assignment2.services.PlayersService;
 import ippo.assignment2.properties.PropertiesSingleton;
@@ -26,6 +27,9 @@ public class ServicesFactory {
         switch(serviceName) {
             case "PlayersService":
                 service = new PlayersService();
+                break;
+            case "PlayersEdinburghService":
+                service = new PlayersEdinburghService();
                 break;
             case "PlayersJsonService":
                 service = new PlayersJsonService();

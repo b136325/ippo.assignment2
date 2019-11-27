@@ -17,13 +17,19 @@
         <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
         </padding>
-        <Button fx:id="leftButton" onAction="#turnLeft" styleClass="primary" text="Left"  />
+        <Label text="Orientation" />
+        <Button fx:id="westButton" onAction="#turnWest" styleClass="primary" text="West"  />
         <Separator orientation="VERTICAL" />
-        <Button fx:id="forwardButton" onAction="#goForward" styleClass="primary" text="Forward" />
+        <Button fx:id="northButton" onAction="#turnNorth" styleClass="primary" text="North" />
         <Separator orientation="VERTICAL" />
-        <Button fx:id="rightButton" onAction="#turnRight" styleClass="primary" text="Right" />
+        <Button fx:id="eastButton" onAction="#turnEast" styleClass="primary" text="East" />
         <Separator orientation="VERTICAL" />
-        <Button fx:id="backButton" onAction="#goBack" styleClass="primary" text="Back" />
+        <Button fx:id="southButton" onAction="#turnSouth" styleClass="primary" text="South" />
+        <Separator orientation="VERTICAL" />
+        <Label text="Movement:" />
+        <Button fx:id="forwardButton" onAction="#goForward" styleClass="primary" text="Forwards" />
+        <Separator orientation="VERTICAL" />
+        <Label text="The path and hash code of the current room model" />
         <TextField fx:id="logger" text="" />
     </HBox>
 </VBox>

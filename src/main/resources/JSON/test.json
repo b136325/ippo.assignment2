@@ -2,17 +2,18 @@
   "rooms": {
     "bedroom": {
       "views": {
-        "left": "glasgow.jpg",
-        "right": "edinburgh.jpg"
+        "east": "images/scotland/edinburgh.jpg",
+        "west": "images/scotland/glasgow.jpg"
       },
       "exits": {
-        "forward": "bathroom",
-        "back": "hall"
+        "north": "bathroom",
+        "south": "hall"
       },
-      "contents": [ "cat", "dog" ]
+      "contents": [ "circle", "suitcase" ]
     }
-  }, "items": {
-  "edinburgh": { "image": "edinburgh.jpg" },
-  "glasgow": { "image": "glasgow.jpg" }
-}
+  },
+  "items": {
+    "circle": { "image": "images/items/circle.png" },
+    "suitcase": { "image": "images/items/suitcase.png" }
+  }
 }

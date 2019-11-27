@@ -1,12 +1,13 @@
 package ippo.assignment2.models;
 
 /**
+ * A Enum class of directions.
  *
  * @since 0.1.2
  */
 public enum Direction {
-    BACK,
-    FORWARD,
-    LEFT,
-    RIGHT,
+    NORTH,
+    EAST,
+    SOUTH,
+    WEST,
 }

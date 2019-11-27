@@ -42,8 +42,8 @@ public class RoomItemsControllerMock {
 
         // Create a WallsCollection and populate it with the Wall objects created above.
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.RIGHT, wallRight);
-        walls.add(Direction.LEFT, wallLeft);
+        walls.add(Direction.NORTH, wallRight);
+        walls.add(Direction.SOUTH, wallLeft);
 
         // Create an ItemsCollection for the room items.
         ItemsCollection roomItems = new ItemsCollection();
@@ -52,7 +52,7 @@ public class RoomItemsControllerMock {
         Room currentRoom = new Room(roomItems, walls, null);
 
         // Create a player object and populate it with the playerItems and the currentRoom.
-        Player player = new Player(Direction.BACK, playerItems, currentRoom, "Username1");
+        Player player = new Player(Direction.SOUTH, playerItems, currentRoom, "Username1");
         return player;
     }
 }

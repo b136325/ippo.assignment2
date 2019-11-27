@@ -15,11 +15,11 @@ public class WallsTest {
         assertTrue(walls.count() == 0);
 
         Wall wallOne = new Wall(null, null, "Wall One");
-        walls.add(Direction.RIGHT, wallOne);
+        walls.add(Direction.NORTH, wallOne);
         assertTrue(walls.count() == 1);
 
         Wall wallTwo = new Wall(null, null, "Wall Two");
-        walls.add(Direction.LEFT, wallTwo);
+        walls.add(Direction.SOUTH, wallTwo);
         assertTrue(walls.count() == 2);
     }
 
@@ -29,11 +29,11 @@ public class WallsTest {
         assertTrue(walls.count() == 0);
 
         Wall wallOne = new Wall(null, null, "Wall One");
-        walls.add(Direction.RIGHT, wallOne);
+        walls.add(Direction.NORTH, wallOne);
         assertTrue(walls.count() == 1);
 
         Wall wallTwo = new Wall(null, null, "Wall Two");
-        walls.add(Direction.RIGHT, wallTwo);
+        walls.add(Direction.NORTH, wallTwo);
         assertTrue(walls.count() == 1);
     }
 
@@ -43,15 +43,15 @@ public class WallsTest {
         assertTrue(walls.count() == 0);
 
         Wall wallOne = new Wall(null, null, "Wall One");
-        walls.add(Direction.RIGHT, wallOne);
+        walls.add(Direction.NORTH, wallOne);
         assertTrue(walls.count() == 1);
 
         Wall wallTwo = new Wall(null, null, "Wall Two");
-        walls.add(Direction.LEFT, wallTwo);
+        walls.add(Direction.EAST, wallTwo);
         assertTrue(walls.count() == 2);
 
         Wall wallThree = new Wall(null, null, "Wall Three");
-        walls.add(Direction.BACK, wallTwo);
+        walls.add(Direction.SOUTH, wallTwo);
         assertTrue(walls.count() == 3);
     }
 
@@ -60,12 +60,12 @@ public class WallsTest {
         WallsCollection walls = new WallsCollection();
 
         Wall wallOne = new Wall(null, null, "Wall One");
-        walls.add(Direction.RIGHT, wallOne);
+        walls.add(Direction.NORTH, wallOne);
 
         Wall wallTwo = new Wall(null, null, "Wall Two");
-        walls.add(Direction.LEFT, wallTwo);
+        walls.add(Direction.SOUTH, wallTwo);
 
-        assertEquals(walls.getImage(Direction.LEFT), null);
+        assertEquals(walls.getImage(Direction.SOUTH), null);
     }
 
     @Test
@@ -73,13 +73,13 @@ public class WallsTest {
         WallsCollection walls = new WallsCollection();
 
         Wall wallOne = new Wall(null, null, "Wall One");
-        walls.add(Direction.RIGHT, wallOne);
+        walls.add(Direction.NORTH, wallOne);
 
         Wall wallTwo = new Wall(null, null, "Wall Two");
-        walls.add(Direction.LEFT, wallTwo);
+        walls.add(Direction.SOUTH, wallTwo);
 
-        assertEquals(walls.getWall(Direction.RIGHT), wallOne);
-        assertEquals(walls.getWall(Direction.LEFT), wallTwo);
+        assertEquals(walls.getWall(Direction.NORTH), wallOne);
+        assertEquals(walls.getWall(Direction.SOUTH), wallTwo);
     }
 
     @Test
@@ -88,14 +88,13 @@ public class WallsTest {
 
         Wall wallOne = new Wall(null, null, "Wall One");
         Wall wallTwo = new Wall(null, null, "Wall Two");
-        Wall wallThree = new Wall(null, null, "Wall Three");
 
-        walls.add(Direction.RIGHT, wallOne);
-        walls.add(Direction.LEFT, wallTwo);
+        walls.add(Direction.NORTH, wallOne);
+        walls.add(Direction.SOUTH, wallTwo);
 
-        assertTrue(walls.hasWall(Direction.RIGHT));
-        assertTrue(walls.hasWall(Direction.LEFT));
-        assertFalse(walls.hasWall(Direction.BACK));
-        assertFalse(walls.hasWall(Direction.FORWARD));
+        assertTrue(walls.hasWall(Direction.NORTH));
+        assertTrue(walls.hasWall(Direction.SOUTH));
+        assertFalse(walls.hasWall(Direction.EAST));
+        assertFalse(walls.hasWall(Direction.WEST));
     }
 }

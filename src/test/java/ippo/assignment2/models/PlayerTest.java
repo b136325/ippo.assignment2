@@ -12,19 +12,19 @@ public class PlayerTest {
     public void constructorValid() {
         ItemsCollection items = new ItemsCollection();
         Room room = new Room(null, null, null);
-        Player player = new Player(Direction.LEFT, items, room, null);
+        Player player = new Player(Direction.WEST, items, room, null);
 
-        assertEquals(player.getDirection(), Direction.LEFT);
+        assertEquals(player.getDirection(), Direction.WEST);
         assertEquals(player.getItems(), items);
         assertEquals(player.getRoom(), room);
     }
 
     @Test
     public void getCurrentImageAssertRoomNull() {
-        Player player = new Player(Direction.LEFT, null, null, null);
+        Player player = new Player(Direction.WEST, null, null, null);
 
         assertThrows(AssertionError.class, () -> {
-            player.getCurrentImage(Direction.RIGHT);
+            player.getCurrentImage(Direction.EAST);
         });
     }
 
@@ -32,11 +32,11 @@ public class PlayerTest {
     public void getCurrentImageValid() {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.RIGHT, wall);
+        walls.add(Direction.EAST, wall);
         Room room = new Room(null, walls, null);
-        Player player = new Player(Direction.LEFT, null, room, null);
+        Player player = new Player(Direction.WEST, null, room, null);
 
-        assertEquals(player.getCurrentImage(Direction.RIGHT), null);
+        assertEquals(player.getCurrentImage(Direction.EAST), null);
     }
 
     @Test
@@ -48,9 +48,9 @@ public class PlayerTest {
 
     @Test
     public void getDirectionValid() {
-        Player player = new Player(Direction.BACK, null, null, null);
+        Player player = new Player(Direction.SOUTH, null, null, null);
 
-        assertEquals(player.getDirection(), Direction.BACK);
+        assertEquals(player.getDirection(), Direction.SOUTH);
     }
     @Test
     public void getItemsInValid() {
@@ -80,7 +80,7 @@ public class PlayerTest {
 
     @Test
     public void moveForwardAssertRoomNull() {
-        Player player = new Player(Direction.BACK, null, null, null);
+        Player player = new Player(Direction.SOUTH, null, null, null);
 
         assertThrows(AssertionError.class, () -> {
             player.moveForward();
@@ -92,11 +92,11 @@ public class PlayerTest {
         Room innerRoom = new Room(null, null, null);
         Wall wall = new Wall(null, innerRoom, null);
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.LEFT, wall);
+        walls.add(Direction.WEST, wall);
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
         Room outerRoom = new Room(roomItems, walls, null);
-        Player player = new Player(Direction.BACK, null, outerRoom, null);
+        Player player = new Player(Direction.SOUTH, null, outerRoom, null);
 
         player.moveForward();
         assertEquals(player.getRoom(), outerRoom);
@@ -105,12 +105,12 @@ public class PlayerTest {
     @Test
     public void moveForwardInValidWall() {
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.LEFT, null);
+        walls.add(Direction.WEST, null);
 
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
         Room outerRoom = new Room(roomItems, walls, null);
-        Player player = new Player(Direction.BACK, null, outerRoom, null);
+        Player player = new Player(Direction.SOUTH, null, outerRoom, null);
 
         player.moveForward();
         assertEquals(player.getRoom(), outerRoom);
@@ -121,11 +121,11 @@ public class PlayerTest {
         Room innerRoom = new Room(null, null, null);
         Wall wall = new Wall(null, innerRoom, null);
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.BACK, wall);
+        walls.add(Direction.SOUTH, wall);
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
         Room room = new Room(roomItems, walls, null);
-        Player player = new Player(Direction.BACK, null, room, null);
+        Player player = new Player(Direction.SOUTH, null, room, null);
 
         player.moveForward();
         assertEquals(player.getRoom(), innerRoom);
@@ -135,12 +135,12 @@ public class PlayerTest {
     public void moveForwardValidWallWithoutRoom() {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.LEFT, wall);
+        walls.add(Direction.WEST, wall);
 
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
         Room outerRoom = new Room(roomItems, walls, null);
-        Player player = new Player(Direction.LEFT, null, outerRoom, null);
+        Player player = new Player(Direction.WEST, null, outerRoom, null);
 
         player.moveForward();
         assertEquals(player.getRoom(), outerRoom);
@@ -251,7 +251,7 @@ public class PlayerTest {
         Player player = new Player(null, playerItems, null, null);
 
         assertThrows(AssertionError.class, () -> {
-            player.turn(Direction.BACK);
+            player.turn(Direction.SOUTH);
         });
     }
 
@@ -259,10 +259,10 @@ public class PlayerTest {
     public void turnInvalid() {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.BACK, wall);
+        walls.add(Direction.SOUTH, wall);
         Room room = new Room(null, walls, null);
         Player player = new Player(null, null, room, null);
-        player.turn(Direction.RIGHT);
+        player.turn(Direction.EAST);
 
         assertEquals(player.getDirection(), null);
     }
@@ -271,11 +271,11 @@ public class PlayerTest {
     public void turnValid() {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
-        walls.add(Direction.BACK, wall);
+        walls.add(Direction.SOUTH, wall);
         Room room = new Room(null, walls, null);
         Player player = new Player(null, null, room, null);
-        player.turn(Direction.BACK);
+        player.turn(Direction.SOUTH);
 
-        assertEquals(player.getDirection(), Direction.BACK);
+        assertEquals(player.getDirection(), Direction.SOUTH);
     }
 }

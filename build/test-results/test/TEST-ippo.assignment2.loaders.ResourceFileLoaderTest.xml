@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.loaders.ResourceFileLoaderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:56:13" hostname="joes-mbp.mynet" time="0.004">
+<testsuite name="ippo.assignment2.loaders.ResourceFileLoaderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-27T16:40:33" hostname="joes-mbp.mynet" time="0.005">
   <properties/>
   <testcase name="loadPropertyFileValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.001"/>
-  <testcase name="loadFromPathValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.0"/>
-  <testcase name="loadJsonInValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.0"/>
+  <testcase name="loadFromPathValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.001"/>
+  <testcase name="loadJsonInValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.001"/>
   <testcase name="loadFromPathInValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.0"/>
-  <testcase name="loadJsonValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.001"/>
-  <testcase name="loadJsonReaderValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.0"/>
+  <testcase name="loadJsonValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.0"/>
+  <testcase name="loadJsonReaderValid()" classname="ippo.assignment2.loaders.ResourceFileLoaderTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

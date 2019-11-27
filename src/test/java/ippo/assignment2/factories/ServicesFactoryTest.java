@@ -2,6 +2,7 @@ package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.PlayersService;
+import ippo.assignment2.services.PlayersEdinburghService;
 import ippo.assignment2.services.PlayersJsonService;
 import ippo.assignment2.properties.PropertiesSingleton;
 import java.io.IOException;
@@ -40,6 +41,11 @@ public class ServicesFactoryTest {
     @Test
     public void createPlayersJsonService() {
         assertTrue(this.servicesFactory.createService("PlayersJsonService") instanceof PlayersJsonService);
+    }
+
+    @Test
+    public void createEdinburghPlayersService() {
+        assertTrue(this.servicesFactory.createService("PlayersEdinburghService") instanceof PlayersEdinburghService);
     }
 
     @Test

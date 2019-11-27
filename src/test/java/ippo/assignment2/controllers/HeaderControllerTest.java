@@ -38,7 +38,7 @@ public class HeaderControllerTest extends ControllerTestHelper {
      */
     @Override
     public Player buildControllerTestData() {
-        Player player = new Player(Direction.BACK, null, null, "Username1");
+        Player player = new Player(Direction.SOUTH, null, null, "Username1");
         return player;
     }
 

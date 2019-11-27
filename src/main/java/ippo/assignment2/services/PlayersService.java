@@ -38,9 +38,13 @@ public class PlayersService implements IService {
         WallsCollection outerRoomWalls = this.createOuterRoomWallsCollection(showImages, innerRoom);
         Room outerRoom = new Room(outerRoomItems, outerRoomWalls, null);
 
+        // BACK REFERENCE BETWEEN INNER AND OUTER ROOM
+        Wall innerBackWall = innerRoomWalls.getWall(Direction.SOUTH);
+        innerBackWall.setRoom(outerRoom);
+
         // PLAYER
         ItemsCollection playerItems = this.createPlayerItems(showImages);
-        Player player = new Player(Direction.RIGHT, playerItems, outerRoom, "Username1");
+        Player player = new Player(Direction.NORTH, playerItems, outerRoom, "Username1");
 
         return player;
     }
@@ -55,11 +59,11 @@ public class PlayersService implements IService {
     private WallsCollection createInnerRoomWallsCollection() {
         WallsCollection innerRoomWalls = new WallsCollection();
 
-        Wall innerWallLeft = new Wall(null, null, "LEFT WALL");
+        Wall innerWallBack = new Wall(null, null, "BACK WALL");
         Wall innerWallRight = new Wall(null, null, "RIGHT WALL");
 
-        innerRoomWalls.add(Direction.LEFT, innerWallLeft);
-        innerRoomWalls.add(Direction.RIGHT, innerWallRight);
+        innerRoomWalls.add(Direction.SOUTH, innerWallBack);
+        innerRoomWalls.add(Direction.NORTH, innerWallRight);
 
         return innerRoomWalls;
     }
@@ -76,7 +80,7 @@ public class PlayersService implements IService {
         Image outerRoomItemOneImage = null;
 
         if (showImages == true) {
-            outerRoomItemOneImage = new Image("images/dundee.jpg");
+            outerRoomItemOneImage = new Image("images/scotland/dundee.jpg");
         }
 
         Item outerRoomItem = new Item(outerRoomItemOneImage, "roomItem");
@@ -93,20 +97,24 @@ public class PlayersService implements IService {
      * @since 0.4.1
      */
     private WallsCollection createOuterRoomWallsCollection(Boolean showImages, Room innerRoom) {
+        Image outerRoomImageForward = null;
         Image outerRoomImageLeft = null;
         Image outerRoomImageRight = null;
         WallsCollection walls = new WallsCollection();
 
         if (showImages == true) {
-            outerRoomImageLeft = new Image("images/edinburgh.jpg");
-            outerRoomImageRight = new Image("images/dundee.jpg");
+            outerRoomImageForward = new Image("images/scotland/glasgow.jpg");
+            outerRoomImageLeft = new Image("images/scotland/edinburgh.jpg");
+            outerRoomImageRight = new Image("images/scotland/dundee.jpg");
         }
 
-        Wall wallLeft = new Wall(outerRoomImageLeft, innerRoom, "INNER LEFT WALL");
-        Wall wallRight = new Wall(outerRoomImageRight, null, "INNER RIGHT WALL");
+        Wall wallForward = new Wall(outerRoomImageForward, null, "OUTER FORWARD WALL");
+        Wall wallLeft = new Wall(outerRoomImageLeft, innerRoom, "OUTER LEFT WALL");
+        Wall wallRight = new Wall(outerRoomImageRight, null, "OUTER RIGHT WALL");
 
-        walls.add(Direction.LEFT, wallLeft);
-        walls.add(Direction.RIGHT, wallRight);
+        walls.add(Direction.NORTH, wallForward);
+        walls.add(Direction.WEST, wallLeft);
+        walls.add(Direction.EAST, wallRight);
 
         return walls;
     }
@@ -124,8 +132,8 @@ public class PlayersService implements IService {
         Image playerItemTwoImage = null;
 
         if (showImages == true) {
-            playerItemOneImage = new Image("images/edinburgh.jpg");
-            playerItemTwoImage = new Image("images/glasgow.jpg");
+            playerItemOneImage = new Image("images/scotland/edinburgh.jpg");
+            playerItemTwoImage = new Image("images/scotland/glasgow.jpg");
         }
 
         Item playerItemOne = new Item(playerItemOneImage, "playerItemOne");
