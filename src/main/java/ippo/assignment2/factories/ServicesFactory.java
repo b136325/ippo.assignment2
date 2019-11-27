@@ -2,7 +2,7 @@ package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.PlayersService;
-import ippo.assignment2.utils.PropertiesSingleton;
+import ippo.assignment2.properties.PropertiesSingleton;
 
 /**
  * A simple concrete factory that creates IService objects.

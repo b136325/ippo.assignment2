@@ -49,7 +49,7 @@ public class RoomItemsControllerMock {
         ItemsCollection roomItems = new ItemsCollection();
 
         // Create the currentRoom and populate it with the roomItems and the walls.
-        Room currentRoom = new Room(roomItems, walls);
+        Room currentRoom = new Room(roomItems, walls, null);
 
         // Create a player object and populate it with the playerItems and the currentRoom.
         Player player = new Player(Direction.BACK, playerItems, currentRoom, "Username1");

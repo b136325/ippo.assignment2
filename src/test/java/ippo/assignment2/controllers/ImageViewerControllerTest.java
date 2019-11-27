@@ -26,7 +26,7 @@ public class ImageViewerControllerTest extends ControllerTestHelper {
      */
     @Override
     public Player buildControllerTestData() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Player player = new Player(Direction.BACK, null, room, "Username1");
         return player;
     }

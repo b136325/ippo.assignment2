@@ -5,11 +5,14 @@ import ippo.assignment2.collections.WallsCollection;
 import javafx.scene.image.Image;
 
 /**
+ * A Room model class.
+ *
  * @since 0.1.2
  */
 public class Room {
 
     private ItemsCollection items;
+    private String name;
     private WallsCollection walls;
 
     /**
@@ -18,8 +21,9 @@ public class Room {
      * @param walls
      * @since 0.1.2
      */
-    public Room(ItemsCollection items, WallsCollection walls) {
+    public Room(ItemsCollection items, WallsCollection walls, String name) {
         this.items = items;
+        this.name = name;
         this.walls = walls;
     }
 
@@ -52,6 +56,17 @@ public class Room {
      */
     public ItemsCollection getItems() {
         return this.items;
+    }
+
+    /**
+     * A 'getter' method that returns the room name.
+     *
+     * @return The room name or null.
+     *
+     * @since 0.4.0
+     */
+    public String getName() {
+        return this.name;
     }
 
     /**

@@ -12,16 +12,16 @@ public class DirectionTest {
 
     @Test
     public void hasForwardDirection() {
-        assertEquals(Direction.FORWARD.ordinal(), 1);
+        assertEquals(Direction.FORWARD.ordinal(), 2);
     }
 
     @Test
     public void hasLeftDirection() {
-        assertEquals(Direction.LEFT.ordinal(), 2);
+        assertEquals(Direction.LEFT.ordinal(), 3);
     }
 
     @Test
     public void hasRightDirection() {
-        assertEquals(Direction.RIGHT.ordinal(), 3);
+        assertEquals(Direction.RIGHT.ordinal(), 5);
     }
 }

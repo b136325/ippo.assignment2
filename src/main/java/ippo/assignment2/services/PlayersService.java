@@ -30,7 +30,7 @@ public class PlayersService implements IService {
         innerRoomWalls.add(Direction.LEFT, innerWallLeft);
         innerRoomWalls.add(Direction.RIGHT, innerWallRight);
 
-        Room innerRoom = new Room(null, innerRoomWalls);
+        Room innerRoom = new Room(null, innerRoomWalls, null);
 
         Image playerItemOneImage = new Image("images/edinburgh.jpg");
         Item playerItemOne = new Item(playerItemOneImage, "playerItemOne");
@@ -67,7 +67,7 @@ public class PlayersService implements IService {
         walls.add(Direction.LEFT, wallLeft);
         walls.add(Direction.RIGHT, wallRight);
 
-        Room room = new Room(roomItems, walls);
+        Room room = new Room(roomItems, walls, null);
 
         Player player = new Player(Direction.RIGHT, playerItems, room, "Username1");
 

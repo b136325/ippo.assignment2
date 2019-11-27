@@ -2,7 +2,7 @@ package ippo.assignment2.helpers;
 
 import ippo.assignment2.controllers.IController;
 import ippo.assignment2.models.Player;
-import ippo.assignment2.utils.PropertiesSingleton;
+import ippo.assignment2.properties.PropertiesSingleton;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;

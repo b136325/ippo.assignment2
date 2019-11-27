@@ -2,17 +2,16 @@ package ippo.assignment2;
 
 import ippo.assignment2.controllers.MainController;
 import ippo.assignment2.factories.ServicesFactory;
+import ippo.assignment2.loggers.ExceptionLogger;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.services.IService;
-import ippo.assignment2.utils.PropertiesSingleton;
+import ippo.assignment2.properties.PropertiesSingleton;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * The core Application class for ippo.assignment2.
@@ -25,6 +24,11 @@ public class App extends Application {
      * @since 0.1.2
      */
     private final String appServicePropertyName = "app.service";
+
+    /**
+     * @since 0.4.0
+     */
+    private final ExceptionLogger exceptionLogger = new ExceptionLogger();
 
     /**
      * @since 0.3.6
@@ -83,9 +87,8 @@ public class App extends Application {
 
             stage.show();
 
-        } catch (IOException ex) {
-            Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, null, ex);
-            System.exit(1);
+        } catch (IOException e) {
+            this.exceptionLogger.log(e);
         }
     }
 

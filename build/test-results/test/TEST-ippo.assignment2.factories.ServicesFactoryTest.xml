@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.factories.ServicesFactoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-26T23:48:56" hostname="joes-mbp.mynet" time="0.003">
+<testsuite name="ippo.assignment2.factories.ServicesFactoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-27T06:03:26" hostname="joes-mbp.mynet" time="0.019">
   <properties/>
-  <testcase name="createServiceFromPropertiesPlayersService()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.001"/>
-  <testcase name="createServiceFromPropertiesNull()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.001"/>
-  <testcase name="createServiceNull()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.0"/>
+  <testcase name="createServiceFromPropertiesPlayersService()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.012"/>
+  <testcase name="createServiceFromPropertiesNull()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.0"/>
+  <testcase name="createServiceNull()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.001"/>
   <testcase name="createPlayersService()" classname="ippo.assignment2.factories.ServicesFactoryTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

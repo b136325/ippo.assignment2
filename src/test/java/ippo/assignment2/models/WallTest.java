@@ -33,7 +33,7 @@ public class WallTest {
     @Test
     public void getNameTestValidWithRoom() {
         String wallName = "Wall One";
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Wall wall = new Wall(null, room, wallName);
         assertTrue(wall.getName() == wallName);
     }
@@ -46,7 +46,7 @@ public class WallTest {
 
     @Test
     public void getRoomTestValid() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Wall wall = new Wall(null, room, null);
         assertTrue(wall.getRoom() == room);
         assertTrue(wall.getRoom().hashCode() == room.hashCode());
@@ -55,7 +55,7 @@ public class WallTest {
     @Test
     public void getRoomTestValidWithName() {
         String wallName = "Wall One";
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Wall wall = new Wall(null, room, wallName);
         assertTrue(wall.getRoom() == room);
     }
@@ -68,7 +68,7 @@ public class WallTest {
 
     @Test
     public void hasRoomValid() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Wall wall = new Wall(null, room, null);
         assertTrue(wall.hasRoom());
     }

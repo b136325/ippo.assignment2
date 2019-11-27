@@ -1,15 +1,22 @@
 package ippo.assignment2.controllers;
 
-import ippo.assignment2.utils.PropertiesSingleton;
+import ippo.assignment2.loggers.ExceptionLogger;
+import ippo.assignment2.properties.PropertiesSingleton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import java.io.IOException;
 
 /**
  * An Observer controller for HeaderViewer.fxml.
  * @since 0.1.2
  */
 public class HeaderController extends AbstractObserverController implements IController {
+
+    /**
+     * An instance of the ExceptionLogger.
+     *
+     * @since 0.4.4
+     */
+    private ExceptionLogger exceptionLogger = new ExceptionLogger();
 
     /**
      * A reference to the title Label (defined within HeaderViewer.fxml).
@@ -38,7 +45,7 @@ public class HeaderController extends AbstractObserverController implements ICon
             this.updateViewTitle();
             this.updateViewUsername();
         } catch(Exception e) {
-            // @TODO add a mechanism for logging errors.
+            this.exceptionLogger.log(e);
         }
     }
 

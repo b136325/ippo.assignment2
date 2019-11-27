@@ -4,7 +4,7 @@ import ippo.assignment2.helpers.ControllerTestHelper;
 import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
-import ippo.assignment2.utils.PropertiesSingleton;
+import ippo.assignment2.properties.PropertiesSingleton;
 import javafx.scene.control.Label;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,7 +29,7 @@ public class MainControllerTest extends ControllerTestHelper {
      */
     @Override
     public Player buildControllerTestData() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Player player = new Player(Direction.BACK, null, room, "Username1");
         return player;
     }

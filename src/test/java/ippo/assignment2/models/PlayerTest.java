@@ -11,7 +11,7 @@ public class PlayerTest {
     @Test
     public void constructorValid() {
         ItemsCollection items = new ItemsCollection();
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Player player = new Player(Direction.LEFT, items, room, null);
 
         assertEquals(player.getDirection(), Direction.LEFT);
@@ -33,7 +33,7 @@ public class PlayerTest {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wall);
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
         Player player = new Player(Direction.LEFT, null, room, null);
 
         assertEquals(player.getCurrentImage(Direction.RIGHT), null);
@@ -67,7 +67,7 @@ public class PlayerTest {
 
     @Test
     public void getRoomInValid() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Player player = new Player(null, null, room, null);
         assertEquals(player.getRoom(), room);
     }
@@ -89,13 +89,13 @@ public class PlayerTest {
 
     @Test
     public void moveForwardInValid() {
-        Room innerRoom = new Room(null, null);
+        Room innerRoom = new Room(null, null, null);
         Wall wall = new Wall(null, innerRoom, null);
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.LEFT, wall);
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
-        Room outerRoom = new Room(roomItems, walls);
+        Room outerRoom = new Room(roomItems, walls, null);
         Player player = new Player(Direction.BACK, null, outerRoom, null);
 
         player.moveForward();
@@ -109,7 +109,7 @@ public class PlayerTest {
 
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
-        Room outerRoom = new Room(roomItems, walls);
+        Room outerRoom = new Room(roomItems, walls, null);
         Player player = new Player(Direction.BACK, null, outerRoom, null);
 
         player.moveForward();
@@ -118,13 +118,13 @@ public class PlayerTest {
 
     @Test
     public void moveForwardValid() {
-        Room innerRoom = new Room(null, null);
+        Room innerRoom = new Room(null, null, null);
         Wall wall = new Wall(null, innerRoom, null);
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.BACK, wall);
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
-        Room room = new Room(roomItems, walls);
+        Room room = new Room(roomItems, walls, null);
         Player player = new Player(Direction.BACK, null, room, null);
 
         player.moveForward();
@@ -139,7 +139,7 @@ public class PlayerTest {
 
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
-        Room outerRoom = new Room(roomItems, walls);
+        Room outerRoom = new Room(roomItems, walls, null);
         Player player = new Player(Direction.LEFT, null, outerRoom, null);
 
         player.moveForward();
@@ -150,7 +150,7 @@ public class PlayerTest {
     public void pickUpAssertionThrownWhenItemsNull() {
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
-        Room roomNoItems = new Room(roomItems, null);
+        Room roomNoItems = new Room(roomItems, null, null);
         Player player = new Player(null, null, roomNoItems, null);
 
         assertThrows(AssertionError.class, () -> {
@@ -174,7 +174,7 @@ public class PlayerTest {
     public void pickUpInValid() {
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
-        Room roomNoItems = new Room(roomItems, null);
+        Room roomNoItems = new Room(roomItems, null, null);
         ItemsCollection playerItems = new ItemsCollection();
         Player player = new Player(null, playerItems, roomNoItems, null);
 
@@ -187,7 +187,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         ItemsCollection roomItems = new ItemsCollection();
         roomItems.add(item);
-        Room roomNoItems = new Room(roomItems, null);
+        Room roomNoItems = new Room(roomItems, null, null);
         ItemsCollection playerItems = new ItemsCollection();
         Player player = new Player(null, playerItems, roomNoItems, null);
 
@@ -198,7 +198,7 @@ public class PlayerTest {
     @Test
     public void putDownAssertionThrownWhenItemsNull() {
         Item item = new Item(null, null);
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         Player player = new Player(null, null, room, null);
 
         assertThrows(AssertionError.class, () -> {
@@ -223,7 +223,7 @@ public class PlayerTest {
         Item item = new Item(null, null);
         ItemsCollection playerItems = new ItemsCollection();
         ItemsCollection roomItems = new ItemsCollection();
-        Room room = new Room(roomItems, null);
+        Room room = new Room(roomItems, null, null);
         Player player = new Player(null, playerItems, room, null);
 
         assertEquals(player.putDown(item), false);
@@ -236,7 +236,7 @@ public class PlayerTest {
         ItemsCollection playerItems = new ItemsCollection();
         playerItems.add(item);
         ItemsCollection roomItems = new ItemsCollection();
-        Room room = new Room(roomItems, null);
+        Room room = new Room(roomItems, null, null);
         Player player = new Player(null, playerItems, room, null);
 
         assertEquals(player.putDown(item), true);
@@ -260,7 +260,7 @@ public class PlayerTest {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.BACK, wall);
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
         Player player = new Player(null, null, room, null);
         player.turn(Direction.RIGHT);
 
@@ -272,7 +272,7 @@ public class PlayerTest {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.BACK, wall);
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
         Player player = new Player(null, null, room, null);
         player.turn(Direction.BACK);
 

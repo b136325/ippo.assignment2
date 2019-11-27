@@ -2,7 +2,7 @@ package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.PlayersService;
-import ippo.assignment2.utils.PropertiesSingleton;
+import ippo.assignment2.properties.PropertiesSingleton;
 import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;

@@ -1,0 +1,18 @@
+{
+  "rooms": {
+    "bedroom": {
+      "views": {
+        "north": "glasgow.jpg",
+        "west": "edinburgh.jpg"
+      },
+      "exits": {
+        "north": "bathroom",
+        "south": "hall"
+      },
+      "contents": [ "cat", "dog" ]
+    }
+  }, "items": {
+    "edinburgh": { "image": "edinburgh.jpg" },
+    "glasgow": { "image": "glasgow.jpg" }
+  }
+}

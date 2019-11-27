@@ -1,7 +1,6 @@
-package ippo.assignment2.utils;
+package ippo.assignment2.properties;
 
-import java.io.IOException;
-import java.io.InputStream;
+import ippo.assignment2.loaders.ResourceFileLoader;
 import java.util.Properties;
 
 /**
@@ -33,17 +32,20 @@ public class PropertiesSingleton {
     private static PropertiesSingleton propertiesSingleton = null;
 
     /**
+     * An instance of the ResourceFileLoader.
+     *
+     * @since 0.4.0
+     */
+    private ResourceFileLoader resourceFileLoader = new ResourceFileLoader();
+
+    /**
      * The privately scoped constructor for the PropertiesSingleton class.
      * To access an instance of the class use 'getInstance' below.
      *
      * @since 0.1.6
      */
     private PropertiesSingleton() {
-        try {
-            this.load();
-        } catch(Exception e) {
-            // @TODO logger
-        }
+        this.load();
     }
 
     /**
@@ -95,16 +97,10 @@ public class PropertiesSingleton {
      * This private method attempt to load the required properties config file,
      * whose path is defined by 'this.propertiesPath', into a Java.util Properties object.
      *
-     * @throws IOException When 'this.propertiesPath' is not a config file that can be accessed.
-     *                     Or when it does not exist.
-     *
      * @since 0.1.6
      */
-    private void load() throws IOException {
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(this.propertiesPath);
-        Properties properties = new java.util.Properties();
-        properties.load(inputStream);
-
+    private void load() {
+        Properties properties = this.resourceFileLoader.loadPropertyFile(this.propertiesPath);
         this.properties.putAll(properties);
     }
 }

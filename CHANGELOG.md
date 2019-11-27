@@ -1,5 +1,16 @@
 ## CHANGELOG
 
+### Tag 0.4.0
+
+- The introduction of the following classes:
+    - `ExceptionLogger`
+    - `JsonFileParser`
+    - `JsonModelBuilder`.
+    - `ResourceFileLoader`
+
+---
+
+
 ### Tag 0.3.6
 
 - Refactor App.

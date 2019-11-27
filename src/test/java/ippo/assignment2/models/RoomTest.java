@@ -12,7 +12,7 @@ public class RoomTest {
 
     @Test
     public void constructorNullTest() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
         assertNull(room.getItems());
         assertTrue(room.getWall(Direction.BACK) == null);
         assertTrue(room.getWall(Direction.FORWARD) == null);
@@ -26,7 +26,7 @@ public class RoomTest {
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wall);
         ItemsCollection items = new ItemsCollection();
-        Room room = new Room(items, walls);
+        Room room = new Room(items, walls, null);
 
         assertEquals(room.getItems(), items);
         assertTrue(room.getItems().hashCode() == items.hashCode());
@@ -40,7 +40,7 @@ public class RoomTest {
     @Test
     public void addTest() {
         ItemsCollection items = new ItemsCollection();
-        Room room = new Room(items, null);
+        Room room = new Room(items, null, null);
         assertTrue(room.getItems().count() == 0);
 
         Item itemOne = new Item(null, "Item One");
@@ -57,7 +57,7 @@ public class RoomTest {
         Wall wall = new Wall(null, null, null);
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wall);
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
 
         assertTrue(room.getImage(Direction.RIGHT) == null);
     }
@@ -65,7 +65,7 @@ public class RoomTest {
     @Test
     public void getImageValid() {
         WallsCollection walls = new WallsCollection();
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
 
         assertTrue(room.getImage(Direction.RIGHT) == null);
     }
@@ -73,7 +73,7 @@ public class RoomTest {
     @Test
     public void getItemsInvalid() {
         WallsCollection walls = new WallsCollection();
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
 
         assertTrue(room.getItems() == null);
     }
@@ -82,7 +82,7 @@ public class RoomTest {
     public void getItemsValid() {
         WallsCollection walls = new WallsCollection();
         ItemsCollection items = new ItemsCollection();
-        Room room = new Room(items, walls);
+        Room room = new Room(items, walls, null);
 
         assertTrue(room.getItems() == items);
         assertTrue(room.getItems().hashCode() == items.hashCode());
@@ -91,7 +91,7 @@ public class RoomTest {
     @Test
     public void getWallInvalid() {
         WallsCollection walls = new WallsCollection();
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
 
         assertNull(room.getWall(Direction.BACK));
         assertNull(room.getWall(Direction.FORWARD));
@@ -104,7 +104,7 @@ public class RoomTest {
         Wall wallRight = new Wall(null, null, "Wall Right");
         WallsCollection walls = new WallsCollection();
         walls.add(Direction.RIGHT, wallRight);
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
 
         assertTrue(room.getWall(Direction.RIGHT) == wallRight);
         assertTrue(room.getWall(Direction.RIGHT).hashCode() == wallRight.hashCode());
@@ -117,7 +117,7 @@ public class RoomTest {
     @Test
     public void hasWallInvalid() {
         WallsCollection walls = new WallsCollection();
-        Room room = new Room(null, walls);
+        Room room = new Room(null, walls, null);
 
         assertFalse(room.hasWall(Direction.BACK));
         assertFalse(room.hasWall(Direction.FORWARD));
@@ -127,7 +127,7 @@ public class RoomTest {
 
     @Test
     public void hasWallNoWalls() {
-        Room room = new Room(null, null);
+        Room room = new Room(null, null, null);
 
         assertFalse(room.hasWall(Direction.BACK));
         assertFalse(room.hasWall(Direction.FORWARD));
@@ -138,7 +138,7 @@ public class RoomTest {
     @Test
     public void removeTest() {
         ItemsCollection items = new ItemsCollection();
-        Room room = new Room(items, null);
+        Room room = new Room(items, null, null);
 
         Item itemOne = new Item(null, "Item One");
         Item itemTwo = new Item(null, "Item Two");
