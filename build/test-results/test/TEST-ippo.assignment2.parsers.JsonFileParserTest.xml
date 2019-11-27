@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.parsers.JsonFileParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T06:03:26" hostname="joes-mbp.mynet" time="0.031">
+<testsuite name="ippo.assignment2.parsers.JsonFileParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:03:38" hostname="joes-mbp.mynet" time="0.034">
   <properties/>
-  <testcase name="parseValid()" classname="ippo.assignment2.parsers.JsonFileParserTest" time="0.031"/>
+  <testcase name="parseValid()" classname="ippo.assignment2.parsers.JsonFileParserTest" time="0.034"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -12,5 +12,5 @@
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
     <Label text="Image viewer"/>
-    <ImageView fx:id="imageViewer" fitHeight="100" fitWidth="100" />
+    <ImageView fx:id="imageViewer" fitHeight="300" fitWidth="300" />
 </HBox>

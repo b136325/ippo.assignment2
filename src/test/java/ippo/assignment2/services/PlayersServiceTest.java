@@ -5,18 +5,32 @@ import ippo.assignment2.models.Direction;
 import ippo.assignment2.models.Player;
 import ippo.assignment2.models.Room;
 import org.junit.jupiter.api.Test;
-import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PlayersTest {
+/**
+ * A test class for the PlayersService.
+ *
+ * @since 0.4.0
+ */
+public class PlayersServiceTest {
     PlayersService playersService;
 
-    public PlayersTest() {
+    /**
+     * The constructor for PlayersServiceTest.
+     *
+     * @since 0.4.0
+     */
+    public PlayersServiceTest() {
         this.playersService = new PlayersService();
     }
 
+    /**
+     * Ensure that the service returns a valid player model.
+     *
+     * @since 0.4.0
+     */
     @Test
-    public void getValid() throws IOException {
+    public void getValid() {
         Player player = this.playersService.get(false);
         assertTrue(player instanceof Player);
         assertTrue(player.getDirection() instanceof Direction);

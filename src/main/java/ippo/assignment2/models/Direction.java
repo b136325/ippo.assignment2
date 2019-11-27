@@ -6,11 +6,7 @@ package ippo.assignment2.models;
  */
 public enum Direction {
     BACK,
-    EAST,
     FORWARD,
     LEFT,
-    NORTH,
     RIGHT,
-    SOUTH,
-    WEST
 }

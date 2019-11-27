@@ -2,18 +2,17 @@
   "rooms": {
     "bedroom": {
       "views": {
-        "north": "bedroom-north.jpg",
-        "west": "bedroom-west.jpg"
+        "left": "glasgow.jpg",
+        "right": "edinburgh.jpg"
       },
       "exits": {
-        "north": "bathroom",
-        "south": "hall"
+        "forward": "bathroom",
+        "back": "hall"
       },
       "contents": [ "cat", "dog" ]
     }
-  },
-  "items": {
-    "edinburgh": { "image": "edinburgh.jpg" },
-    "glasgow": { "image": "glasgow.jpg" }
-  }
+  }, "items": {
+  "edinburgh": { "image": "edinburgh.jpg" },
+  "glasgow": { "image": "glasgow.jpg" }
+}
 }

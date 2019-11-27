@@ -2,12 +2,12 @@
   "rooms": {
     "bedroom": {
       "views": {
-        "north": "glasgow.jpg",
-        "west": "edinburgh.jpg"
+        "left": "glasgow.jpg",
+        "right": "edinburgh.jpg"
       },
       "exits": {
-        "north": "bathroom",
-        "south": "hall"
+        "forward": "bathroom",
+        "back": "hall"
       },
       "contents": [ "cat", "dog" ]
     }

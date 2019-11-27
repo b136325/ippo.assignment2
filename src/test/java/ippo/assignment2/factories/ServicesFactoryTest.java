@@ -2,6 +2,7 @@ package ippo.assignment2.factories;
 
 import ippo.assignment2.services.IService;
 import ippo.assignment2.services.PlayersService;
+import ippo.assignment2.services.PlayersJsonService;
 import ippo.assignment2.properties.PropertiesSingleton;
 import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -33,7 +34,12 @@ public class ServicesFactoryTest {
 
     @Test
     public void createPlayersService() {
-        assertTrue(this.servicesFactory.createService("Players") instanceof PlayersService);
+        assertTrue(this.servicesFactory.createService("PlayersService") instanceof PlayersService);
+    }
+
+    @Test
+    public void createPlayersJsonService() {
+        assertTrue(this.servicesFactory.createService("PlayersJsonService") instanceof PlayersJsonService);
     }
 
     @Test
@@ -46,7 +52,7 @@ public class ServicesFactoryTest {
     @Test
     public void createServiceFromPropertiesPlayersService() throws IOException {
         PropertiesSingleton properties = PropertiesSingleton.getInstance();
-        String propertyName = "navigation.service";
+        String propertyName = "app.service";
         IService service = this.servicesFactory.createServiceFromProperties(properties, propertyName);
         assertTrue(service instanceof PlayersService);
     }

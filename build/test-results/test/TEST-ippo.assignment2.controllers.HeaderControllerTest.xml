@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.controllers.HeaderControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-27T06:03:29" hostname="joes-mbp.mynet" time="0.573">
+<testsuite name="ippo.assignment2.controllers.HeaderControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:03:41" hostname="joes-mbp.mynet" time="0.569">
   <properties/>
-  <testcase name="titleTest()" classname="ippo.assignment2.controllers.HeaderControllerTest" time="0.296"/>
-  <testcase name="usernameTest()" classname="ippo.assignment2.controllers.HeaderControllerTest" time="0.275"/>
+  <testcase name="titleTest()" classname="ippo.assignment2.controllers.HeaderControllerTest" time="0.285"/>
+  <testcase name="usernameTest()" classname="ippo.assignment2.controllers.HeaderControllerTest" time="0.283"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

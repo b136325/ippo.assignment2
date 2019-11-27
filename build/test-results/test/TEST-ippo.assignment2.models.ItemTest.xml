@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ippo.assignment2.models.ItemTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-27T06:03:26" hostname="joes-mbp.mynet" time="0.012">
+<testsuite name="ippo.assignment2.models.ItemTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-27T09:03:38" hostname="joes-mbp.mynet" time="0.001">
   <properties/>
-  <testcase name="getNameTest()" classname="ippo.assignment2.models.ItemTest" time="0.007"/>
+  <testcase name="getNameTest()" classname="ippo.assignment2.models.ItemTest" time="0.0"/>
   <testcase name="constructorNullTest()" classname="ippo.assignment2.models.ItemTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

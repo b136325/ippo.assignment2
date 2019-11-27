@@ -34,7 +34,7 @@ public class PropertiesSingletonTest {
      */
     @Test
     public void hasValueTrue() {
-        assertTrue(this.propertiesSingleton.has("navigation.service"));
+        assertTrue(this.propertiesSingleton.has("app.service"));
     }
 
     /**
